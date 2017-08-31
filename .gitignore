@@ -1,0 +1,8 @@
+/build
+.idea
+*.log
+*.bak
+*.orig
+build
+gmu.log.lck
+.DS_Store
