@@ -448,44 +448,6 @@ the policy developer can now use the delegators and does not need to worry about
 <p>The interface is simple, like this one:</p>
 <img src="images/02_serviceapi_insert.png"/>
 <p>The policy developer also does not even need to know which database system is used. Or if there is a database at all!</p>
-<h3>Policies for the policy installer framework</h3>
-<p>If the intention is to built a policy that can be installed using the policy installer framework there are a few remarks you have to keep in mind:</p>
-<ol>
-    <li>Each policy bundle that you want to make selectable has to be complete by itself. This means that entities (e.g.:
-        encapsulated assertions) that are used in multiple bundles have to be available multiple times</li>
-    <li>To enbable a policy to be installed multiple times has to be done by setting a prefix. That prefix will be used for
-        URLs and names of policies and encapsulated assertions</li>
-    <li>Each bundle should be logically complete. For example, a bundle that contains service APIs that do authentication should not include
-        APIs for accessing data sources</li>
-</ol>
-<p>An example that implements all of these remarks is the 'OAuth Toolkit' installer. If you open the policy manager and look
-    for 'Tasks -> Additional Actions -> Install OAuth Toolkit' you will find a screen like this one:</p>
-<img src="images/01_installer.png"/>
-<p>Users can select any bundle (e.g.: Internal, Browser based test clients) and that bundle will be installed. If the user wants to install
-    a second set of the same policies he can select it again but configures a 'Version Modifier', e.g.: v1.1. </p>
-<h4>Versioning</h4>
-<p>Imagine you develop a service on the URL path '/this/is/my/service'. When this is installed, would it not be nice if it could be installed
-    as '/v1.0/this/is/my/service'? And after you improved your service install the new version as '/v1.5/this/is/my/service'.
-    And would it not be even better if all referenced objects like encapsulated assertions would also include that version?<br/>
-    I know, yes it would be nice! And yes, it already works.</p>
-<p>Making it work requires you to follow a naming convention for variables. Here is an example:</p>
-<ol>
-    <li><b>server location: </b> create a variable named 'host_howto_db_server' and set the value to 'https://localhost:8443'</li>
-    <li><b>URL paths: </b>create a variable named 'howto_db_server_insert' and set it to '/howto/datastore/v1/all'</li>
-    <li><b>service location: </b>create a variable named 'howto_db_server_insert' and set it to '${host_howto_db_server}${howto_db_server_insert_path}' </li>
-    <li><b>routing assertions: </b>for any routing assertion that should call that service set the URL to '${howto_db_server_insert}'</li>
-</ol>
-<p>What will happen (with some example code in the actual installer implementation) is this:</p>
-<ol>
-    <li>The installer will search for variables named 'host_...' and will append the value '/prefix' if a prefix has been set</li>
-    <li>'${host_howto_db_server}${howto_db_server_insert_path}' will become '${host_howto_db_server}<b>/prefix</b>${howto_db_server_insert_path}'</li>
-    <li>'https://localhost:8443/howto/datastore/v1/all' could become 'https://localhost:8443<b>/v1.0</b>/howto/datastore/v1/all'</li>
-    <li>'https://localhost:8443/howto/datastore/v1/all' could become 'https://localhost:8443<b>/v2.0</b>/howto/datastore/v1/all'</li>
-    <li>... and so forth</li>
-    <li>an encapsulated assertions would change from 'howto_configuration' to '<b>v1.0</b> howto_configuration'</li>
-</ol>
-<p>Please take the provided policies of this tutorial and have a look at 'howto_configuration'. Also look how its variable is used
-    in routing assertions in the delegate encapsulated assertion.</p>
 <h3>Last but not least: Test</h3>
 <p>After all these policies being implemented you certainly need to know if they work. For that you can create testing APIs that will
 test each single piece of your work.</p>
@@ -554,8 +516,7 @@ Turn on policy debugging, follow the audit log and you can see that your data AP
     <li>Ready to go!</li>
 </ol>
 <h3>Summary</h3>
-<p>You hopefully have seen how services can be implemented that can be implemented multiple times on the same gateway,
-how encapsulated assertions can be designed to communicate with local databases or via an API. And you have learned how
+<p>You have hopefully seen how encapsulated assertions can be designed to communicate with local databases or via an API. And you have learned how
 tests can be implemented, for encapsulated assertions and for APIs.</p>
 <p>Please send any comments to <a href="mailto:sascha.preibisch@ca.com?subject=HowTo&body=Dear Sascha, this tutorial is great, but ...">Sascha</a>.</p>
 <input onclick='window.history.back()' value='Back' type='button' />
