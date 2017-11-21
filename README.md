@@ -2,7 +2,7 @@
 This section of this github project is made for tutorials. You will find tutorials related to our mobile offerings and server-side solutions. The tutorials are created by our developers for developers.
 
 # What to expect
-You may find tutorials helpful or not, they may work smooth in your environment or maybe not, in any case we encourage you to contribute via pull requests to enhance or correct or add your own tutorial.
+You may find tutorials helpful or not, they may work smooth in your environment or maybe not. In any case we encourage you to contribute via pull requests to enhance or correct and existing tutorial or to add your own.
 
 # Feedback
 We are certainly happy about any feedback on these tutorials, especially if they helped you in your daily worklife!
