@@ -6,7 +6,24 @@
     <link rel="stylesheet" type="text/css" href="style/howto.css" />
 </head>
 <body>
-<h1>Implementing policies to access databases</h1>
+<h1>Tutorial - encapsulating locations of resources</h1>
+<p>This tutorial is meant for users of the CA API Gateway that want to learn how to build policies that can retrieve resources from 'localhost' or from an external location.</p>
+<p>If you are not a CA API Gateway customer this may still help you to get an idea how APIs could look like and how encapsulated pieces of code that hide details such as "where is my database (or remote API) located?" can be built.</p>
+<p><b>Disclaimer: This is meant for educational purposes only!</b></p>
+<h2>Table of contents</h2>
+<ul>
+    <li><a href="#no1">Implementing policies to access databases (or other resources)</a></li>
+    <li><a href="#no2">Separation of concerns</a></li>
+    <li><a href="#no3">Implementation overview</a></li>
+    <li><a href="#no4">The database for this howto guide</a></li>
+    <li><a href="#no5">Encapsulated assertions that use database access fragments</a></li>
+    <li><a href="#no6">Encapsulated assertions that work as delegates</a></li>
+    <li><a href="#no7">API design (data and service APIs)</a></li>
+    <li><a href="#no8">Testing your implementation</a></li>
+    <li><a href="#no9">Setting up this tutorial</a></li>
+    <li><a href="#no10">Summary</a></li>
+</ul>
+<h2><a name="no1"></a>Implementing policies to access databases (or other resources)</h2>
 <p>The gateway supports assertions that enable a policy developer to use JDBC/ Cassandra connections to access a database
     system. This is pretty straightforward. Nevertheless a naive implementation will end in policies that are difficult
     to maintain and difficult to extend. If a complex service API has to be implemented it is even more important to have
@@ -21,9 +38,9 @@
 </ol>
 <p>At the end the policy logic of the encapsulated assertions will support a setup where a gateway is taking on one of these roles:</p>
 <ol>
-    <li><b>Service API provider</b>: this API implements the actual API used by clients</li><br><img src="images/01_ssg_type_service.png"/></li>
-    <li><b>Data API provider</b>: this API implements access to the database layer. This may be exposed in an internal secured network only</li><br><img src="images/01_ssg_type_data.png"/></li>
-    <li><b>Service and data API provider</b>: both APIs may be exposed and available at the same time</li><br><img src="images/01_ssg_type_service_data.png"/></li>
+    <li><b>Service API provider</b>: this API implements the actual API used by clients<br><img src="images/01_ssg_type_service.png"/></li>
+    <li><b>Data API provider</b>: this API implements access to the database layer. This may be exposed in an internal secured network only<br><img src="images/01_ssg_type_data.png"/></li>
+    <li><b>Service and data API provider</b>: both APIs may be exposed and available at the same time<br><img src="images/01_ssg_type_service_data.png"/></li>
 </ol>
 <p>If you are now thinking: 'Ok, so what is so special about it?' Here is the answer. If a serious customer does not want to run a
     database in the DMZ he can use a combination of the roles and combine them. The policy will support the setup below by switching
@@ -33,12 +50,12 @@
     without any danger of having data exposed to unauthorized parties.</p>
 <p>An extension is the ability to include monitoring/ management tools that use the same data API:</p>
 <img src="images/01_setup_monitoring.png"/>
-<h3>Separation of concerns</h3>
+<h2><a name="no2"></a>Separation of concerns</h2>
 As a side note: when implementing the policies be aware that the encapsulated assertion (encas) described here <b>will not implement any
 logic that is required to validate</b> an incoming service request! These encas will only provide access to a data source.
 Therefore keep in mind <b>NOT</b> to implement service validation on a data API, it is none of their conerns!
 <hr/>
-<h2>Implementation overview</h2>
+<h3><a name="no3"></a>Implementation overview</h3>
 <p>The overall goal is to have encapsulated assertions that provide easy access to a data source. Policy developers do
 not need to be aware of databases or server locations whatsoever. They just have to provide the values that should be inserted or
     updated or deleted or selected. The image below shows a service policy that is using
@@ -67,7 +84,7 @@ the encas for select, insert, update and delete: </p>
     <b>Lets begin having fun!</b><br/>
     <b>Tip</b>: The policy for this tutorial can be found at the <a href="#examplepolicy">bottom</a> of this tutorial</p>
 <hr/>
-<h2><a id="exampledatabase">The database for this howto guide</a></h2>
+<h3><a id="exampledatabase" name="no4">The database for this howto guide</a></h3>
 <p>We will start with creating a database.</p>
 <p>The database will be called <b>dbhowto</b>, the table will be called <b>howto</b>. I know, not very fancy.</p>
 <p>Here are the steps to create the database (for MySQL). The commands have to be executed in the terminal:</p>
@@ -173,7 +190,7 @@ preceding it but that is up to you. If you follow my thought the value of the pa
 if no records were returned. That simply indicates an empty result.</p>
 <p>Check 'Save Results to Context Variables' only if you have a use for them. In this tutorial we do not use them so that list could be
 empty. It is just shown as an example.</p>
-<p>Since we have designed the expected response for queries further down (see API Design) we have to run a XSL stylesheet to create it. The stylesheet will
+<p>Since we have designed the expected response for queries further down (see <a href="#no7">API Design</a>) we have to run a XSL stylesheet to create it. The stylesheet will
     transform the default XML JDBC assertion result into our expected result and looks like this:</p>
 <code>
     &lt;xsl:stylesheet version="1.0" xmlns:L7j="http://ns.l7tech.com/2012/08/jdbc-query-result" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;<br/>
@@ -237,7 +254,8 @@ in the fragment itself!</p>
 <p>That's it for all fragments that are communicating with the database. All other policies will connect to the database through these
 fragments. Therefore they are the central point for any modifications on the 'database level'. The next
 step is to built encapsulated assertions around them.</p>
-<hr/><h2>Encapsulated assertions that use database access fragments</h2>
+<hr/>
+<h2><a name="no5"></a>Encapsulated assertions that use database access fragments</h2>
 <p>The encapsulated assertions that are based on the fragments that we have built above will be specified with input variables
 but without labels. They will be used at APIs and also within 'delegator' encapsulated assertions later. Here is the 'insert' encapsulated assertion:</p>
 <img src="images/01_encas_insert.png"/>
@@ -253,7 +271,8 @@ but without labels. They will be used at APIs and also within 'delegator' encaps
 <p><b>Note: </b>'Input' must refer to variables that are used with the same name in the fragment. 'Outputs' must match names of variables
 that are set in the fragment!</p>
 <p>The other encapsulated assertions for select, update, delete look just the same with appropriate inputs and outputs.</p>
-<hr/><h2>Encapsulated assertions that work as delegates</h2>
+<hr/>
+<h2><a name="no6"></a>Encapsulated assertions that work as delegates</h2>
 <p>As this tutorial is all about building policies that will make it easy to configure one or more gateways to act in different
 roles we will now look at one of the most important pieces. Encapsulated assertions that will either use an encapsulated assertion
 that accesses the database or to use a data API. The logic will be implemented as shown below:</p>
@@ -326,7 +345,7 @@ we have created an encapsulated assertion named 'howto_db_select'. I usually rec
 </ol>
 <p>The other delegates will follow the same pattern.</p>
 <hr/>
-<h2>API design</h2>
+<h2><a name="no7"></a>API design</h2>
 <p>This is the toughest part. How should the API look like that is exposed to clients as service API and as data API? Since this tutorial
     is more about the data API we will spent time on that. Not so much on the service API.</p>
 <p>The API will have to handle all operations. Select, update, insert, delete. We will implement a REST-isch API and for that we will
@@ -448,12 +467,12 @@ the policy developer can now use the delegators and does not need to worry about
 <p>The interface is simple, like this one:</p>
 <img src="images/02_serviceapi_insert.png"/>
 <p>The policy developer also does not even need to know which database system is used. Or if there is a database at all!</p>
-<h3>Last but not least: Test</h3>
+<h2><a name="no8"></a>Last but not least: Test</h2>
 <p>After all these policies being implemented you certainly need to know if they work. For that you can create testing APIs that will
 test each single piece of your work.</p>
 <p><b>NOTE: </b>Before running tests on the provided policies make sure to implement the authentication section at the datastore endpoint!</p>
 <p><b>NOTE: </b>The provided example policies are configured to use 'admin/password' in the delegate encapsulated assertions for connecting to the data API!</p>
-<h4>Testing encapsulated assertions</h4>
+<h3>Testing encapsulated assertions</h3>
 <p>You can now create an API for testing purposes. This API would set the required input variables for any encapsulated assertion
     and could verify output variables. To give you an idea, it could look like this:</p>
 <img src="images/01_encas_test.png"/>
@@ -465,7 +484,7 @@ test each single piece of your work.</p>
         But at least you know it is not working!</li>
 </ol>
 <p>You can complete this policy with all kinds of cases and look at it as JUnit test for your encapsulated assertions.</p>
-<h4>Testing the data API</h4>
+<h3>Testing the data API</h3>
 <p>If you have verified that your encapsulated assertion work it is also simple to go and test your data API. As I showed above you can certainly also test any API. A test policy can look something like this:</p>
 <img src="images/03_dataapi_test.png"/>
 <ol>
@@ -476,7 +495,7 @@ test each single piece of your work.</p>
     <li><b>browser: </b>Call the test API using a browser and see your specified success message. If you do not get it you have to debug your policy.
         But at least you know it is not working!</li>
 </ol>
-<h4>Testing the delegates</h4>
+<h3>Testing the delegates</h3>
 <p>Once the encapsulated assertion and the data API got verified it is time to test the delegates. Implement the same logic:</p>
 <img src="images/01_test_delegates.png"/>
 <ol>
@@ -495,11 +514,11 @@ Turn on policy debugging, follow the audit log and you can see that your data AP
     service API. A test policy can look something like this:</p>
 <img src="images/01_test.png"/>
 <p>Call your service API with all kinds of variations.</p>
-<h3><a id="examplepolicy">Setting up this tutorial</a></h3>
+<h2><a id="examplepolicy" name="no9">Setting up this tutorial</a></h2>
 <p>For anybody who wants to play around with this tutorial I have a good message: you can have it! These are the requirements and steps to get you going:</p>
 <p><b>Note: </b>the import of the tutorial will create all policies and the JDBC connection. No need to do that manually</p>
 <ol>
-    <li><b>Pre-Requisite: </b>A gateway version 8.3 must be available, up and running</li>
+    <li><b>Pre-Requisite: </b>A gateway version 8.3 (or higher) must be available, up and running</li>
     <li><b>Pre-Requisite: </b>The internal 'Gateway REST Management Service' service must be published (In policy manager: Tasks - Publish Internal Service - Gateway REST Management Service)</li>
     <li><b>Database: </b>Create the database by using the provided sql snippets from <a href="#exampledatabase">above</a></li>
     <li><b>REST tool: </b>Use a tool like google chromes 'Advanced Rest Client Application' to import the policy. Configure a request with these properties:
@@ -508,17 +527,17 @@ Turn on policy debugging, follow the audit log and you can see that your data AP
             <li>HTTP Method: PUT</li>
             <li>Header: Authorization with admin credentials. E.g.: if it is admin/password use this header: 'Authorization: Basic YWRtaW46cGFzc3dvcmQ='</li>
             <li>Header: Content-Type: application/xml; charset=UTF-8</li>
-            <li>Message: copy the content <a href="resources/howto_policy_bundle.txt" target="_blank">found here</a> and use that</li>
+            <li>Message: copy the content <b>/resources/howto_policy_bundle.txt</b> found in this repository and use that</li>
         </ol>
     </li>
     <li><b>Configuration in chromes 'Advanced Rest Client Application':</b><br/><img src="images/01_resttool.png"/></li>
     <li><b>Verification: </b>After sending the message refresh the policy manager and find the folder 'HowToDatabaseAccess'</li>
     <li>Ready to go!</li>
 </ol>
-<h3>Summary</h3>
+<h2><a name="no10"></a>Summary</h2>
 <p>You have hopefully seen how encapsulated assertions can be designed to communicate with local databases or via an API. And you have learned how
 tests can be implemented, for encapsulated assertions and for APIs.</p>
-<p>Please send any comments to <a href="mailto:sascha.preibisch@ca.com?subject=HowTo&body=Dear Sascha, this tutorial is great, but ...">Sascha</a>.</p>
+<p>Please send any comments to sascha.preibisch at ca.com.</p>
 <input onclick='window.history.back()' value='Back' type='button' />
 </body>
 </html>
