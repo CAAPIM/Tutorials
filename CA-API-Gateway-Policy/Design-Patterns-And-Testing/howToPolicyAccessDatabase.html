@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Building policies – How to</title>
+    <link rel="stylesheet" type="text/css" href="style/howto.css" />
+</head>
+<body>
+<h1>Tutorial - encapsulating locations of resources</h1>
+<p>This tutorial is meant for users of the CA API Gateway that want to learn how to build policies that can retrieve resources from 'localhost' or from an external location.</p>
+<p>If you are not a CA API Gateway customer this may still help you to get an idea how APIs could look like and how encapsulated pieces of code that hide details such as "where is my database (or remote API) located?" can be built.</p>
+<p><b>Disclaimer: This is meant for educational purposes only!</b></p>
+<h2>Table of contents</h2>
+<ul>
+    <li><a href="#no1">Implementing policies to access databases (or other resources)</a></li>
+    <li><a href="#no2">Separation of concerns</a></li>
+    <li><a href="#no3">Implementation overview</a></li>
+    <li><a href="#no4">The database for this howto guide</a></li>
+    <li><a href="#no5">Encapsulated assertions that use database access fragments</a></li>
+    <li><a href="#no6">Encapsulated assertions that work as delegates</a></li>
+    <li><a href="#no7">API design (data and service APIs)</a></li>
+    <li><a href="#no8">Testing your implementation</a></li>
+    <li><a href="#no9">Setting up this tutorial</a></li>
+    <li><a href="#no10">Summary</a></li>
+</ul>
+<h2><a name="no1"></a>Implementing policies to access databases (or other resources)</h2>
+<p>The gateway supports assertions that enable a policy developer to use JDBC/ Cassandra connections to access a database
+    system. This is pretty straightforward. Nevertheless a naive implementation will end in policies that are difficult
+    to maintain and difficult to extend. If a complex service API has to be implemented it is even more important to have
+    a clean design.</p>
+<p>This how to guide explains a pattern that will support policies that:</p>
+<ol>
+    <li>are easy to understand</li>
+    <li>are easy to maintain</li>
+    <li>are easy to extend</li>
+    <li>expose a database layer API</li>
+    <li>are usable with more than one gateway where only one gateway will connect to the database directly and the other will use the API</li>
+</ol>
+<p>At the end the policy logic of the encapsulated assertions will support a setup where a gateway is taking on one of these roles:</p>
+<ol>
+    <li><b>Service API provider</b>: this API implements the actual API used by clients<br><img src="images/01_ssg_type_service.png"/></li>
+    <li><b>Data API provider</b>: this API implements access to the database layer. This may be exposed in an internal secured network only<br><img src="images/01_ssg_type_data.png"/></li>
+    <li><b>Service and data API provider</b>: both APIs may be exposed and available at the same time<br><img src="images/01_ssg_type_service_data.png"/></li>
+</ol>
+<p>If you are now thinking: 'Ok, so what is so special about it?' Here is the answer. If a serious customer does not want to run a
+    database in the DMZ he can use a combination of the roles and combine them. The policy will support the setup below by switching
+    just one variable from 'database is at SSG I' to 'database is running at SSG II':</p>
+<img src="images/01_setup.png"/>
+<p>SSG I and SSG II will authenticate each other using mutual ssl or any other appropriate scheme. The database can be accessed
+    without any danger of having data exposed to unauthorized parties.</p>
+<p>An extension is the ability to include monitoring/ management tools that use the same data API:</p>
+<img src="images/01_setup_monitoring.png"/>
+<h2><a name="no2"></a>Separation of concerns</h2>
+As a side note: when implementing the policies be aware that the encapsulated assertion (encas) described here <b>will not implement any
+logic that is required to validate</b> an incoming service request! These encas will only provide access to a data source.
+Therefore keep in mind <b>NOT</b> to implement service validation on a data API, it is none of their conerns!
+<hr/>
+<h3><a name="no3"></a>Implementation overview</h3>
+<p>The overall goal is to have encapsulated assertions that provide easy access to a data source. Policy developers do
+not need to be aware of databases or server locations whatsoever. They just have to provide the values that should be inserted or
+    updated or deleted or selected. The image below shows a service policy that is using
+the encas for select, insert, update and delete: </p>
+<img src="images/01_goal.png"/>
+<p>The implementation will consist of 6 API endpoints (service, data, test) and 11 policies (9 as encapsulated assertions):</p>
+<img src="images/01_overview.png"/>
+<p>The folder structure should be 'intuitive' which means, someone who did not develop
+    the policies should have an idea of what is found where. We will create 9 folders (excluding the main folder):</p>
+<ol>
+    <li><b>policy fragments: </b>This folder contains everything that is not a service endpoint </li>
+    <li><b>policy fragments/configuration: </b>Whenever a service API or policy is configurable this folder should hold policies that contain
+        variables that do the configuration. We do not want users having to go through 50 policies and services to configure the
+        implementation</li>
+    <li><b>policy fragments/delegate: </b>Policies that will either connect to the database locally or via the data API</li>
+    <li><b>policy fragments/persistence: </b>Policies that use JDBC/ Cassandra assertion to actually 'talk' to the data source</li>
+    <li><b>policy fragments/pof: </b>pof = 'plain old fragment'. That's fancy, isn't it? Policies that are not used as encapsulated assertions</li>
+    <li><b>Server: </b>This folder contains all services</li>
+    <li><b>Server/DMZ: </b>This folder contains all services that are exposed to the internet. The naming is just a hint for users
+    to make it easier to understand where these services should be available</li>
+    <li><b>Server/Internal: </b>This folder contains all services that should not be exposed to the internet but the internal, safe network</li>
+    <li><b>Server/Internal/test: </b>A folder with test services. These services may be disabled later</li>
+</ol>
+<hr/>
+<p>
+    <b>Lets begin having fun!</b><br/>
+    <b>Tip</b>: The policy for this tutorial can be found at the <a href="#examplepolicy">bottom</a> of this tutorial</p>
+<hr/>
+<h3><a id="exampledatabase" name="no4">The database for this howto guide</a></h3>
+<p>We will start with creating a database.</p>
+<p>The database will be called <b>dbhowto</b>, the table will be called <b>howto</b>. I know, not very fancy.</p>
+<p>Here are the steps to create the database (for MySQL). The commands have to be executed in the terminal:</p>
+<code>
+    <b>In the mysql console:</b><br/>
+    CREATE DATABASE dbhowto;<br/>
+    GRANT SELECT,INSERT,UPDATE,DELETE on dbhowto.* to howtouser@'localhost' identified by 'password';<br/>
+    FLUSH PRIVILEGES;<br/><br/>
+    use dbhowto;<br/><br/>
+    CREATE TABLE howto (<br/>
+    pk_howto VARCHAR(64) PRIMARY KEY COMMENT 'the primary key',<br/>
+    howto_topic VARCHAR(128) UNIQUE NOT NULL COMMENT 'the topic of the howto guide',<br/>
+    howto_author VARCHAR(128) NOT NULL COMMENT 'the author of this topic',<br/>
+    howto_updated BIGINT NOT NULL COMMENT 'updated a timestamp in seconds',<br/>
+    howto_desc VARCHAR(256) NULL COMMENT 'an optional description'<br/>
+    );
+</code>
+<p>That's it. We will maintain data via policy execution later.</p>
+<p>To complete the database task we have to create a JDBC connection in the policy manager. The details look like this
+    if the database is running locally on the gateway:</p>
+<img src="images/01_jdbc_connection.png"/>
+<p>The password has to match the value that was used in the 'GRANT' statement of the SQL script above (...identified by 'password', so it actually is 'password'). Do not forget to hit the "Test" button
+once the configuration is complete.</p>
+<hr/>
+<h2>Policy fragments that use JDBC assertions to connect to the database</h2>
+<p>We will implement 4 encapsulated assertions. One encapsulated assertion per operation, 'insert,select,update,delete'. Ideally per database table.
+    In this guide we will only use one table since the pattern will be the same for multiple or just a single table. When
+    creating a fragment per table try to use the table name as part of the fragment name.</p>
+<table>
+    <tr><th>operation</th><th>fragment</th><th>encas</th><th>task</th></tr>
+    <tr><td>insert</td><td>howto_db_insert</td><td>howto_db_insert</td><td>insert data into the table 'howto'</td></tr>
+    <tr><td>select</td><td>howto_db_select</td><td>howto_db_select</td><td>select data of the table 'howto'</td></tr>
+    <tr><td>update</td><td>howto_db_update</td><td>howto_db_update</td><td>update data of the table 'howto'</td></tr>
+    <tr><td>delete</td><td>howto_db_delete</td><td>howto_db_delete</td><td>delete data of the table 'howto'</td></tr>
+</table>
+<h3>howto_db_insert</h3>
+<p>The implementation will support one insert statement. The fragment will use 3 input variables:</p>
+<ol>
+    <li>mandatory: topic (unique)</li>
+    <li>mandatory: author</li>
+    <li>optional: desc</li>
+</ol>
+<p>The other 2 values, the primary key and the updated timestamp, will be generated within the policy. For <b>pk_howto</b>
+    the policy will generate a UUID. For <b>updated</b> the policy will take the current date-time in seconds. The policy looks like this:</p>
+<img src="images/01_fragment_insert.png"/>
+<p>The policy is built like this:</p>
+<ol>
+    <li><b>Lines   2-5: </b>A tiny bit of documentation</li>
+    <li><b>Lines   6-9: </b>Setting default values for variables that will be returned and made available for the surrounding policy</li>
+    <li><b>Lines 10-17: </b>Checking if mandatory values are provided. If not, set an error.code, error.msg and audit more info (Audit Level=INFO)</li>
+    <li><b>Lines 18-28: </b>Verify that no error occurred (line 19), generate the primary key and the updated timestamp (line 21, 22). Again,
+    if an error occurs create an error.code, error.msg and an audit log </li>
+    <li><b>Line 24: </b>This line sets the result to the generated primary key! If it is not set the default value for result '-1' will be returned.
+        In the context of this tutorial it will always indicate an error state</li>
+</ol>
+<p>You may ask where the variable 'desc' is being set. Since this fragment will later be used as an encapsulated assertion it is
+up to that encapsulated assertion to define and set that variable. The actual insert statement looks like this:</p>
+<code>
+    INSERT INTO howto (pk_howto, howto_author, howto_topic, howto_desc, howto_updated) VALUES (${pk_howto[0]},${author},${topic}, ${desc}, ${now.seconds})
+</code>
+<h3>howto_db_select</h3>
+<p>The implementation will support 6 different select statements. Always depending on the provided parameters. These are
+    the possible queries. We will also associate each query with a 'selector':</p>
+<ol>
+    <li>s_id: ...where pk_howto = ${id}</li>
+    <li>s_topic: ...where howto_topic like ${topic}</li>
+    <li>s_desc: ...where howto_desc like ${desc}</li>
+    <li>s_author: ...where howto_author = ${author}</li>
+    <li>s_author_desc: ...where howto_author = ${author} AND howto_desc like ${desc}</li>
+    <li>s_all: no where clause // this most likely requires the support for pagination. That will be explained as part of a different howto guide</li>
+</ol>
+<p>The 'selector' is important to prevent execution of a branch by accident. It also speeds up policy execution because the correct
+branch will be selected by checking one variable.</p>
+<p>Whenever a 'like' should be supported it has to be decided if a '%' should be usable on its own or not. I like to have at least 3 characters
+preceding it but that is up to you. If you follow my thought the value of the parameter has to be checked accordingly!</p>
+<p>In order to create the policy we have to create branches that will execute the correct branch. The branches have to be ordered in a way
+     that the most common (or possibly most common) branch will be processed first. In this howto guide I am assuming that users will most likely
+    search for <b>topics</b> most of the times.</p>
+<ol>
+    <li>IF ${s_topic} AND COMPARE topic != empty THEN select</li>
+    <li>ELSE IF ${s_desc} AND COMPARE desc != empty THEN select</li>
+    <li>ELSE IF ${s_author} AND COMPARE author != empty THEN select</li>
+    <li>ELSE IF ${s_author_desc} AND COMPARE author != empty AND COMPARE desc != empty THEN select</li>
+    <li>ELSE IF ${s_id} AND COMPARE id != empty THEN select</li>
+    <li>ELSE IF ${s_all} THEN select</li>
+    <li>ELSE fail</li>
+</ol>
+<p>The policy looks like this:</p>
+<img src="images/01_fragment_select.png"/>
+<p>The policy is built like this:</p>
+<ol>
+    <li><b>Lines 2-10: </b>A tiny bit of documentation</li>
+    <li><b>Lines 11-14: </b>Setting default values for variables that will be returned and made available for the surrounding policy. It is important
+        to set the variable 'jdbcQuery.xmlResult' on line 14 to an empty XML-JDBC-assertion response. In case no query will be executed the XSL transformation
+        on line 45 will still work!</li>
+    <li><b>Lines 15-43: </b>Identifying the query to execute. On line 40 the fail case is handled</li>
+    <li><b>Lines 44-46: </b>Use the response of any JDBC assertion and transform it into the expected response. All JDBC assertions
+    will create an XML response</li>
+</ol>
+<p>The JDBC assertions are configured as shown below (example shows the one using 'topic' as where clause:</p>
+<img src="images/02_fragment_select.png"/>
+<p>The value for 'The maximum .... returned by the query' must have a reasonable value for your use case! In order to process the result it is usually good to return a result as an XML structure. And we also do not want to fail
+if no records were returned. That simply indicates an empty result.</p>
+<p>Check 'Save Results to Context Variables' only if you have a use for them. In this tutorial we do not use them so that list could be
+empty. It is just shown as an example.</p>
+<p>Since we have designed the expected response for queries further down (see <a href="#no7">API Design</a>) we have to run a XSL stylesheet to create it. The stylesheet will
+    transform the default XML JDBC assertion result into our expected result and looks like this:</p>
+<code>
+    &lt;xsl:stylesheet version="1.0" xmlns:L7j="http://ns.l7tech.com/2012/08/jdbc-query-result" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;<br/>
+    &lt;xsl:output cdata-section-elements="id author topic desc updated" method="xml" omit-xml-declaration="yes"/&gt;<br/>
+    &lt;xsl:template match="/L7j:jdbcQueryResult"&gt;<br/>
+    &lt;xsl:element name="values"&gt;<br/>
+    &lt;xsl:attribute name="count"&gt;&lt;xsl:value-of select="count(L7j:row)"/&gt;&lt;/xsl:attribute&gt;<br/>
+    &lt;xsl:for-each select="L7j:row"&gt;<br/>
+    &lt;xsl:element name="value"&gt;<br/>
+    &lt;xsl:element name="id"&gt;&lt;xsl:value-of select="L7j:col[@name='pk_howto']"/&gt;&lt;/xsl:element&gt;<br/>
+    &lt;xsl:element name="author"&gt;&lt;xsl:value-of select="L7j:col[@name='howto_author']"/&gt;&lt;/xsl:element&gt;<br/>
+    &lt;xsl:element name="topic"&gt;&lt;xsl:value-of select="L7j:col[@name='howto_topic']"/&gt;&lt;/xsl:element&gt;<br/>
+    &lt;xsl:element name="desc"&gt;&lt;xsl:value-of select="L7j:col[@name='howto_desc']"/&gt;&lt;/xsl:element&gt;<br/>
+    &lt;xsl:element name="updated"&gt;&lt;xsl:value-of select="L7j:col[@name='howto_updated']"/&gt;&lt;/xsl:element&gt;<br/>
+    &lt;/xsl:element&gt;<br/>
+    &lt;/xsl:for-each&gt;<br/>
+    &lt;/xsl:element&gt;<br/>
+    &lt;/xsl:template&gt;<br/>
+    &lt;/xsl:stylesheet&gt;
+</code>
+<p>All values will be created within a CDATA section. The XSLResponse assertion is configured to use 'resp' as input variable.</p>
+<p>We now have to define result variables. In order to keep the fragment easy extensible we will not return single variables
+    but a message response. And a content type, and a status.</p>
+<p>Here is what has been useful in development so far (each variable set as type 'String'):</p>
+<ol>
+    <li><b>result: </b>set a variable named: ${result} which contains the created XML response</li>
+    <li><b>content-type: </b>set a variable named: ${content-type}. The value has to match the content of the ${result} variable</li>
+    <li><b>error.code: </b>set a variable ${error.code} containing a value that indicates a successful execution (200)</li>
+    <li><b>error.msg: </b>set a variable ${error.msg} describing any occured errors</li>
+</ol>
+<p><b>IMPORTANT: </b> the value of the variable <b>content-type</b> has to match the selected result value in the 'Set Variable Assertion'
+ on line 46!</p>
+<img src="images/04_fragment_select.png"/>
+<h3>howto_db_update</h3>
+<p>The implementation will support 4 different update statements. The fragment will use 4 input variables:</p>
+<ol>
+    <li><b>id: </b>The ID of the dataset to be updated. This value has to be provided always</li>
+    <li><b>topic: </b>The new topic</li>
+    <li><b>author: </b>The new author</li>
+    <li><b>desc: </b>The new desc </li>
+    <li><b>valid combinations: </b>'author, topic, desc'; 'author'; 'topic'; 'desc' but in any case including the 'id'</li>
+</ol>
+<p>The policy is built like this:</p>
+<img src="images/01_fragment_update.png"/>
+<p>The policy has these main sections:</p>
+<ol>
+    <li><b>Lines 2-12: </b>Tiny documentation, setting default values for some variables</li>
+    <li><b>Line 13, Check: </b>Check if the 'id' has been provided. Without that value nothing will work</li>
+    <li><b>Line 20, Selector: </b>Figure out which selector to use and set an appropriate variable</li>
+    <li><b>Line 46, Update: </b>Execute the actual update statement</li>
+</ol>
+<p><b>IMPORTANT: </b>Line 63, the 'id' of the updated dataset is set as result!</p>
+<p>In comparison to the fragment 'howto_db_select' this fragment is setting the selector in a specific section. 'howto_b_select' gets
+    the selector passed in as value. The way to do this depends on the overall logic of the policies. It it is possible do this
+in the fragment itself!</p>
+<h3>howto_db_delete</h3>
+<p>The implementation will support 1 delete statements. Values can only be deleted by a given 'id'</p>
+<p>The policy looks like this:</p>
+<img src="images/01_fragment_delete.png"/>
+<p>There is not a lot going on. Therefore no further description.</p>
+<p>That's it for all fragments that are communicating with the database. All other policies will connect to the database through these
+fragments. Therefore they are the central point for any modifications on the 'database level'. The next
+step is to built encapsulated assertions around them.</p>
+<hr/>
+<h2><a name="no5"></a>Encapsulated assertions that use database access fragments</h2>
+<p>The encapsulated assertions that are based on the fragments that we have built above will be specified with input variables
+but without labels. They will be used at APIs and also within 'delegator' encapsulated assertions later. Here is the 'insert' encapsulated assertion:</p>
+<img src="images/01_encas_insert.png"/>
+<p>Here a few notes that should be kept in mind:</p>
+<ol>
+    <li>Choose a useful icon. In this case a floppy disk which is the closest we have to indicate a persistence layer</li>
+    <li>Name the encapsulated assertion ALWAYS after the underlying fragment. That will help you to find fragments and encapsulated assertion easier</li>
+    <li>Include a brief description</li>
+    <li>Do <b>NOT</b> include a label for 'Inputs'! For these encapsulated assertions it is important that the specified variables are available in the surrounding policy</li>
+    <li>Speficy outputs. These will be set by this encapsulated assertions</li>
+    <li>Check 'Allow debug tracing into backing policy. This will makes everyones life easier when it comes to debugging</li>
+</ol>
+<p><b>Note: </b>'Input' must refer to variables that are used with the same name in the fragment. 'Outputs' must match names of variables
+that are set in the fragment!</p>
+<p>The other encapsulated assertions for select, update, delete look just the same with appropriate inputs and outputs.</p>
+<hr/>
+<h2><a name="no6"></a>Encapsulated assertions that work as delegates</h2>
+<p>As this tutorial is all about building policies that will make it easy to configure one or more gateways to act in different
+roles we will now look at one of the most important pieces. Encapsulated assertions that will either use an encapsulated assertion
+that accesses the database or to use a data API. The logic will be implemented as shown below:</p>
+<img src="images/01_delegate.png"/>
+<p>SSG I includes the delegate encapsulated assertions. These are configured to either use a local storage encapsulated assertion or to
+sent a request to the data API hosted on a different gateway.</p>
+<p>Accessing the local storage is easy: take the incoming values and pass them to the encapsulated assertion. Calling the data API is
+slightly more complex:</p>
+<ol>
+    <li>URLEncode all values</li>
+    <li>Add values to routing URL or create a message for the routing assertion</li>
+    <li>Receive the response and set output variables as if they were set through the local storage encapsulated assertion</li>
+    <li><b>NOTE: </b>it is important that however the result was retrieved, local or via API, the output of the encapsulated assertion has to be the same always!</li>
+</ol>
+<p>We will go though an example to explain the details and the pitfalls. As of here I will not separate the process of building a fragment
+and encapsulated assertion. They belong together and by now everyone is an expert anyways :-)</p>
+<p>The first step is to create an encapsulated assertion (which includes a fragment and an encapsulated assertion definition) that holds the configuration that enables a
+ delegate encapsulated assertion to distinguish between 'local' and 'data API'.</p>
+<p>We will name this encapsulated assertion <b>howto_configuration</b> which will be located in the 'configuration' folder of our folder structure.
+The screenshot below shows the policy and the configured input and output parameters of the encapsulated assertion:</p>
+<img src="images/01_encas_configuration.png"/>
+<ol>
+    <li><b>Lines 3-6: </b>Those are the path values used with the data API that we will create later. That path has to be known and
+    configured here</li>
+    <li><b>Line 8: </b>Configures te location of the serve that is hosting the data API</li>
+    <li><b>Line 9-12: </b>Server location and path values combined</li>
+    <li><b>Line 13: </b>A switch which will be used in the delegate. Have patience ...</li>
+</ol>
+<p>As an example we will discuss the delegate named 'howto_select'. Can you see it? What? The name! 'howto_select'! Remember,
+we have created an encapsulated assertion named 'howto_db_select'. I usually recommend to used similiar names if the encapsulated assertions are somehow
+    related to each other.</p>
+<p>Here is the specified interface:</p>
+<img src="images/03_delegate.png"/>
+<p>Again, look at the single bits and pieces:</p>
+<ol>
+    <li><b>Icon: </b>An arrow up. Indicating the data is being 'pulled up' from the persistence layer</li>
+    <li><b>Inputs: </b>Names MUST MATCH the names of variables specified within the database access encapsulated assertion!</li>
+    <li><b>Label: </b>Delegates need an input label. When this encapsulated assertion is dragged into a policy an interface appears requesting inputs</li>
+</ol>
+<p>Here is the policy:</p>
+<img src="images/02_delegate.png"/>
+<p>Now, this policy has a lot going on. Let's start at the top:</p>
+<ol>
+    <li><b>Line 2: </b>That is our configuration encapsulated assertion. See the icon that I have chosen. If you stick to the same icons for different
+    types of encapsulated assertion it becomes easier to read policies. That icon (in my eyes) indicates configuration. The encapsulated assertion does not take
+     any input values as you have seen earlier. It just exports configurations as variables</li>
+    <li><b>Line 3 </b>is a block which holds a branch used for local storage access and one for the data API access.</li>
+    <li><b>Line 4: </b>this block handles the local storage case</li>
+    <li><b>Line 5: </b>check if the data API server is configured to be at localhost</li>
+    <li><b>Line 6: </b>set the variable to 'true'. This helps us to avoid an unnecessary execution of the data API branch if
+    something goes wrong here</li>
+    <li><b>Line 7: </b>A plain of fragment that sets variables needed for the 'howto_db_select' encapsulated assertion, specifically the 'selector'</li>
+    <li><b>Line 8: </b>Our encapsulated assertion that connects to the database</li>
+</ol>
+<p>If the data API server is not located at localhost some more stuff has to happen:</p>
+<ol>
+    <li><b>Line 10: </b>Make sure we do not execute this branch only because something went wrong in the block above</li>
+    <li><b>Lines 11-13: </b>URLEncode all values before we use them with a routing assertion</li>
+    <li><b>Lines 14: </b>Not not inherit any artefacts from any other request create an empty message used with the routing assertion. This
+    prevents any unwanted parameters or header to be passed along</li>
+    <li><b>Line 15: </b>Depending on the provided parameters use a different routing URL, with or without filter element (...?desc=${dec}). Configure
+    the roting assertions to use method GET and the emptyMsg as request message. Configure it also not to fail with HTTP status
+    response codes >=400</li>
+    <li><b>Lines 20, 21: </b>Set the content for the variables that should be exported</li>
+    <li><b>Lines 22: </b>Copy the response message body into a variable. Use that further down to either create a success or
+    fail response.</li>
+    <li><b>Line 28: </b>Especially for the fail case some manipulation is required. As said earlier no matter which branch gets executed
+    the result provided by this encapsulated assertion has to be the same always. And since 'howto_db_select' has a different outcome than calling the
+    data API some work is required</li>
+</ol>
+<p>The other delegates will follow the same pattern.</p>
+<hr/>
+<h2><a name="no7"></a>API design</h2>
+<p>This is the toughest part. How should the API look like that is exposed to clients as service API and as data API? Since this tutorial
+    is more about the data API we will spent time on that. Not so much on the service API.</p>
+<p>The API will have to handle all operations. Select, update, insert, delete. We will implement a REST-isch API and for that we will
+    map the database operations to HTTP methods GET, POST, PUT and DELETE. I am not the worlds best REST expert so you will have to excuse if the following
+    is not perfect. It should at least give you an idea how you could approach this task.</p>
+<p><b>INFO</b>: For the pattern '/api/...' this tutorial uses '/howto/datastore/v1' for the data API and 'howto/service' for the service API.</p>
+<h3>Data APi</h3>
+<h4>Adding data using POST</h4>
+<p>The supported pattern looks like this:</p>
+<p><b>POST /api/{entity}</b> where 'entity' can be one of the following: <b>all</b></p>
+<p>The content-type has to be <b>application/x-www-form-urlencoded</b>.</p>
+<p>The message content can be one of these (reflecting our 'NULL/ NOT NULL' database definition):</p>
+<ol>
+    <li>author=value&topic=value&desc=value</li>
+    <li>author=value&topic=value</li>
+</ol>
+<p><b>IMPORTANT: Values for 'pk_howto' and 'updated' will created in policy!</b></p>
+<p>Since this API will generate a primary key (id) on the fly it is unkonwn by the client. For that reason this API will always have
+    to return a URL that can be used to retrieve the persisted data! The response will look something like this:</p>
+<p><b>https://server/api/id/xyz</b> where <b>id</b> is the entity and <b>xyz</b> is the generated id.</p>
+<h4>Getting data using GET</h4>
+<p>The supported pattern looks like this:</p>
+<p><b>GET /api/{entity}/{value}?{filter}</b> where 'entity' can be one of the following: </p>
+<p><b>id</b>, <b>author</b>, <b>topic</b>, <b>desc(ription)</b>, <b>all</b></p>
+<p>Supported filter: <b>desc=value</b></p>
+<p>These are the supported combinations:</p>
+<ol>
+    <li>GET /api/id/value</li>
+    <li>GET /api/author/value</li>
+    <li>GET /api/author/value?desc=value</li>
+    <li>GET /api/topic/value</li>
+    <li>GET /api/desc/value</li>
+    <li>GET /api/all</li>
+</ol>
+<p>Ok, great. But wait. What is returned? In general I am a big fan of XML. XML can easily be transformed into anything. For that reason this tutorial
+    implements XML responses. The message format will be this:</p>
+<p>Here is an example. <b>value</b> represents a single row to be returned. Multiple rows could be returned:</p>
+<code>
+    &lt;values count="2"&gt;<br/>
+    &lt;value&gt;<br/>
+    &lt;id&gt;&lt;![CDATA[column_data]]&gt;&lt;/id&gt;<br/>
+    &lt;author&gt;&lt;![CDATA[column_data]]&gt;&lt;/author&gt;<br/>
+    &lt;topic&gt;&lt;![CDATA[column_data]]&gt;&lt;/topic&gt;<br/>
+    &lt;desc&gt;&lt;![CDATA[column_data]]&gt;&lt;/desc&gt;<br/>
+    &lt;update&gt;&lt;![CDATA[column_data]]&gt;&lt;/update&gt;<br/>
+    &lt;/value&gt;<br/>
+    &lt;value&gt;<br/>
+    &lt;id&gt;&lt;![CDATA[column_data]]&gt;&lt;/id&gt;<br/>
+    &lt;author&gt;&lt;![CDATA[column_data]]&gt;&lt;/author&gt;<br/>
+    &lt;topic&gt;&lt;![CDATA[column_data]]&gt;&lt;/topic&gt;<br/>
+    &lt;desc&gt;&lt;![CDATA[column_data]]&gt;&lt;/desc&gt;<br/>
+    &lt;update&gt;&lt;![CDATA[column_data]]&gt;&lt;/update&gt;<br/>
+    &lt;/value&gt;<br/>
+    ...<br/>
+    &lt;/values&gt;<br/>
+</code>
+<p>An empty result looks like this:</p>
+<code>
+    &lt;values count="0"/&gt;<br/>
+</code>
+<p>The attribute <b>count</b> is a little goody for clients that help them to create logic based on the number of values.</p>
+<p>A namespace is not defined. That is more or less up to the concrete implementation if a namespace is required or not.</p>
+<h4>Updating data using PUT</h4>
+<p>The supported pattern looks like this:</p>
+<p><b>PUT /api/{entity}/{value}</b> where 'entity' can be one of the following: <b>id</b></p>
+<p><b>value</b> must be the id of the dataset that is updated.</p>
+<p>The content-type has to be <b>application/x-www-form-urlencoded</b>.</p>
+<p>The message content can be one of these:</p>
+<ol>
+    <li>author=value&topic=value&desc=value</li>
+    <li>author=value</li>
+    <li>topic=value</li>
+    <li>desc=value</li>
+</ol>
+<p>The response will look something like this, the URL pointing to the modified dataset:</p>
+<p><b>https://server/api/id/xyz</b> where <b>id</b> is the entity and <b>xyz</b> is the id.</p>
+<h4>Deleting data using DELETE</h4>
+<p>The supported pattern looks like this:</p>
+<p><b>DELETE /api/{entity}/{value}</b> where 'entity' can be one of the following: <b>id</b></p>
+<p>The response will be plain text containing the message <b>deleted</b></p>
+<p>For simplicity the service API will support the same interface as this data API!</p>
+<p>The URL for the data API will be this: <b>/howto/datastore/v1/*</b></p>
+<p>The policy for the data API looks like this:</p>
+<img src="images/01_dataapi.png"/>
+<p><b>IMPORTANT: </b>Require SSL ALWAYS! Require some kind of authentication ALWAYS!!!</p>
+<ol>
+    <li><b>Lines 2-8: </b>A tiny bit of documentation</li>
+    <li><b>Lines 10: </b>A Customize Error Response Assertion. As you may have noticed we have not used any of those yet. The reason
+    for that is that <b>encapsulated assertions should NEVER</b> include any of those (exceptions exist)! In most cases the specified error message
+    would be the wrong one anyways!</li>
+    <li><b>Lines 11-32: </b>Authentication and service protection details. Authentication could be done by username/password or mutual SSL
+    or OAuth. To protect the service assertions like the Rate Limit Assertion could be used. </li>
+    <li><b>Lines 33, 34: </b>Verify specific, it extracts 'entity' and 'value' of the URL. This is designed as a fragment since its also used
+    at our service API (which we will see later)</li>
+    <li><b>Lines 35-: </b>All operations that access the database. Here we can find our database access encapsulated assertions again. Each branch
+    has to make sure that required variables are made available for the encapsulated assertion</li>
+</ol>
+<p>As for a few special cases the response assertions may not just return the result of the encapsulated assertion. The POST branch for example
+    has to return the URL that enables a client to access the persisted dataset. It look like this (line 51):</p>
+<img src="images/02_dataapi.png"/>
+<p>The Customize Error Response assertion was also configured with many variables:</p>
+<img src="images/03_dataapi_error.png"/>
+<h3>Service API</h3>
+<p>So, we are almost done. We will now implement a very simple service that is not providing anything cool other than showing how
+our delegate encapsulated assertions are used. Have a look at the policy:</p>
+<p><b>IMPORTANT: </b>Any request validation (replay attack protection, parameter validation, ...) has to be implemented before line 8!</p>
+<img src="images/01_serviceapi.png"/>
+<p>Requests to this API can be executed with the same URL-path and query parameters as our data API. Our base URL is slightly different though:</p>
+<code>
+    Service API: /howto/service/* instead of /howto/datastore/v1/*
+</code>
+<p>The main difference of course is that we are using the <b>delegate</b> encapsulated assertion but not the <b>datastorage access</b> encapsulated assertion. The nice thing here is that
+the policy developer can now use the delegators and does not need to worry about:</p>
+<ol>
+    <li>Where is my database server located?</li>
+    <li>Do I have to route to anywhere?</li>
+    <li>Do I have to URLEncode or URLDecode any values?</li>
+</ol>
+<p>The interface is simple, like this one:</p>
+<img src="images/02_serviceapi_insert.png"/>
+<p>The policy developer also does not even need to know which database system is used. Or if there is a database at all!</p>
+<h2><a name="no8"></a>Last but not least: Test</h2>
+<p>After all these policies being implemented you certainly need to know if they work. For that you can create testing APIs that will
+test each single piece of your work.</p>
+<p><b>NOTE: </b>Before running tests on the provided policies make sure to implement the authentication section at the datastore endpoint!</p>
+<p><b>NOTE: </b>The provided example policies are configured to use 'admin/password' in the delegate encapsulated assertions for connecting to the data API!</p>
+<h3>Testing encapsulated assertions</h3>
+<p>You can now create an API for testing purposes. This API would set the required input variables for any encapsulated assertion
+    and could verify output variables. To give you an idea, it could look like this:</p>
+<img src="images/01_encas_test.png"/>
+<ol>
+    <li><b>API: </b>Create an endpoint, e.g.: /howto/test/encas</li>
+    <li><b>policy: </b>Create a policy that cleans up the database, sets variables required by the encapsulated assertion and verifies the response variables. Also
+        set a message which is returned to the calling client (e.g.: browser)</li>
+    <li><b>browser: </b>Call the API using a browser and see your specified success message. If you do not get it you have to debug your policy.
+        But at least you know it is not working!</li>
+</ol>
+<p>You can complete this policy with all kinds of cases and look at it as JUnit test for your encapsulated assertions.</p>
+<h3>Testing the data API</h3>
+<p>If you have verified that your encapsulated assertion work it is also simple to go and test your data API. As I showed above you can certainly also test any API. A test policy can look something like this:</p>
+<img src="images/03_dataapi_test.png"/>
+<ol>
+    <li><b>API: </b>Create an endpoint, e.g.: /howto/test/dataapi</li>
+    <li><b>policy: </b>Create a policy that cleans up the database and uses a routing assertion to call the data API.
+        Make sure to select the correct HTTP method and the required input message. Verify the response and return something that
+    is telling you that your data API works</li>
+    <li><b>browser: </b>Call the test API using a browser and see your specified success message. If you do not get it you have to debug your policy.
+        But at least you know it is not working!</li>
+</ol>
+<h3>Testing the delegates</h3>
+<p>Once the encapsulated assertion and the data API got verified it is time to test the delegates. Implement the same logic:</p>
+<img src="images/01_test_delegates.png"/>
+<ol>
+    <li><b>API: </b>Create an endpoint, e.g.: /howto/test/encas/delegates</li>
+    <li><b>policy: </b>Create a policy that cleans up the database, uses the delegate and verifies the response variables. Also
+        set a message which is returned to the calling client (e.g.: browser)</li>
+    <li><b>browser: </b>Call the API using a browser and see your specified success message. If you do not get it you have to debug your policy.
+        But at least you know it is not working!</li>
+</ol>
+<p><b>Using local storage and (simulated) data API server:</b><br/>The good news is that you do not have to care when implementing your tests for the delegates.
+By switching your configuration from 'localhost' to 'your-real-hostname' will switch from local to data API and you will know if both cases work.</p>
+<p>Switch <b>host_howto_db_server</b> from <code>https://localhost:8443</code> to <code>https://your_hostname:8443</code>
+Turn on policy debugging, follow the audit log and you can see that your data API is used. If your tests are still successful the chances are high that you have working database access encapsulated assertion, delegators and data API.</p>
+<h4>Testing the service API</h4>
+<p>It is now a simple step to go and test your service API. As I showed above for the data APIs you can certainly also test a
+    service API. A test policy can look something like this:</p>
+<img src="images/01_test.png"/>
+<p>Call your service API with all kinds of variations.</p>
+<h2><a id="examplepolicy" name="no9">Setting up this tutorial</a></h2>
+<p>For anybody who wants to play around with this tutorial I have a good message: you can have it! These are the requirements and steps to get you going:</p>
+<p><b>Note: </b>the import of the tutorial will create all policies and the JDBC connection. No need to do that manually</p>
+<ol>
+    <li><b>Pre-Requisite: </b>A gateway version 8.3 (or higher) must be available, up and running</li>
+    <li><b>Pre-Requisite: </b>The internal 'Gateway REST Management Service' service must be published (In policy manager: Tasks - Publish Internal Service - Gateway REST Management Service)</li>
+    <li><b>Database: </b>Create the database by using the provided sql snippets from <a href="#exampledatabase">above</a></li>
+    <li><b>REST tool: </b>Use a tool like google chromes 'Advanced Rest Client Application' to import the policy. Configure a request with these properties:
+        <ol>
+            <li>URL: https://&lt;your_ssg&gt;:8443/restman/1.0/bundle</li>
+            <li>HTTP Method: PUT</li>
+            <li>Header: Authorization with admin credentials. E.g.: if it is admin/password use this header: 'Authorization: Basic YWRtaW46cGFzc3dvcmQ='</li>
+            <li>Header: Content-Type: application/xml; charset=UTF-8</li>
+            <li>Message: copy the content <b>/resources/howto_policy_bundle.txt</b> found in this repository and use that</li>
+        </ol>
+    </li>
+    <li><b>Configuration in chromes 'Advanced Rest Client Application':</b><br/><img src="images/01_resttool.png"/></li>
+    <li><b>Verification: </b>After sending the message refresh the policy manager and find the folder 'HowToDatabaseAccess'</li>
+    <li>Ready to go!</li>
+</ol>
+<h2><a name="no10"></a>Summary</h2>
+<p>You have hopefully seen how encapsulated assertions can be designed to communicate with local databases or via an API. And you have learned how
+tests can be implemented, for encapsulated assertions and for APIs.</p>
+<p>Please send any comments to sascha.preibisch at ca.com.</p>
+<input onclick='window.history.back()' value='Back' type='button' />
+</body>
+</html>
