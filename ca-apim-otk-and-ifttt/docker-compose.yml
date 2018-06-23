@@ -1,0 +1,41 @@
+version: '2'
+services:
+  api-gateway:
+    image: caapim/gateway:9.3.00
+    ports:
+      - "80:8080"
+      - "8443:8443"
+      - "443:9443"
+    volumes:
+#      - /opt/SecureSpan/Gateway/node/default/etc/bootstrap/services/restman
+      - /path/to/your/gateway/license:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/license/license.xml
+      - ./add-ons/bundles/otk_01_jdbc.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/otk_01_jdbc.bundle
+      - ./add-ons/bundles/otk_02_clusterProperties.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/otk_02_clusterProperties.bundle
+      - ./add-ons/bundles/otk_03_folders.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/otk_03_folders.bundle
+      - ./add-ons/bundles/z_ifttt_clusterProperties.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/z_ifttt_clusterProperties.bundle
+      - ./add-ons/bundles/z_ifttt_folders.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/z_ifttt_folders.bundle
+    environment:
+      ACCEPT_LICENSE: "true"
+      SSG_ADMIN_USERNAME: "admin"
+      SSG_ADMIN_PASSWORD: "password"
+      SSG_CLUSTER_HOST: "otk-ifttt.tutorial.com"
+      SSG_JVM_HEAP: "4g"
+      EXTRA_JAVA_ARGS: "-XX:ParallelGCThreads=4 -Dcom.l7tech.bootstrap.autoTrustSslKey=trustAnchor,TrustedFor.SSL"
+
+  otk_db_ifttt_server:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "password"
+      MYSQL_DATABASE: "otk_db_ifttt"
+      MYSQL_USER: "otk_user"
+      MYSQL_PASSWORD: "password"
+    command:
+      - "--character-set-server=utf8"
+      - "--innodb_log_buffer_size=32M"
+      - "--innodb_log_file_size=80M"
+      - "--max_allowed_packet=8M"
+    volumes:
+      - ./data/mysql-otk-ifttt/conf:/etc/mysql/conf.d
+      - ./data/mysql-otk-ifttt/data:/var/lib/mysql
+      - ./add-ons/database:/docker-entrypoint-initdb.d

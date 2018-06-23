@@ -6,6 +6,7 @@
 build
 gmu.log.lck
 .DS_Store
+ca-apim-otk-and-ifttt/docker-compose-dev.yml
 ca-apim-otk-and-ifttt/data/mysql-otk-ifttt/data*
 ca-apim-otk-and-ifttt/scripts/lib/*
 ca-apim-otk-and-ifttt/apitest/*workspace.xml
