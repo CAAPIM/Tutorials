@@ -17,5 +17,12 @@ The list is ordered by 'newest first':
 
 Each tutorial has its own structure and its own description. After downloading or cloning this project simply change into
  the directory of your target tutorial and follow its instructions.
- 
-## Latest update: 23. June 2018
+
+## Feedback
+We are certainly happy about any feedback on these tutorials, especially if they helped you in your daily work life! We 
+are also available via the [CA Communities](https://communities.ca.com) sites. 
+
+## IMPORTANT
+If any tutorial has an issue please do not contact CA support. We do not run these tutorials through QA since our main goal is to get them to you rather easy and fast than via an official process that includes QA and documentation. Please communicate via comments, pull requests and emails to the author of the tutorial if you have any issues or questions.
+
+**Enjoy!**

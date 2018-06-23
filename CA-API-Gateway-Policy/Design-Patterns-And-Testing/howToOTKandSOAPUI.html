@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CA World 2017 - OTK-4.1</title>
+    <link rel="stylesheet" type="text/css" href="style/howto.css" />
+</head>
+<body>
+<h1>OTK-4.1 and SOAPUI</h1>
+<p>This tutorial, which is actually more or less a demo of APIs that are provided by OTK-4.1, was shown at CA World 2017. To show the APIs we have used a SOAPUI project and
+    we are now making it available to anyone who is interested in using it.</p>
+<p>This project will be interesting for you if you would like to see how to implement a flow starting at 'Get OpenID Configuration' all the way to 'Call /userinfo'.</p>
+<p><b>The goals for this project are the following:</b></p>
+<ol>
+    <li>Help understand OTK APIs better</li>
+    <li>Have a starting point for testing OTK after customizations have been implemented</li>
+</ol>
+<p>To get going please follow the few steps shown below:</p>
+<ol>
+    <li>Install OTK-4.1, have it up and running in your test environment</li>
+    <li>Install the open source version of SOAPUI</li>
+    <li>Import the project and configure it</li>
+    <li>Run the test suite <b>OpenID-Config-Registration</b></li>
+</ol>
+<p>After loading the project only a few configurations are required. The project should work with an OTK-4.1 instance that
+    has been installed without an instance modifier right out of the box. Configure the following values:</p>
+<ol>
+    <li><b>host_iss: </b> replace 'your-gateway' with your gateway's hostname</li>
+    <li><b>resource_owner: </b> a username valid on the gateway</li>
+    <li><b>resource_owner_password: </b> the password for the given username</li>
+</ol>
+<img src="images/otk_41_soapui.png"/>
+<p>Now double-click 'OpenID-Config-Registration' and click the green test-button-arrow-thingy and all test steps should execute successfully. If something fails ... well ... you will
+have to do some debugging. Make sure your gateway can be reached and you provided a valid username and password. If nothing helps do some debugging in policy.
+Luckily a blog post for that exists <a href="https://communities.ca.com/blogs/oauth/2017/03/06/tip-of-the-week-tracing-policy" target="_blank">here.</a></p>
+<p>Please find the SOAPUI project in the resource folder of this tutorial named: <b>OTK-soapui-project.xml</b>.</p>
+<h3>Summary</h3>
+<p>You hopefully have seen how services can be implemented that can be implemented multiple times on the same gateway,
+    how encapsulated assertions can be designed to communicate with local databases or via an API. And you have learned how
+    tests can be implemented, for encapsulated assertions and for APIs.</p>
+<p>Please send any comments to <a href="mailto:sascha.preibisch@ca.com?subject=HowTo&body=Dear Sascha, this tutorial is great, but ...">Sascha</a>.</p>
+<input onclick='window.history.back()' value='Back' type='button' />
+</body>
+</html>

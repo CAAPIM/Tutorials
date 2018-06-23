@@ -6,3 +6,9 @@
 build
 gmu.log.lck
 .DS_Store
+ca-apim-otk-and-ifttt/data/mysql-otk-ifttt/data*
+ca-apim-otk-and-ifttt/scripts/lib/*
+ca-apim-otk-and-ifttt/apitest/*workspace.xml
+ca-apim-otk-and-ifttt/scripts/raw/*
+ca-apim-otk-and-ifttt/apitest/properties/*.properties
+!ca-apim-otk-and-ifttt/apitest/properties/ifttt-otk-tutorial.template.properties
