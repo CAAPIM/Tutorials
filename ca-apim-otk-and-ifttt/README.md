@@ -10,11 +10,13 @@ However, I have tried to enable interested users to get going fast and easy.
 
 **IMPORTANT:** 
 
-This tutorial comes with preconfigured client_id and client_secret and a fake username and password. Please
- note that these are included to give you an idea how the system should like like once it is configured. Before you 
- start implementing any apps use your own client_id and client_secret and user names! The instructions further down will 
+This tutorial comes with pre-configured client_id and client_secret and a fake username and password. Please
+ note that these are included to give you an idea how the system should look like once it is configured. Before you 
+ start implementing any apps use your own client_id and client_secret and usernames! The instructions further down will 
  explain what you need to do! 
 
 Nevertheless, enjoy!
 
 ## Tutorial
+
+This will be filled our shortly!
