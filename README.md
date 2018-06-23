@@ -10,8 +10,8 @@ The list is ordered by 'newest first':
 |Topic|Author|Intended audience|Last updated|
 |-----|------|-----------------|------------|
 |CA APIM OTK and IFTTT|Sascha Preibisch|Developers who are interested in the combination of OTK and IFTTT. Having a gateway with policy manager available is required|23. June 2018|
-|Implementing SOAPUI tests to unit test policies|Sascha Preibisch|Basic knowledge of the policy manager and SOAPUI is required|18. june 2016|
-|Implementing policies to access databases|Sascha Preibisch|Knowledge of the policy manager is required|11. May 2015|
+|Encapsulating access to resources|Sascha Preibisch|API developers|01. December 2017|
+|CA World 2017: showing features of OTK-4.1 using SOAPUI|Sascha Preibisch|Example project shown at CA World 2017 to work with OTK-4.1|20. November 2017|
 
 ## Using the tutorials
 
