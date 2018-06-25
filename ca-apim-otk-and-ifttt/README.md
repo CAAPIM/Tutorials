@@ -239,7 +239,7 @@ Ingredient no. 3:
 
 **Actions**
 
-Actions will send a message to your server in order to update your system! The will usually be fed with ingredients 
+Actions will send a message to your server in order to update your system! They will usually be fed by ingredients 
 provided by triggers.
 
 - Click *New action*
