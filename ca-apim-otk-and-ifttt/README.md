@@ -303,6 +303,7 @@ IFTTT has provided a redirect_uri earlier. This needs to be used now:
 - Click *Save*
 
 **4. Run the test**
+
 To run the endpoint test simply click the button **Begin test**. If you configured everything as described there should be no issues. 
 This message should be displayed: **Success! All endpoint tests passed**
 
