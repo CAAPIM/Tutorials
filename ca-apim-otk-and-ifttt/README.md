@@ -206,7 +206,7 @@ Adding a verbiage:
 - *Verbiage*: the account has changed
 - Click *Save*
 
-Now we'll add 3 ingredients. Values that are returned by the tigger and used as input of actions:
+Now we'll add 3 ingredients. Values, that are returned by the trigger, and used as input for actions:
 
 First, remove the default one *CreatedAt*
 
@@ -266,14 +266,14 @@ the configuration on the gateway. A few tasks are required to make this happen.
 
 IFTTT is running in the cloud, your gateway is running in your local environment. To close the gap and enable connections
  between these two, IFTTT recommends 2 different tools. I have used [ngrok.com](https://ngrok.com). To enable this tool 
- simply follow their instructions. It took me 5 minutes ti get it going, it is really simple.
+ simply follow their instructions. It took me 5 minutes to get it going, it is really simple.
  
 Once you installed the agent on your machine launch it like this:
 
 - [user]$ ./ngrok http 80
 - a dialog opens, copy the shown hostname, e.g.: http://**s45afabc223.ngrop.io**
 - open the Dashboard in IFTTT and open the API tab:
-  - replace the host name in all URLs in the sections: General, Authentication (3 URLs altogether)
+  - replace the host name in all URLs in the sections: General, Authentication (3 URLs all together)
   - replace *otk-ifttt.tutorial.com* with your copied hostname, e.g.: *s45afabc223.ngrop.io*
 
 That's it! The agent will now forward any requests received via http or https to the local port 80.
@@ -297,17 +297,21 @@ IFTTT has provided a redirect_uri earlier. This needs to be used now:
 
 - open a browser and go to [OAuth Manager](https://otk-ifttt.tutorial.com/oauth/manager)
 - Login using *admin/password*
-- Find the client named 'IFTTT' and select *List Keys* and the right end of the row
+- Find the client named 'IFTTT' and select *List Keys* at the right end of the row
 - Click *Edit* in the opening dialog
 - Replace the callback URL *https://otk-ifttt.tutorial.com/oauth/v2/client/bcp?auth=done* with the value provided by IFTTT earlier
 - Click *Save*
 
 **4. Run the test**
 
-To run the endpoint test simply click the button **Begin test**. If you configured everything as described, there should be no issues. 
+To run the endpoint test, simply click the button **Begin test**. If you configured everything as described, there should be no issues. 
 This message should be displayed: **Success! All endpoint tests passed**
 
 **Connection test**
 
 Nothing else to do here then clicking *Begin test*. When you get redirected to your authorization servers page, use *admin/password* 
 or *mr_ifttt/Mr_ift_@234pas$word* to login. This message should be displayed: **Connection tests successful.**
+
+## IFTTT Application
+
+working on it ...
