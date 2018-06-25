@@ -304,10 +304,10 @@ IFTTT has provided a redirect_uri earlier. This needs to be used now:
 
 **4. Run the test**
 
-To run the endpoint test simply click the button **Begin test**. If you configured everything as described there should be no issues. 
+To run the endpoint test simply click the button **Begin test**. If you configured everything as described, there should be no issues. 
 This message should be displayed: **Success! All endpoint tests passed**
 
 **Connection test**
 
 Nothing else to do here then clicking *Begin test*. When you get redirected to your authorization servers page, use *admin/password* 
-or *mr_ifttt/Mr_ift_@234pas$word*. This message should be displayed: **Connection tests successful.**
+or *mr_ifttt/Mr_ift_@234pas$word* to login. This message should be displayed: **Connection tests successful.**
