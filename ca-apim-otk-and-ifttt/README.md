@@ -201,13 +201,16 @@ Add a second trigger field:
 - *Key name*: amount
 - Click *Save*
 
+Adding a verbiage:
+
 - *Verbiage*: the account has changed
 - Click *Save*
 
 Now we'll add 3 ingredients. Values that are returned by the tigger and used as input of actions:
 
-- Remove the default one *CreatedAt*
+First, remove the default one *CreatedAt*
 
+Ingredient no. 1:
 - Click *Add ingredient*
 - *Name*: Type
 - *Slug*: type
@@ -216,6 +219,7 @@ Now we'll add 3 ingredients. Values that are returned by the tigger and used as 
 - *Example*: http://example.com/account/type // not sure how this is used. If you find out, let me know!
 - Click *Save*
 
+Ingredient no. 2:
 - Click *Add ingredient*
 - *Name*: Amount
 - *Slug*: amount
@@ -224,6 +228,7 @@ Now we'll add 3 ingredients. Values that are returned by the tigger and used as 
 - *Example*: http://example.com/account/amount // not sure how this is used. If you find out, let me know!
 - Click *Save*
 
+Ingredient no. 3:
 - Click *Add ingredient*
 - *Name*: Id
 - *Slug*: id
@@ -244,7 +249,7 @@ provided by triggers.
 - *Endpoint*: add 'account_management'
 - Click *Save*
 
-Now we'll add 1 Action field. Values are sent to your server:
+Now we'll add 1 Action field. The value is sent to your server:
 
 - Click *Add action field +*
 - *Label*: Which Account
