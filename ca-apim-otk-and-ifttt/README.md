@@ -85,8 +85,6 @@ While in the policy manager, you may want to have a look around and pay attentio
   - \#OTK Fail with error message: overwriting error 990 (expired or unknown access_token) and 103 (missing or invalid parameters) to match IFTTTs error response expectations
   - \#OTK Authorization Server Website Template: added and modified 'content' and 'error.msg' to display 'CA OTK Tutorial Bank' at the authorization servers page. This modification is optional
 
-
-
 #### SOAPUI
 
 The next step is to verify that the system is up and running, including OTK. SOAPUI is required:
@@ -96,6 +94,17 @@ The next step is to verify that the system is up and running, including OTK. SOA
 - Double-click **IFTTT/Testing** and click the *green* arrow in the appearing dialog, you should see a green **FINISHED** message
 - Double-click **OTK-4.2/Example TestSuite** and click the *green* arrow in the appearing dialog, you should see a green **FINISHED** message
 
-**Hurray!** Our IFTTT endpoints and OTK are up and running! 
+### CA OTK Tutorial Bank web application
 
+To confirm even the last piece, open a browser:
 
+- https://otk-ifttt.tutorial.com/tutorial/otk/ifttt/bank
+- Login using **admin/password** or **mr_ifttt/Mr_ift_@234pas$word**
+- Select the menu item *Account Management* from the left and get an overview of available accounts.
+  - that menu is the only ones that works!
+  
+If all these above steps were successful, you are good to go! Our IFTTT endpoints and OTK are up and running! 
+
+## IFTTT
+
+Instructions are on their way ...

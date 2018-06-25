@@ -93,8 +93,7 @@
             <l7:Resource>
                 <l7:ClusterProperty id="d0c2108b72b11af05b03eb6dd44d2928" version="0">
                     <l7:Name>ifttt.bank.client.redirect</l7:Name>
-                    <l7:Value>https://otk-ifttt.tutorial.com/tutorial/otk/ifttt/bank?action=token&amp;provider=bank
-                    </l7:Value>
+                    <l7:Value>https://otk-ifttt.tutorial.com/tutorial/otk/ifttt/bank?action=token&amp;provider=bank</l7:Value>
                 </l7:ClusterProperty>
             </l7:Resource>
         </l7:Item>
