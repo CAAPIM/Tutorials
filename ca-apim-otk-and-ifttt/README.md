@@ -32,7 +32,6 @@ the content artifacts can be found here so that anybody can try it out themselve
 
 **Dependencies**
 1. A gateway license. This can be requested [here](https://transform.ca.com/API-Management-Trial.html)
-2. A CA API Gateway (gateway 9.3). This can be downloaded and used after a license has been requested
 2. A CA API Gateway policy manager (for gateway 9.3)
 3. Optional: SOAPUI is a free and open source tool. To use it needs to be downloaded from [here](https://www.soapui.org/downloads/latest-release.html)
 4. Optional: Docker. The system runs in docker which gets you started fast. Otherwise, any other CA API Gateway can be used but requires manual installation steps. However, these are shown further down
