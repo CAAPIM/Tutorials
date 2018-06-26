@@ -1,0 +1,2 @@
+To use the 'export.sh' script please download saxon9he.jar and please it in this directory.
+You will find it here: http://saxon.sourceforge.net
