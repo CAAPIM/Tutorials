@@ -311,6 +311,48 @@ This message should be displayed: **Success! All endpoint tests passed**
 Nothing else to do here then clicking *Begin test*. When you get redirected to your authorization servers page, use *admin/password* 
 or *mr_ifttt/Mr_ift_@234pas$word* to login. This message should be displayed: **Connection tests successful.**
 
-## IFTTT Application
+## IFTTT-Applets
 
-working on it ...
+Now that all components are available, we need to start using it. Two use cases will be described:
+
+1. *Account Manager*: update the account so that user get placed at the account they monitored when they login to their online banking system
+2. *EMail*: send out an email if the account changes
+
+### Account Manager Applet
+
+- At the IFTTT Dashboard select the *Applets* tab
+- Click *New Applet*
+- **IF**
+- *Trigger -> CA OTK Tutorial Bank -> Account Monitor* 
+- Field Label *Account Number*: check *Customizable by the user* // this is where users will type in their account number
+- Field Label *Amount*: check *Customizable by the user* // this is where users will type in the amount as of which the monitor should *trigger*
+- **THEN**
+- Click *Add Action*
+- *Action -> OTK CA Tutorial Bank -> Account Manager*
+- Field LAbel *Which Account*:  check *Customizable by the user* // this is where user type in the Account Number they want to monitor. **Challenge for later**: update the Trigger to expose its given Account Number as ingredient and choose it here!
+- Applet title: *Account Manager*
+- Applet description: *The given Account Number will be pre-selected within the online banking system if the Amount matches the configured one.*
+- Click *Save*
+
+On the next screen select your new and fancy applet to try it out:
+
+- **IMPORTANT*: make sure you are still connected from IFTTT to your development environment by running the endpoint and connection tests!
+
+- Click the image in the *Configure preview*
+- *Turn on*
+- Configure an account number and an amount
+
+
+
+### EMail Notification Applet
+
+The only difference 
+
+- **THEN**
+- Click *Add Action*
+- *Action -> EMail
+- Try out the rest yourself :-)
+
+## Configure unique credentials
+
+workign on it ....
