@@ -342,11 +342,15 @@ On the next screen select your new and fancy applet to try it out:
 - *Turn on*
 - Configure an account number and an amount
 
+IFTTT will use the trigger to send a request to your new *.../account_monitor* API. That API returns a list of values that have changed.
 
+If something has changed (and that is the case in this tutorial) the new API *.../account_manager* will be called.
+
+Once this is running, open the CA OTK Tutorial Bank website again and you will see that you will find yourself in front of the monitored account!
 
 ### EMail Notification Applet
 
-The only difference 
+The only difference in comparison to above:
 
 - **THEN**
 - Click *Add Action*
