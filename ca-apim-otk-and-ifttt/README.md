@@ -354,9 +354,75 @@ The only difference in comparison to above:
 
 - **THEN**
 - Click *Add Action*
-- *Action -> EMail
+- *Action* -> EMail
 - Try out the rest yourself :-)
 
 ## Configure unique credentials
 
-workign on it ....
+Now, that your system is up and running, you need to configure credentials for your system:
+
+- *client_id* and *client_secret*
+- *mr_ifttt*
+
+### Configure a user
+
+1. in policy manager, add a new user or change the password of *mr_ifttt*, whatever you prefer
+2. update the IFTTT platform to use this new username (or the updated password)
+3. update the SOAPUI project. To do so, do not modify the custom properties in SOAPUI but update do this:
+  * copy and paste this file: *./apitest/properties/ifttt-otk-tutorial.template.properties*
+  * name it to something else
+  * update the content. At this point, you may also update the *ifttt-service-key* value
+  * save the file
+  * in SOAPUI, both projects after another, select the custom properties tab in the lower left corner, and load the properties file
+
+### Configure OAuth client credentials
+
+There are two sets of oauth credentials. One for *IFTTT* and one for *CA OTK Tutorial Bank*.
+
+#### IFTTT OAuth client
+
+1. Open OAuth Manager
+2. Select the *Clients* tab and look for the app named *IFTTT*
+3. Select *List Keys*
+4. Select *Edit*
+5. Update the client secret
+6. Click *Save*
+
+Alternatively, you can also add a new client key (which is the OAuth client_id) and use that! Now update the IFTTT app 
+in the IFTTT Dashboard and the cluster-properties in policy manager (*ifttt.client.id* and *ifttt.client.secret*)
+
+#### CA OTK Tutorial Bank OAuth client
+
+1. Open OAuth Manager
+2. Select the *Clients* tab and look for the app named *CA OTK Tutorial Bank*
+3. Select *List Keys*
+4. Select *Edit*
+5. Update the client secret
+6. Click *Save*
+
+Alternatively, you can also add a new client key (which is the OAuth client_id) and use that! Now update the cluster-properties 
+in policy manager (*ifttt.bank.client.id* and *ifttt.bank.client.secret*)
+
+Run your SOAPUI and IFTTT endpoint tests again to see if everything is still working. If not just make sure that you have updated 
+all values appropriately.
+
+## Build a new Docker image
+
+With all your updated you can now create a new docker image that includes all your changes that have been applied to the gateway.
+
+To make it easy, do the following:
+
+1. Follow the instructions in *./scripts/export.sh*. A saxon parser (*.jar) needs to be placed in *./scripts/lib*
+2. cd ./scripts
+3. Run *./export.sh* // this script will export all *OTK* and *IFTTT* policies. The exported files (bundles) will be 
+placed in *./add-ons/bundles*. **NOTE**: If you have created a bew user or updated *mr_ifttt*, that will not be included in the export!
+4. Stop the currently running docker gateway
+5. Startup a new container // all changes are incldued EXCEPT For the user that you may have added!
+
+The scripte *export.sh* works fine. However, the suggestion is to use this as an example but switch over to use our new 
+gradle-based policy developer tools. Find the info here: [Blog on CA API Gateway](https://communities.ca.com/blogs/gateway).
+
+## That's it
+
+I think this is all I wanted to share. Let me know how it works for you, what is difficult to follow, what you liked 
+and what you did not like!
