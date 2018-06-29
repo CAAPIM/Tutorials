@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# This file uses RESTMan to export policies. To use it simply install the RESTMan service, update usernam, password in
-# this file and execute it as is. If it is used with a gatway that has the tutorial policies installed, it will export them all!
+# This file uses RESTMan to export policies. To use it, simply install the RESTMan service, update username, password in
+# this file and execute it as is. If it is used with a gateway that has the tutorial policies installed, it will export them all!
 #
 # export IFTTT service
 #
@@ -29,5 +29,6 @@ java -jar lib/saxon9he.jar -xsl:xsl/bundle.xsl -s:raw/otk_03_folders.bundle.raw 
 java -jar lib/saxon9he.jar -xsl:xsl/removeEntitiesFromFolderBundle.xsl -s:../add-ons/bundles/otk_03_folders.bundle -o:../add-ons/bundles/otk_03_folders.bundle
 #
 # Fixing a broken reference
-#sed 's#&lt;L7p:KeyGoid goidValue="0000000000000000ffffffffffffffff"/&gt;#\&lt;L7p:KeyAlias stringValue="ssl"/\&gt;\&lt;L7p:KeyGoid goidValue="00000000000000000000000000000002"/\&gt;#g' otk_03_folders.bundle > otk_03_folders.bundle
-#sed 's#&lt;L7p:SourceKeyGoid goidValue="0000000000000000ffffffffffffffff"/&gt;#\&lt;L7p:SourceKeyAlias stringValue="ssl"/\&gt;\&lt;L7p:SourceKeyGoid goidValue="00000000000000000000000000000002"/\&gt;#g' otk_03_folders.bundle > otk_03_folders.bundle
+sed 's#&lt;L7p:KeyGoid goidValue="0000000000000000ffffffffffffffff"/&gt;#\&lt;L7p:KeyAlias stringValue="ssl"/\&gt;\&lt;L7p:KeyGoid goidValue="00000000000000000000000000000002"/\&gt;#g' ../add-ons/bundles/otk_03_folders.bundle > ../add-ons/bundles/otk_03_folders-fixed.bundle
+sed 's#&lt;L7p:SourceKeyGoid goidValue="0000000000000000ffffffffffffffff"/&gt;#\&lt;L7p:SourceKeyAlias stringValue="ssl"/\&gt;\&lt;L7p:SourceKeyGoid goidValue="00000000000000000000000000000002"/\&gt;#g' ../add-ons/bundles/otk_03_folders-fixed.bundle > ../add-ons/bundles/otk_03_folders.bundle
+rm ../add-ons/bundles/otk_03_folders-fixed.bundle
