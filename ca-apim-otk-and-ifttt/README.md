@@ -412,14 +412,14 @@ With all your updates you can now create a new docker image that includes all yo
 
 To make it easy, do the following:
 
-1. Follow the instructions in *./scripts/export.sh*. A saxon parser (*.jar) needs to be placed in *./scripts/lib*
+1. Follow the instructions in *./scripts/lib/info.txt*. A saxon parser (*.jar) needs to be placed in *./scripts/lib*
 2. cd ./scripts
 3. Run *./export.sh* // this script will export all *OTK* and *IFTTT* policies. The exported files (bundles) will be 
 placed in *./add-ons/bundles*. **NOTE**: If you have created a new user or updated *mr_ifttt*, that will not be included in the export!
 4. Stop the currently running docker gateway (**[user]$ docker-compose -p otk_ifttt down** in this directory)
 5. Startup a new container // all changes are included EXCEPT for the user that you may have added!
 
-The script *export.sh* works fine. However, the suggestion is to use this as an example but switch over to our new 
+The script *export.sh* works fine (on a MacBook). However, the suggestion is to use this as an example but switch over to our new 
 gradle-based policy developer tools. Find the info here: [Blog on CA API Gateway](https://communities.ca.com/blogs/gateway).
 
 ## That's it
