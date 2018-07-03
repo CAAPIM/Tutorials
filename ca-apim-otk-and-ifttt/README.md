@@ -75,14 +75,27 @@ For some reason cluster-properties need to be 'clicked':
 
 Do not worry about values, these will be updated later!
 
+##### Updated policies
+
 While in the policy manager, you may want to have a look around and pay attention to these pieces:
 
-- Folder OTK: open all folders in the Server/DMZ subfolder, you can see a few disabled services. These are disabled since they are not required for this tutorial. Enable them if you want to play around with them
-- Folder OTK/Customizations: A few policies have been modified to integrate with IFTTT. For any OTK those are required. Here is the list:
+- Folder OTK
+  - Open all folders in the Server/DMZ subfolder, you can see a few disabled services. These are disabled since they are not required for this tutorial. Enable them if you want to play around with them
+- Folder OTK/Customizations: A few policies have been modified to integrate with IFTTT. For any OTK used with IFTTT those are required. Here is the list:
   - \#OTK Storage Configuration: max_oauth_token_count=2, default=1
   - \#OTK OVP Configuration: reuse_refresh_token=true, default=false
   - \#OTK Fail with error message: overwriting error 990 (expired or unknown access_token) and 103 (missing or invalid parameters) to match IFTTTs error response expectations
   - \#OTK Authorization Server Website Template: added and modified 'content' and 'error.msg' to display 'CA OTK Tutorial Bank' at the authorization servers page. This modification is optional
+- Modified services: For development purposes some services have been updated to disable the requirement for SSL (enabling http):
+  - /auth/oauth/v2/authorize
+  - /auth/oauth/v2/token
+- Add cluster property (otk.port) to configure the port used with OTK: It is used here:
+  - /oauth/manager/tokens
+  - /oauth/manager/clients
+  - \#OTK Variable Configuration
+  - \#OTK Authorization Server Configuration
+  - \#oauth manager config
+  - \#OTK Client Context Variables
 
 #### SOAPUI
 
