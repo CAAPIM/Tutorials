@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+    <l7:References>
+        <l7:Item>
+            <l7:Name>mr_ifttt</l7:Name>
+            <l7:Id>00000000000000000000000000000002</l7:Id>
+            <l7:Type>USER</l7:Type>
+            <l7:Resource>
+                <l7:User providerId="0000000000000000fffffffffffffffe" id="00000000000000000000000000000002">
+                    <l7:Login>mr_ifttt</l7:Login>
+                    <l7:Password>Mr_ift_@234pas$word</l7:Password>
+                    <l7:Properties>
+                        <l7:Property key="accountExpiration">
+                            <l7:LongValue>-1</l7:LongValue>
+                        </l7:Property>
+                        <l7:Property key="enabled">
+                            <l7:BooleanValue>true</l7:BooleanValue>
+                        </l7:Property>
+                        <l7:Property key="name">
+                            <l7:StringValue>mr_ifttt</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:User>
+            </l7:Resource>
+        </l7:Item>
+    </l7:References>
+    <l7:Mappings>
+        <l7:Mapping action="NewOrUpdate" srcId="00000000000000000000000000000002" type="USER">
+            <l7:Properties>
+                <l7:Property key="FailOnNew">
+                    <l7:BooleanValue>false</l7:BooleanValue>
+                </l7:Property>
+                <l7:Property key="allowLoginChange">
+                    <l7:StringValue>true</l7:StringValue>
+                </l7:Property>
+            </l7:Properties>
+        </l7:Mapping>
+    </l7:Mappings>
+</l7:Bundle>

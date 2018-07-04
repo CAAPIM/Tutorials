@@ -9,13 +9,14 @@ services:
     volumes:
 #      - /opt/SecureSpan/Gateway/node/default/etc/bootstrap/services/restman
       - /path/to/your/gateway/license:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/license/license.xml
-      - ./add-ons/bundles/otk_01_jdbc.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/otk_01_jdbc.bundle
-      - ./add-ons/bundles/otk_02_clusterProperties.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/otk_02_clusterProperties.bundle
-      - ./add-ons/bundles/otk_03_folders.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/otk_03_folders.bundle
-      - ./add-ons/bundles/otk_04_unreferencedEncas.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/otk_04_unreferencedEncas.bundle
-      - ./add-ons/bundles/otk_05_scheduledTasks.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/otk_05_scheduledTasks.bundle
-      - ./add-ons/bundles/z_ifttt_clusterProperties.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/z_ifttt_clusterProperties.bundle
-      - ./add-ons/bundles/z_ifttt_folders.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/z_ifttt_folders.bundle
+      - ./add-ons/bundles/otk/otk_01_jdbc.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/otk_01_jdbc.bundle
+      - ./add-ons/bundles/otk/otk_02_clusterProperties.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/otk_02_clusterProperties.bundle
+      - ./add-ons/bundles/otk/otk_03_folders.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/otk_03_folders.bundle
+      - ./add-ons/bundles/otk/otk_04_unreferencedEncas.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/otk_04_unreferencedEncas.bundle
+      - ./add-ons/bundles/otk/otk_05_scheduledTasks.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/otk_05_scheduledTasks.bundle
+      - ./add-ons/bundles/ifttt/z_ifttt_clusterProperties.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/z_ifttt_clusterProperties.bundle
+      - ./add-ons/bundles/ifttt/z_ifttt_folders.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/z_ifttt_folders.bundle
+      - ./add-ons/bundles/ifttt/z_ifttt_testuser.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/z_ifttt_testuser.bundle
     environment:
       ACCEPT_LICENSE: "true"
       SSG_ADMIN_USERNAME: "admin"

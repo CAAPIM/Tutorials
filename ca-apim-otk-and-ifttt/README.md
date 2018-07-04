@@ -10,7 +10,7 @@ However, I have tried to enable interested users to get going fast and easy.
 
 **IMPORTANT:** 
 
-This tutorial comes with pre-configured client_id and client_secret and a fake username and password. Please
+This tutorial comes with pre-configured client_id and client_secret and usernames and passwords. Please
  note that these are included to give you an idea how the system should look like once it is configured. Before you 
  start implementing any apps use your own client_id and client_secret and usernames! The instructions further down will 
  explain what you need to do! 
@@ -32,10 +32,9 @@ the content artifacts can be found here so that anybody can try it out themselve
 
 **Dependencies**
 1. A gateway license. This can be requested [here](https://transform.ca.com/API-Management-Trial.html)
-2. A CA API Gateway policy manager (for gateway 9.3)
-3. Optional: SOAPUI is a free and open source tool. To use it needs to be downloaded from [here](https://www.soapui.org/downloads/latest-release.html)
-4. Optional: Docker. The system runs in docker which gets you started fast. Otherwise, any other CA API Gateway can be used but requires manual installation steps. However, these are shown further down
-5. When using Docker, the docker-compose file will also launch a MySQL image. The tutorial will not work without it. However, the policies could still be viewed via policy manager
+2. A CA API Gateway Policy Manager (for gateway 9.3)
+3. Docker. The system runs in docker which gets you started fast. The provided docker-compose file will also launch a MySQL container. The tutorial will not work without it. However, the policies could still be viewed via policy manager if the MySQL database gets removed from the compose file
+4. Optional: SOAPUI is a free open source tool. To use it, it can be downloaded from [here](https://www.soapui.org/downloads/latest-release.html)
 
 ## Getting started
 
@@ -47,49 +46,50 @@ Please note that these instructions are made to run on a MacBook. If you are a W
 
 ### Docker
 
-Using docker gets you started very fast. When using the provided docker-compose file, these ports will be occupied:
+Follow these steps:
+
+- **sudo vi /etc/hosts**, add **127.0.0.1 otk-ifttt.tutorial.com** // add the hostname otk-ifttt.tutorial.com
+- **[user]$ vi docker-compose.yml**, replace **/path/to/your/gateway/license** with your path to your gateway license
+- **[user]$ docker-compose -p otk_ifttt up** // launches the gateway
+
+**That's it, the system is up and running!**
+
+FYI: These ports will be occupied:
 
 - 80: for http connections
 - 443: for https connections
 - 8443: for https connections (policy manager)
 - 3306: MySQL
 
-Follow these steps:
+#### Policy Manager
 
-- **sudo vi /etc/hosts**, add **127.0.0.1 otk-ifttt.tutorial.com** // add the hostname otk-ifttt.tutorial.com
-- **[user]$ vi docker-compose.yml**, replace **/path/to/your/gateway/license** with your path to your gateway license
-- **[user]$ docker-compose -p otk_ifttt up** // launches the gateway
-- **[user]$ /path/to/java/bin/java -jar /path/to/policy/manager/Manager.jar** // launches the policy manager
+To have a look and modify the the policy implementation, the policy manager is required:
+
+- **[user]$ /path/to/java/bin/java -jar /path/to/policy/manager/Manager.jar** // launches the policy manager, JDK 1.8 is required
 - Use **admin/password** to login // these credentials are configured in the docker-compose.yml file
   - Use **otk-ifttt.tutorial.com** as hostname
+  
+There are two main folders in the lower left window:
 
-#### In policy manager do the following:
+- IFTTT: this contains policies made for the IFTTT integration/ tutorial
 
-Add a new user to the gateway:
-- Click the button **Create Internal User**, add 'mr_ifttt/Mr_ift_@234pas$word' 
-
-For some reason cluster-properties need to be 'clicked':
-- Tasks -> Global Settings -> Manage Cluster-Wide Properties
-- Select each one, click 'Edit', followed by 'OK'
-- Close the dialog
-
-Do not worry about values, these will be updated later!
+- OTK: this contains OTK-4.3 with a few modifications. Some are made for convenience, others were required for IFTTT.
 
 ##### Updated policies
 
-While in the policy manager, you may want to have a look around and pay attention to these pieces:
+If you are interested in knowing what was changed in OTK, check out these policies:
 
-- Folder OTK
+- *Folder OTK*
   - Open all folders in the Server/DMZ subfolder, you can see a few disabled services. These are disabled since they are not required for this tutorial. Enable them if you want to play around with them
-- Folder OTK/Customizations: A few policies have been modified to integrate with IFTTT. For any OTK used with IFTTT those are required. Here is the list:
+- *Folder OTK/Customizations* A few policies have been modified to integrate with IFTTT. For any OTK used with IFTTT those are required. Here is the list:
   - \#OTK Storage Configuration: max_oauth_token_count=2, default=1
   - \#OTK OVP Configuration: reuse_refresh_token=true, default=false
   - \#OTK Fail with error message: overwriting error 990 (expired or unknown access_token) and 103 (missing or invalid parameters) to match IFTTTs error response expectations
   - \#OTK Authorization Server Website Template: added and modified 'content' and 'error.msg' to display 'CA OTK Tutorial Bank' at the authorization servers page. This modification is optional
-- Modified services: For development purposes some services have been updated to disable the requirement for SSL (enabling http):
+- *Modified services* For development purposes some services have been updated to disable the requirement for SSL (enabling http):
   - /auth/oauth/v2/authorize
   - /auth/oauth/v2/token
-- Add cluster property (otk.port) to configure the port used with OTK: It is used here:
+- *cluster property* (otk.port) to configure the port used with OTK: It is used here:
   - /oauth/manager/tokens
   - /oauth/manager/clients
   - \#OTK Variable Configuration
@@ -113,7 +113,7 @@ To confirm even the last piece, open a browser:
 - https://otk-ifttt.tutorial.com/tutorial/otk/ifttt/bank
 - Login using **admin/password** or **mr_ifttt/Mr_ift_@234pas$word**
 - Select the menu item *Account Management* from the left and get an overview of available accounts.
-  - that menu is the only ones that works!
+  - that menu is the only one that works!
   
 If all these above steps were successful, you are good to go! Our IFTTT endpoints and OTK are up and running! 
 
