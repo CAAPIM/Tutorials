@@ -57,4 +57,7 @@ java -jar lib/saxon9he.jar -xsl:xsl/removeEntitiesFromFolderBundle.xsl -s:../add
 # Fixing a broken reference
 sed 's#&lt;L7p:KeyGoid goidValue="0000000000000000ffffffffffffffff"/&gt;#\&lt;L7p:KeyAlias stringValue="ssl"/\&gt;\&lt;L7p:KeyGoid goidValue="00000000000000000000000000000002"/\&gt;#g' ../add-ons/bundles/otk_03_folders.bundle > ../add-ons/bundles/otk_03_folders-fixed.bundle
 sed 's#&lt;L7p:SourceKeyGoid goidValue="0000000000000000ffffffffffffffff"/&gt;#\&lt;L7p:SourceKeyAlias stringValue="ssl"/\&gt;\&lt;L7p:SourceKeyGoid goidValue="00000000000000000000000000000002"/\&gt;#g' ../add-ons/bundles/otk_03_folders-fixed.bundle > ../add-ons/bundles/otk_03_folders.bundle
+#
+# Removing temporary files
 rm ../add-ons/bundles/otk_03_folders-fixed.bundle
+rm raw/*.raw
