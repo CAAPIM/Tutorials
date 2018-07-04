@@ -1,45 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
-    <l7:References>
-        <l7:Item>
-            <l7:Name>OAuth</l7:Name>
-            <l7:Id>6c4cbf41983a96e34d69b488770929a3</l7:Id>
-            <l7:Type>JDBC_CONNECTION</l7:Type>
-            <l7:TimeStamp>2018-07-03T20:24:06.020Z</l7:TimeStamp>
-            <l7:Resource>
-                <l7:JDBCConnection id="6c4cbf41983a96e34d69b488770929a3" version="0">
+<?xml version="1.0" encoding="UTF-8"?><l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+            <l7:References>
+                <l7:Item>
                     <l7:Name>OAuth</l7:Name>
-                    <l7:Enabled>true</l7:Enabled>
-                    <l7:Properties>
-                        <l7:Property key="maximumPoolSize">
-                            <l7:IntegerValue>100</l7:IntegerValue>
-                        </l7:Property>
-                        <l7:Property key="minimumPoolSize">
-                            <l7:IntegerValue>25</l7:IntegerValue>
-                        </l7:Property>
-                    </l7:Properties>
-                    <l7:Extension>
-                        <l7:DriverClass>com.mysql.jdbc.Driver</l7:DriverClass>
-                        <l7:JdbcUrl>jdbc:mysql://otk_db_ifttt_server:3306/otk_db_ifttt</l7:JdbcUrl>
-                        <l7:ConnectionProperties>
-                            <l7:Property key="EnableCancelTimeout">
-                                <l7:StringValue>true</l7:StringValue>
-                            </l7:Property>
-                            <l7:Property key="user">
-                                <l7:StringValue>otk_user</l7:StringValue>
-                            </l7:Property>
-                            <l7:Property key="password">
-                                <l7:StringValue>password</l7:StringValue>
-                            </l7:Property>
-                        </l7:ConnectionProperties>
-                    </l7:Extension>
-                </l7:JDBCConnection>
-            </l7:Resource>
-        </l7:Item>
-    </l7:References>
-    <l7:Mappings>
-        <l7:Mapping action="NewOrUpdate" srcId="6c4cbf41983a96e34d69b488770929a3"
-                    srcUri="https://e7899e96ce3c:443/restman/1.0/jdbcConnections/6c4cbf41983a96e34d69b488770929a3"
-                    type="JDBC_CONNECTION"/>
-    </l7:Mappings>
-</l7:Bundle>
+                    <l7:Id>6c4cbf41983a96e34d69b488770929a3</l7:Id>
+                    <l7:Type>JDBC_CONNECTION</l7:Type>
+                    <l7:TimeStamp>2018-07-03T23:45:02.879Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:JDBCConnection id="6c4cbf41983a96e34d69b488770929a3" version="0">
+                            <l7:Name>OAuth</l7:Name>
+                            <l7:Enabled>true</l7:Enabled>
+                            <l7:Properties>
+<l7:Property key="maximumPoolSize">
+    <l7:IntegerValue>100</l7:IntegerValue>
+</l7:Property>
+<l7:Property key="minimumPoolSize">
+    <l7:IntegerValue>25</l7:IntegerValue>
+</l7:Property>
+                            </l7:Properties>
+                            <l7:Extension>
+<l7:DriverClass>com.mysql.jdbc.Driver</l7:DriverClass>
+<l7:JdbcUrl>jdbc:mysql://otk_db_ifttt_server:3306/otk_db_ifttt</l7:JdbcUrl>
+<l7:ConnectionProperties>
+    <l7:Property key="EnableCancelTimeout">
+        <l7:StringValue>true</l7:StringValue>
+    </l7:Property>
+    <l7:Property key="user">
+        <l7:StringValue>otk_user</l7:StringValue>
+    </l7:Property><l7:Property key="password"><l7:StringValue>password</l7:StringValue></l7:Property>
+</l7:ConnectionProperties>
+                            </l7:Extension>
+                        </l7:JDBCConnection>
+                    </l7:Resource>
+                </l7:Item>
+            </l7:References>
+            <l7:Mappings>
+                <l7:Mapping action="NewOrUpdate" srcId="6c4cbf41983a96e34d69b488770929a3" srcUri="https://05550dcdd451:443/restman/1.0/jdbcConnections/6c4cbf41983a96e34d69b488770929a3" type="JDBC_CONNECTION"/>
+            </l7:Mappings>
+        </l7:Bundle>

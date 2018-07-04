@@ -1,28 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
-    <l7:References>
-        <l7:Item>
-            <l7:Name>otk.port</l7:Name>
-            <l7:Id>33a6275037893961d8ba3bdfdb33c101</l7:Id>
-            <l7:Type>CLUSTER_PROPERTY</l7:Type>
-            <l7:TimeStamp>2018-07-03T20:24:07.719Z</l7:TimeStamp>
-            <l7:Resource>
-                <l7:ClusterProperty id="33a6275037893961d8ba3bdfdb33c101" version="2">
+<?xml version="1.0" encoding="UTF-8"?><l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+            <l7:References>
+                <l7:Item>
                     <l7:Name>otk.port</l7:Name>
-                    <l7:Value>443</l7:Value>
-                </l7:ClusterProperty>
-            </l7:Resource>
-        </l7:Item>
-    </l7:References>
-    <l7:Mappings>
-        <l7:Mapping action="NewOrUpdate" srcId="33a6275037893961d8ba3bdfdb33c101"
-                    srcUri="https://e7899e96ce3c:443/restman/1.0/clusterProperties/33a6275037893961d8ba3bdfdb33c101"
-                    type="CLUSTER_PROPERTY">
-            <l7:Properties>
-                <l7:Property key="MapBy">
-                    <l7:StringValue>name</l7:StringValue>
-                </l7:Property>
-            </l7:Properties>
-        </l7:Mapping>
-    </l7:Mappings>
-</l7:Bundle>
+                    <l7:Id>33a6275037893961d8ba3bdfdb33c101</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-07-03T23:45:04.442Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="33a6275037893961d8ba3bdfdb33c101" version="0">
+                            <l7:Name>otk.port</l7:Name>
+                            <l7:Value>443</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+            </l7:References>
+            <l7:Mappings>
+                <l7:Mapping action="NewOrUpdate" srcId="33a6275037893961d8ba3bdfdb33c101" srcUri="https://05550dcdd451:443/restman/1.0/clusterProperties/33a6275037893961d8ba3bdfdb33c101" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+            </l7:Mappings>
+        </l7:Bundle>
