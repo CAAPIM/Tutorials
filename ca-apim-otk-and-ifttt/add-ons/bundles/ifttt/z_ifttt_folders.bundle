@@ -4,7 +4,7 @@
                     <l7:Name>IFTTT</l7:Name>
                     <l7:Id>5dbe8b411167eae8d109f6a968bc9792</l7:Id>
                     <l7:Type>FOLDER</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.481Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.120Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Folder folderId="0000000000000000ffffffffffffec76" id="5dbe8b411167eae8d109f6a968bc9792" version="0">
                             <l7:Name>IFTTT</l7:Name>
@@ -15,7 +15,7 @@
                     <l7:Name>Policy Fragments</l7:Name>
                     <l7:Id>5dbe8b411167eae8d109f6a968bca4f8</l7:Id>
                     <l7:Type>FOLDER</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.481Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.120Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Folder folderId="5dbe8b411167eae8d109f6a968bc9792" id="5dbe8b411167eae8d109f6a968bca4f8" version="0">
                             <l7:Name>Policy Fragments</l7:Name>
@@ -26,7 +26,7 @@
                     <l7:Name>authentication</l7:Name>
                     <l7:Id>5dbe8b411167eae8d109f6a968bca968</l7:Id>
                     <l7:Type>FOLDER</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.481Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.120Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Folder folderId="5dbe8b411167eae8d109f6a968bca4f8" id="5dbe8b411167eae8d109f6a968bca968" version="0">
                             <l7:Name>authentication</l7:Name>
@@ -37,7 +37,7 @@
                     <l7:Name>Services</l7:Name>
                     <l7:Id>5dbe8b411167eae8d109f6a968bca5ac</l7:Id>
                     <l7:Type>FOLDER</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.481Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.120Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Folder folderId="5dbe8b411167eae8d109f6a968bc9792" id="5dbe8b411167eae8d109f6a968bca5ac" version="0">
                             <l7:Name>Services</l7:Name>
@@ -48,7 +48,7 @@
                     <l7:Name>DMZ</l7:Name>
                     <l7:Id>5dbe8b411167eae8d109f6a968bca569</l7:Id>
                     <l7:Type>FOLDER</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.481Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.120Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Folder folderId="5dbe8b411167eae8d109f6a968bca5ac" id="5dbe8b411167eae8d109f6a968bca569" version="0">
                             <l7:Name>DMZ</l7:Name>
@@ -59,7 +59,7 @@
                     <l7:Name>IFTTT-Services</l7:Name>
                     <l7:Id>5dbe8b411167eae8d109f6a968bca63a</l7:Id>
                     <l7:Type>FOLDER</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.481Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.120Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Folder folderId="5dbe8b411167eae8d109f6a968bca569" id="5dbe8b411167eae8d109f6a968bca63a" version="0">
                             <l7:Name>IFTTT-Services</l7:Name>
@@ -70,7 +70,7 @@
                     <l7:Name>Triggers</l7:Name>
                     <l7:Id>457652ee7bfc6625aa2134eb519226d9</l7:Id>
                     <l7:Type>FOLDER</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.481Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.120Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Folder folderId="5dbe8b411167eae8d109f6a968bca63a" id="457652ee7bfc6625aa2134eb519226d9" version="0">
                             <l7:Name>Triggers</l7:Name>
@@ -81,7 +81,7 @@
                     <l7:Name>Actions</l7:Name>
                     <l7:Id>457652ee7bfc6625aa2134eb51922719</l7:Id>
                     <l7:Type>FOLDER</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.482Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.120Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Folder folderId="5dbe8b411167eae8d109f6a968bca63a" id="457652ee7bfc6625aa2134eb51922719" version="0">
                             <l7:Name>Actions</l7:Name>
@@ -92,7 +92,7 @@
                     <l7:Name>IFTTT-System</l7:Name>
                     <l7:Id>457652ee7bfc6625aa2134eb51924873</l7:Id>
                     <l7:Type>FOLDER</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.482Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.120Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Folder folderId="5dbe8b411167eae8d109f6a968bca569" id="457652ee7bfc6625aa2134eb51924873" version="0">
                             <l7:Name>IFTTT-System</l7:Name>
@@ -103,27 +103,26 @@
                     <l7:Name>Services</l7:Name>
                     <l7:Id>457652ee7bfc6625aa2134eb51926919</l7:Id>
                     <l7:Type>FOLDER</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.482Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.120Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Folder folderId="5dbe8b411167eae8d109f6a968bca569" id="457652ee7bfc6625aa2134eb51926919" version="0">
                             <l7:Name>Services</l7:Name>
                         </l7:Folder>
                     </l7:Resource>
                 </l7:Item>
-                
                 <l7:Item>
                     <l7:Name>OTK Caching Customization</l7:Name>
                     <l7:Id>c2656fd5ff575252902a7e330e355f53</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.488Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.127Z</l7:TimeStamp>
                     <l7:Resource>
-                        <l7:Policy guid="a2206e7c-28e8-489d-862d-3b7c6da78079" id="c2656fd5ff575252902a7e330e355f53" version="0">
-                            <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d169147d0" guid="a2206e7c-28e8-489d-862d-3b7c6da78079" id="c2656fd5ff575252902a7e330e355f53" version="0">
+                        <l7:Policy guid="a2206e7c-28e8-489d-862d-3b7c6da78079" id="c2656fd5ff575252902a7e330e355f53" version="2">
+                            <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d169147d0" guid="a2206e7c-28e8-489d-862d-3b7c6da78079" id="c2656fd5ff575252902a7e330e355f53" version="2">
 <l7:Name>OTK Caching Customization</l7:Name>
 <l7:PolicyType>Include</l7:PolicyType>
 <l7:Properties>
     <l7:Property key="revision">
-        <l7:LongValue>1</l7:LongValue>
+        <l7:LongValue>2</l7:LongValue>
     </l7:Property>
     <l7:Property key="soap">
         <l7:BooleanValue>false</l7:BooleanValue>
@@ -417,15 +416,15 @@
                     <l7:Name>OTK Cache Look Up Customization</l7:Name>
                     <l7:Id>161861da3a78c5dcdc62696d16914896</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.490Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.128Z</l7:TimeStamp>
                     <l7:Resource>
-                        <l7:Policy guid="df0a2c11-cf6e-47da-84c0-032bf7f3b6d2" id="161861da3a78c5dcdc62696d16914896" version="0">
-                            <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d169147d0" guid="df0a2c11-cf6e-47da-84c0-032bf7f3b6d2" id="161861da3a78c5dcdc62696d16914896" version="0">
+                        <l7:Policy guid="df0a2c11-cf6e-47da-84c0-032bf7f3b6d2" id="161861da3a78c5dcdc62696d16914896" version="2">
+                            <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d169147d0" guid="df0a2c11-cf6e-47da-84c0-032bf7f3b6d2" id="161861da3a78c5dcdc62696d16914896" version="2">
 <l7:Name>OTK Cache Look Up Customization</l7:Name>
 <l7:PolicyType>Include</l7:PolicyType>
 <l7:Properties>
     <l7:Property key="revision">
-        <l7:LongValue>1</l7:LongValue>
+        <l7:LongValue>2</l7:LongValue>
     </l7:Property>
     <l7:Property key="soap">
         <l7:BooleanValue>false</l7:BooleanValue>
@@ -490,15 +489,15 @@
                     <l7:Name>OTK Cache Store Customization</l7:Name>
                     <l7:Id>161861da3a78c5dcdc62696d16914883</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.492Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.129Z</l7:TimeStamp>
                     <l7:Resource>
-                        <l7:Policy guid="2294fc5e-0adf-4d4b-b44d-8d1252f024c9" id="161861da3a78c5dcdc62696d16914883" version="0">
-                            <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d169147d0" guid="2294fc5e-0adf-4d4b-b44d-8d1252f024c9" id="161861da3a78c5dcdc62696d16914883" version="0">
+                        <l7:Policy guid="2294fc5e-0adf-4d4b-b44d-8d1252f024c9" id="161861da3a78c5dcdc62696d16914883" version="2">
+                            <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d169147d0" guid="2294fc5e-0adf-4d4b-b44d-8d1252f024c9" id="161861da3a78c5dcdc62696d16914883" version="2">
 <l7:Name>OTK Cache Store Customization</l7:Name>
 <l7:PolicyType>Include</l7:PolicyType>
 <l7:Properties>
     <l7:Property key="revision">
-        <l7:LongValue>1</l7:LongValue>
+        <l7:LongValue>2</l7:LongValue>
     </l7:Property>
     <l7:Property key="soap">
         <l7:BooleanValue>false</l7:BooleanValue>
@@ -564,15 +563,15 @@
                     <l7:Name>OTK Cache Handler</l7:Name>
                     <l7:Id>161861da3a78c5dcdc62696d16914861</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.503Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.140Z</l7:TimeStamp>
                     <l7:Resource>
-                        <l7:Policy guid="65eff071-9a97-415b-8ebb-8e711ffd738d" id="161861da3a78c5dcdc62696d16914861" version="0">
-                            <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d1691481a" guid="65eff071-9a97-415b-8ebb-8e711ffd738d" id="161861da3a78c5dcdc62696d16914861" version="0">
+                        <l7:Policy guid="65eff071-9a97-415b-8ebb-8e711ffd738d" id="161861da3a78c5dcdc62696d16914861" version="3">
+                            <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d1691481a" guid="65eff071-9a97-415b-8ebb-8e711ffd738d" id="161861da3a78c5dcdc62696d16914861" version="3">
 <l7:Name>OTK Cache Handler</l7:Name>
 <l7:PolicyType>Include</l7:PolicyType>
 <l7:Properties>
     <l7:Property key="revision">
-        <l7:LongValue>1</l7:LongValue>
+        <l7:LongValue>4</l7:LongValue>
     </l7:Property>
     <l7:Property key="soap">
         <l7:BooleanValue>false</l7:BooleanValue>
@@ -929,15 +928,15 @@
                     <l7:Name>OTK Cache Look Up</l7:Name>
                     <l7:Id>161861da3a78c5dcdc62696d16914bbb</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.509Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.146Z</l7:TimeStamp>
                     <l7:Resource>
-                        <l7:Policy guid="fb88be42-83e7-4d36-a865-34e53d4f4218" id="161861da3a78c5dcdc62696d16914bbb" version="0">
-                            <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d1691481a" guid="fb88be42-83e7-4d36-a865-34e53d4f4218" id="161861da3a78c5dcdc62696d16914bbb" version="0">
+                        <l7:Policy guid="fb88be42-83e7-4d36-a865-34e53d4f4218" id="161861da3a78c5dcdc62696d16914bbb" version="3">
+                            <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d1691481a" guid="fb88be42-83e7-4d36-a865-34e53d4f4218" id="161861da3a78c5dcdc62696d16914bbb" version="3">
 <l7:Name>OTK Cache Look Up</l7:Name>
 <l7:PolicyType>Include</l7:PolicyType>
 <l7:Properties>
     <l7:Property key="revision">
-        <l7:LongValue>1</l7:LongValue>
+        <l7:LongValue>4</l7:LongValue>
     </l7:Property>
     <l7:Property key="soap">
         <l7:BooleanValue>false</l7:BooleanValue>
@@ -1108,7 +1107,7 @@
                     <l7:Name>OTK Cache Look Up</l7:Name>
                     <l7:Id>161861da3a78c5dcdc62696d16914c21</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.509Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.146Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="161861da3a78c5dcdc62696d16914c21" version="2">
                             <l7:Name>OTK Cache Look Up</l7:Name>
@@ -1189,15 +1188,15 @@
                     <l7:Name>#OTK Fail with error message</l7:Name>
                     <l7:Id>bc9a31b7578652a08a514d7d4fef9afd</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.512Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.149Z</l7:TimeStamp>
                     <l7:Resource>
-                        <l7:Policy guid="1a55cc2a-9996-4978-8473-c2a75e5c59d1" id="bc9a31b7578652a08a514d7d4fef9afd" version="0">
-                            <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d16914781" guid="1a55cc2a-9996-4978-8473-c2a75e5c59d1" id="bc9a31b7578652a08a514d7d4fef9afd" version="0">
+                        <l7:Policy guid="1a55cc2a-9996-4978-8473-c2a75e5c59d1" id="bc9a31b7578652a08a514d7d4fef9afd" version="2">
+                            <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d16914781" guid="1a55cc2a-9996-4978-8473-c2a75e5c59d1" id="bc9a31b7578652a08a514d7d4fef9afd" version="2">
 <l7:Name>#OTK Fail with error message</l7:Name>
 <l7:PolicyType>Include</l7:PolicyType>
 <l7:Properties>
     <l7:Property key="revision">
-        <l7:LongValue>1</l7:LongValue>
+        <l7:LongValue>2</l7:LongValue>
     </l7:Property>
     <l7:Property key="soap">
         <l7:BooleanValue>false</l7:BooleanValue>
@@ -1324,15 +1323,15 @@
                     <l7:Name>OTK Cache Store</l7:Name>
                     <l7:Id>161861da3a78c5dcdc62696d16914be5</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.519Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.156Z</l7:TimeStamp>
                     <l7:Resource>
-                        <l7:Policy guid="58143e14-a1cd-4cca-b25a-e2d637a42bbc" id="161861da3a78c5dcdc62696d16914be5" version="0">
-                            <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d1691481a" guid="58143e14-a1cd-4cca-b25a-e2d637a42bbc" id="161861da3a78c5dcdc62696d16914be5" version="0">
+                        <l7:Policy guid="58143e14-a1cd-4cca-b25a-e2d637a42bbc" id="161861da3a78c5dcdc62696d16914be5" version="3">
+                            <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d1691481a" guid="58143e14-a1cd-4cca-b25a-e2d637a42bbc" id="161861da3a78c5dcdc62696d16914be5" version="3">
 <l7:Name>OTK Cache Store</l7:Name>
 <l7:PolicyType>Include</l7:PolicyType>
 <l7:Properties>
     <l7:Property key="revision">
-        <l7:LongValue>1</l7:LongValue>
+        <l7:LongValue>4</l7:LongValue>
     </l7:Property>
     <l7:Property key="soap">
         <l7:BooleanValue>false</l7:BooleanValue>
@@ -1529,7 +1528,7 @@
                     <l7:Name>OTK Cache Store</l7:Name>
                     <l7:Id>161861da3a78c5dcdc62696d16914c44</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.520Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.156Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="161861da3a78c5dcdc62696d16914c44" version="2">
                             <l7:Name>OTK Cache Store</l7:Name>
@@ -1642,15 +1641,15 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Fail with error message</l7:Name>
                     <l7:Id>d1bde3d2021a469e82ebf8cac288bbd1</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.579Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.217Z</l7:TimeStamp>
                     <l7:Resource>
-                        <l7:Policy guid="9e864ce5-1275-477f-a642-b5e867f367a3" id="d1bde3d2021a469e82ebf8cac288bbd1" version="0">
-                            <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fd08e" guid="9e864ce5-1275-477f-a642-b5e867f367a3" id="d1bde3d2021a469e82ebf8cac288bbd1" version="0">
+                        <l7:Policy guid="9e864ce5-1275-477f-a642-b5e867f367a3" id="d1bde3d2021a469e82ebf8cac288bbd1" version="3">
+                            <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fd08e" guid="9e864ce5-1275-477f-a642-b5e867f367a3" id="d1bde3d2021a469e82ebf8cac288bbd1" version="3">
 <l7:Name>OTK Fail with error message</l7:Name>
 <l7:PolicyType>Include</l7:PolicyType>
 <l7:Properties>
     <l7:Property key="revision">
-        <l7:LongValue>1</l7:LongValue>
+        <l7:LongValue>4</l7:LongValue>
     </l7:Property>
     <l7:Property key="soap">
         <l7:BooleanValue>false</l7:BooleanValue>
@@ -3615,7 +3614,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Fail with error message</l7:Name>
                     <l7:Id>d1bde3d2021a469e82ebf8cac288bd97</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.579Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.217Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="d1bde3d2021a469e82ebf8cac288bd97" version="2">
                             <l7:Name>OTK Fail with error message</l7:Name>
@@ -3696,102 +3695,10 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     </l7:Resource>
                 </l7:Item>
                 <l7:Item>
-                    <l7:Name>IFTTT API Key Protection</l7:Name>
-                    <l7:Id>5dbe8b411167eae8d109f6a968bca807</l7:Id>
-                    <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.581Z</l7:TimeStamp>
-                    <l7:Resource>
-                        <l7:Policy guid="ae9b04c7-0038-4e04-8eaf-d4a44f1bd5ca" id="5dbe8b411167eae8d109f6a968bca807" version="0">
-                            <l7:PolicyDetail folderId="5dbe8b411167eae8d109f6a968bca968" guid="ae9b04c7-0038-4e04-8eaf-d4a44f1bd5ca" id="5dbe8b411167eae8d109f6a968bca807" version="0">
-<l7:Name>IFTTT API Key Protection</l7:Name>
-<l7:PolicyType>Include</l7:PolicyType>
-<l7:Properties>
-    <l7:Property key="revision">
-        <l7:LongValue>1</l7:LongValue>
-    </l7:Property>
-    <l7:Property key="soap">
-        <l7:BooleanValue>false</l7:BooleanValue>
-    </l7:Property>
-</l7:Properties>
-                            </l7:PolicyDetail>
-                            <l7:Resources>
-<l7:ResourceSet tag="policy">
-    <l7:Resource type="policy">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
-    &lt;wsp:All wsp:Usage="Required"&gt;
-        &lt;L7p:CommentAssertion&gt;
-            &lt;L7p:Comment stringValue="Used at endpoints found in the IFTTT-System folder"/&gt;
-        &lt;/L7p:CommentAssertion&gt;
-        &lt;L7p:CommentAssertion&gt;
-            &lt;L7p:Comment stringValue="The IFTTT service key is a API Key in 'CA Portal' terms"/&gt;
-        &lt;/L7p:CommentAssertion&gt;
-        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
-            &lt;L7p:ComparisonAssertion&gt;
-                &lt;L7p:Expression1 stringValue="${request.http.header.IFTTT-Service-Key}"/&gt;
-                &lt;L7p:Expression2 stringValue="${gateway.ifttt.service.key}"/&gt;
-                &lt;L7p:Predicates predicates="included"&gt;
-                    &lt;L7p:item binary="included"&gt;
-                        &lt;L7p:RightValue stringValue="${gateway.ifttt.service.key}"/&gt;
-                    &lt;/L7p:item&gt;
-                &lt;/L7p:Predicates&gt;
-            &lt;/L7p:ComparisonAssertion&gt;
-            &lt;wsp:All wsp:Usage="Required"&gt;
-                &lt;L7p:AuditDetailAssertion&gt;
-                    &lt;L7p:Detail stringValue="Missing or invalid service key was provided: '${request.http.header.IFTTT-Service-Key}', expected: '${gateway.ifttt.service.key}'"/&gt;
-                &lt;/L7p:AuditDetailAssertion&gt;
-                &lt;L7p:Encapsulated&gt;
-                    &lt;L7p:AssertionComment assertionComment="included"&gt;
-                        &lt;L7p:Properties mapValue="included"&gt;
-                            &lt;L7p:entry&gt;
-                                &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
-                                &lt;L7p:value stringValue="// error code 201: invalid client"/&gt;
-                            &lt;/L7p:entry&gt;
-                        &lt;/L7p:Properties&gt;
-                    &lt;/L7p:AssertionComment&gt;
-                    &lt;L7p:EncapsulatedAssertionConfigGuid stringValue="56bd8147-3ab4-4d09-9460-8b2de02b7a9e"/&gt;
-                    &lt;L7p:EncapsulatedAssertionConfigName stringValue="OTK Fail with error message"/&gt;
-                    &lt;L7p:Parameters mapValue="included"&gt;
-                        &lt;L7p:entry&gt;
-                            &lt;L7p:key stringValue="apiPrefix"/&gt;
-                            &lt;L7p:value stringValue=""/&gt;
-                        &lt;/L7p:entry&gt;
-                        &lt;L7p:entry&gt;
-                            &lt;L7p:key stringValue="givenErrorCode"/&gt;
-                            &lt;L7p:value stringValue="201"/&gt;
-                        &lt;/L7p:entry&gt;
-                    &lt;/L7p:Parameters&gt;
-                &lt;/L7p:Encapsulated&gt;
-                &lt;L7p:assertionComment&gt;
-                    &lt;L7p:Properties mapValue="included"&gt;
-                        &lt;L7p:entry&gt;
-                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
-                            &lt;L7p:value stringValue="// Error"/&gt;
-                        &lt;/L7p:entry&gt;
-                    &lt;/L7p:Properties&gt;
-                &lt;/L7p:assertionComment&gt;
-            &lt;/wsp:All&gt;
-            &lt;L7p:assertionComment&gt;
-                &lt;L7p:Properties mapValue="included"&gt;
-                    &lt;L7p:entry&gt;
-                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
-                        &lt;L7p:value stringValue="// Verify the IFTTT Service Key"/&gt;
-                    &lt;/L7p:entry&gt;
-                &lt;/L7p:Properties&gt;
-            &lt;/L7p:assertionComment&gt;
-        &lt;/wsp:OneOrMore&gt;
-    &lt;/wsp:All&gt;
-&lt;/wsp:Policy&gt;
-</l7:Resource>
-</l7:ResourceSet>
-                            </l7:Resources>
-                        </l7:Policy>
-                    </l7:Resource>
-                </l7:Item>
-                <l7:Item>
                     <l7:Name>OTK Require SSL (with Client Certificate)</l7:Name>
                     <l7:Id>d1bde3d2021a469e82ebf8cac288b778</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.588Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.223Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="b598a733-5faf-439a-9aaf-088ca73d102e" id="d1bde3d2021a469e82ebf8cac288b778" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fd6e8" guid="b598a733-5faf-439a-9aaf-088ca73d102e" id="d1bde3d2021a469e82ebf8cac288b778" version="0">
@@ -4021,7 +3928,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Require SSL (with Client Certificate)</l7:Name>
                     <l7:Id>d1bde3d2021a469e82ebf8cac288b7c9</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.588Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.223Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="d1bde3d2021a469e82ebf8cac288b7c9" version="1">
                             <l7:Name>OTK Require SSL (with Client Certificate)</l7:Name>
@@ -4100,7 +4007,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>IFTTT API Access Control</l7:Name>
                     <l7:Id>5dbe8b411167eae8d109f6a968bca37d</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.591Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.225Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="63da1d1c-1984-4844-8a33-f6b662351892" id="5dbe8b411167eae8d109f6a968bca37d" version="0">
                             <l7:PolicyDetail folderId="5dbe8b411167eae8d109f6a968bca968" guid="63da1d1c-1984-4844-8a33-f6b662351892" id="5dbe8b411167eae8d109f6a968bca37d" version="0">
@@ -4210,11 +4117,104 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                         </l7:Policy>
                     </l7:Resource>
                 </l7:Item>
+                
+                <l7:Item>
+                    <l7:Name>IFTTT API Key Protection</l7:Name>
+                    <l7:Id>5dbe8b411167eae8d109f6a968bca807</l7:Id>
+                    <l7:Type>POLICY</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:57:45.227Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:Policy guid="ae9b04c7-0038-4e04-8eaf-d4a44f1bd5ca" id="5dbe8b411167eae8d109f6a968bca807" version="0">
+                            <l7:PolicyDetail folderId="5dbe8b411167eae8d109f6a968bca968" guid="ae9b04c7-0038-4e04-8eaf-d4a44f1bd5ca" id="5dbe8b411167eae8d109f6a968bca807" version="0">
+<l7:Name>IFTTT API Key Protection</l7:Name>
+<l7:PolicyType>Include</l7:PolicyType>
+<l7:Properties>
+    <l7:Property key="revision">
+        <l7:LongValue>1</l7:LongValue>
+    </l7:Property>
+    <l7:Property key="soap">
+        <l7:BooleanValue>false</l7:BooleanValue>
+    </l7:Property>
+</l7:Properties>
+                            </l7:PolicyDetail>
+                            <l7:Resources>
+<l7:ResourceSet tag="policy">
+    <l7:Resource type="policy">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="Used at endpoints found in the IFTTT-System folder"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="The IFTTT service key is a API Key in 'CA Portal' terms"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;L7p:ComparisonAssertion&gt;
+                &lt;L7p:Expression1 stringValue="${request.http.header.IFTTT-Service-Key}"/&gt;
+                &lt;L7p:Expression2 stringValue="${gateway.ifttt.service.key}"/&gt;
+                &lt;L7p:Predicates predicates="included"&gt;
+                    &lt;L7p:item binary="included"&gt;
+                        &lt;L7p:RightValue stringValue="${gateway.ifttt.service.key}"/&gt;
+                    &lt;/L7p:item&gt;
+                &lt;/L7p:Predicates&gt;
+            &lt;/L7p:ComparisonAssertion&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:AuditDetailAssertion&gt;
+                    &lt;L7p:Detail stringValue="Missing or invalid service key was provided: '${request.http.header.IFTTT-Service-Key}', expected: '${gateway.ifttt.service.key}'"/&gt;
+                &lt;/L7p:AuditDetailAssertion&gt;
+                &lt;L7p:Encapsulated&gt;
+                    &lt;L7p:AssertionComment assertionComment="included"&gt;
+                        &lt;L7p:Properties mapValue="included"&gt;
+                            &lt;L7p:entry&gt;
+                                &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                                &lt;L7p:value stringValue="// error code 201: invalid client"/&gt;
+                            &lt;/L7p:entry&gt;
+                        &lt;/L7p:Properties&gt;
+                    &lt;/L7p:AssertionComment&gt;
+                    &lt;L7p:EncapsulatedAssertionConfigGuid stringValue="56bd8147-3ab4-4d09-9460-8b2de02b7a9e"/&gt;
+                    &lt;L7p:EncapsulatedAssertionConfigName stringValue="OTK Fail with error message"/&gt;
+                    &lt;L7p:Parameters mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="apiPrefix"/&gt;
+                            &lt;L7p:value stringValue=""/&gt;
+                        &lt;/L7p:entry&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="givenErrorCode"/&gt;
+                            &lt;L7p:value stringValue="201"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Parameters&gt;
+                &lt;/L7p:Encapsulated&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// Error"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// Verify the IFTTT Service Key"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+</l7:ResourceSet>
+                            </l7:Resources>
+                        </l7:Policy>
+                    </l7:Resource>
+                </l7:Item>
                 <l7:Item>
                     <l7:Name>OTK HTTP Method Validation</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd946</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.594Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.230Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="6aa2d277-b510-44e2-88ef-31ff01840c28" id="e001cfd0c1c1ffaa18e187b5e72fd946" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fd08e" guid="6aa2d277-b510-44e2-88ef-31ff01840c28" id="e001cfd0c1c1ffaa18e187b5e72fd946" version="0">
@@ -4315,7 +4315,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK HTTP Method Validation</l7:Name>
                     <l7:Id>3f6b5c92ca2ac3665bc7d8780bc4d876</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.594Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.230Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="3f6b5c92ca2ac3665bc7d8780bc4d876" version="1">
                             <l7:Name>OTK HTTP Method Validation</l7:Name>
@@ -4396,7 +4396,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>#OTK OVP Configuration</l7:Name>
                     <l7:Id>24e6fd7c5b6fb3a96690246c8ac492ec</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.595Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.230Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="a4448be1-9b0e-417f-b498-8a268cadf8a5" id="24e6fd7c5b6fb3a96690246c8ac492ec" version="0">
                             <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d16914781" guid="a4448be1-9b0e-417f-b498-8a268cadf8a5" id="24e6fd7c5b6fb3a96690246c8ac492ec" version="0">
@@ -4449,7 +4449,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK OVP Configuration</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd82d</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.597Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.232Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="c6bf9e90-5ea0-4650-91f9-7c2a8291902f" id="e001cfd0c1c1ffaa18e187b5e72fd82d" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fc858" guid="c6bf9e90-5ea0-4650-91f9-7c2a8291902f" id="e001cfd0c1c1ffaa18e187b5e72fd82d" version="0">
@@ -4551,7 +4551,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK OVP Configuration</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fda9a</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.597Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.233Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="e001cfd0c1c1ffaa18e187b5e72fda9a" version="1">
                             <l7:Name>OTK OVP Configuration</l7:Name>
@@ -4617,7 +4617,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Access Token Retrieval</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd86a</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.613Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.248Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="14f8a882-e66c-4a70-88d8-0128e2922744" id="e001cfd0c1c1ffaa18e187b5e72fd86a" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fcfce" guid="14f8a882-e66c-4a70-88d8-0128e2922744" id="e001cfd0c1c1ffaa18e187b5e72fd86a" version="0">
@@ -5052,7 +5052,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Access Token Retrieval</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fdaa0</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.613Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.248Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="e001cfd0c1c1ffaa18e187b5e72fdaa0" version="1">
                             <l7:Name>OTK Access Token Retrieval</l7:Name>
@@ -5161,15 +5161,15 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>#OTK Storage Configuration</l7:Name>
                     <l7:Id>24e6fd7c5b6fb3a96690246c8ac49304</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.614Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.249Z</l7:TimeStamp>
                     <l7:Resource>
-                        <l7:Policy guid="cfa7239a-60e4-483a-9d45-c364f2fb673d" id="24e6fd7c5b6fb3a96690246c8ac49304" version="0">
-                            <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d16914781" guid="cfa7239a-60e4-483a-9d45-c364f2fb673d" id="24e6fd7c5b6fb3a96690246c8ac49304" version="0">
+                        <l7:Policy guid="cfa7239a-60e4-483a-9d45-c364f2fb673d" id="24e6fd7c5b6fb3a96690246c8ac49304" version="2">
+                            <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d16914781" guid="cfa7239a-60e4-483a-9d45-c364f2fb673d" id="24e6fd7c5b6fb3a96690246c8ac49304" version="2">
 <l7:Name>#OTK Storage Configuration</l7:Name>
 <l7:PolicyType>Include</l7:PolicyType>
 <l7:Properties>
     <l7:Property key="revision">
-        <l7:LongValue>1</l7:LongValue>
+        <l7:LongValue>2</l7:LongValue>
     </l7:Property>
     <l7:Property key="soap">
         <l7:BooleanValue>false</l7:BooleanValue>
@@ -5206,15 +5206,15 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Storage Configuration</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fc9d0</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.618Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.252Z</l7:TimeStamp>
                     <l7:Resource>
-                        <l7:Policy guid="71039e77-2081-40df-a892-50097f1c18de" id="e001cfd0c1c1ffaa18e187b5e72fc9d0" version="0">
-                            <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fc858" guid="71039e77-2081-40df-a892-50097f1c18de" id="e001cfd0c1c1ffaa18e187b5e72fc9d0" version="0">
+                        <l7:Policy guid="71039e77-2081-40df-a892-50097f1c18de" id="e001cfd0c1c1ffaa18e187b5e72fc9d0" version="3">
+                            <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fc858" guid="71039e77-2081-40df-a892-50097f1c18de" id="e001cfd0c1c1ffaa18e187b5e72fc9d0" version="3">
 <l7:Name>OTK Storage Configuration</l7:Name>
 <l7:PolicyType>Include</l7:PolicyType>
 <l7:Properties>
     <l7:Property key="revision">
-        <l7:LongValue>1</l7:LongValue>
+        <l7:LongValue>4</l7:LongValue>
     </l7:Property>
     <l7:Property key="soap">
         <l7:BooleanValue>false</l7:BooleanValue>
@@ -5379,7 +5379,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Storage Configuration</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fcac5</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.618Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.252Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="e001cfd0c1c1ffaa18e187b5e72fcac5" version="2">
                             <l7:Name>OTK Storage Configuration</l7:Name>
@@ -5465,7 +5465,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token DB GET</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fcc49</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.671Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.303Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="85fc86ff-4cac-4086-afa1-3673d74fe895" id="e001cfd0c1c1ffaa18e187b5e72fcc49" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fcbcd" guid="85fc86ff-4cac-4086-afa1-3673d74fe895" id="e001cfd0c1c1ffaa18e187b5e72fcc49" version="0">
@@ -7005,7 +7005,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token DB GET</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fce1e</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.671Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.303Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="e001cfd0c1c1ffaa18e187b5e72fce1e" version="1">
                             <l7:Name>OTK Token DB GET</l7:Name>
@@ -7128,7 +7128,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token Get (token)</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd1ab</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.687Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.318Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="bae27987-97aa-4029-bc62-778be9fa31b3" id="e001cfd0c1c1ffaa18e187b5e72fd1ab" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fcfce" guid="bae27987-97aa-4029-bc62-778be9fa31b3" id="e001cfd0c1c1ffaa18e187b5e72fd1ab" version="0">
@@ -7585,7 +7585,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token Get (token)</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd20f</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.687Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.318Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="e001cfd0c1c1ffaa18e187b5e72fd20f" version="1">
                             <l7:Name>OTK Token Get (token)</l7:Name>
@@ -7701,7 +7701,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>#OTK Validate JWT OAuth Token</l7:Name>
                     <l7:Id>d2fa9e7e0db9f0c56c13fe57e46309e1</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.691Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.349Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="03d4ea7a-8557-4002-80b2-925e52eb4e26" id="d2fa9e7e0db9f0c56c13fe57e46309e1" version="0">
                             <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d16914781" guid="03d4ea7a-8557-4002-80b2-925e52eb4e26" id="d2fa9e7e0db9f0c56c13fe57e46309e1" version="0">
@@ -7902,7 +7902,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Validate JWT OAuth Token</l7:Name>
                     <l7:Id>d003cc363d3af3fa8c1c0dfed091ccfe</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.692Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.351Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="ebc7bee2-0d5e-4348-89cf-c3a84ca693a6" id="d003cc363d3af3fa8c1c0dfed091ccfe" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fd08e" guid="ebc7bee2-0d5e-4348-89cf-c3a84ca693a6" id="d003cc363d3af3fa8c1c0dfed091ccfe" version="0">
@@ -7991,7 +7991,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Validate JWT OAuth Token</l7:Name>
                     <l7:Id>d003cc363d3af3fa8c1c0dfed091cd38</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.692Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.351Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="d003cc363d3af3fa8c1c0dfed091cd38" version="1">
                             <l7:Name>OTK Validate JWT OAuth Token</l7:Name>
@@ -8064,7 +8064,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>#OTK Variable Configuration</l7:Name>
                     <l7:Id>24e6fd7c5b6fb3a96690246c8ac49335</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.693Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.352Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="174ef22a-955b-465c-bd2a-9bc4caa888d8" id="24e6fd7c5b6fb3a96690246c8ac49335" version="0">
                             <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d16914781" guid="174ef22a-955b-465c-bd2a-9bc4caa888d8" id="24e6fd7c5b6fb3a96690246c8ac49335" version="0">
@@ -8121,7 +8121,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Variable Configuration</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd183</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.698Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.361Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="e64823db-25f0-462a-a226-44908c239fe6" id="e001cfd0c1c1ffaa18e187b5e72fd183" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fc858" guid="e64823db-25f0-462a-a226-44908c239fe6" id="e001cfd0c1c1ffaa18e187b5e72fd183" version="0">
@@ -8356,7 +8356,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Variable Configuration</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd2da</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.699Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.362Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="e001cfd0c1c1ffaa18e187b5e72fd2da" version="1">
                             <l7:Name>OTK Variable Configuration</l7:Name>
@@ -8506,7 +8506,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK SCOPE Verification</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd147</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.710Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.374Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="2792f49f-c879-4eb1-a1e1-326bad2dcb74" id="e001cfd0c1c1ffaa18e187b5e72fd147" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fd08e" guid="2792f49f-c879-4eb1-a1e1-326bad2dcb74" id="e001cfd0c1c1ffaa18e187b5e72fd147" version="0">
@@ -8884,7 +8884,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK SCOPE Verification</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd28f</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.710Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.374Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="e001cfd0c1c1ffaa18e187b5e72fd28f" version="1">
                             <l7:Name>OTK SCOPE Verification</l7:Name>
@@ -8973,7 +8973,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token DB Delete</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fccc1</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.724Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.388Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="fe455d03-c935-44d1-9b44-5ecad7832462" id="e001cfd0c1c1ffaa18e187b5e72fccc1" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fcbcd" guid="fe455d03-c935-44d1-9b44-5ecad7832462" id="e001cfd0c1c1ffaa18e187b5e72fccc1" version="0">
@@ -9376,7 +9376,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token DB Delete</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fcdfa</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.724Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.388Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="e001cfd0c1c1ffaa18e187b5e72fcdfa" version="1">
                             <l7:Name>OTK Token DB Delete</l7:Name>
@@ -9463,7 +9463,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token Delete</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd16f</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.819Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.402Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="32285486-39c2-43da-aa40-7587c3300212" id="e001cfd0c1c1ffaa18e187b5e72fd16f" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fcfce" guid="32285486-39c2-43da-aa40-7587c3300212" id="e001cfd0c1c1ffaa18e187b5e72fd16f" version="0">
@@ -9876,7 +9876,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token Delete</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd25d</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.819Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.402Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="e001cfd0c1c1ffaa18e187b5e72fd25d" version="1">
                             <l7:Name>OTK Token Delete</l7:Name>
@@ -9964,7 +9964,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK OAuth 2.0 Token Validation - BEARER</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd1d3</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.831Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.413Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="f07df530-d404-47ad-88a6-dadb4421ead3" id="e001cfd0c1c1ffaa18e187b5e72fd1d3" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fd08e" guid="f07df530-d404-47ad-88a6-dadb4421ead3" id="e001cfd0c1c1ffaa18e187b5e72fd1d3" version="0">
@@ -10433,7 +10433,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK OAuth 2.0 Token Validation - BEARER</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd322</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.831Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.413Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="e001cfd0c1c1ffaa18e187b5e72fd322" version="1">
                             <l7:Name>OTK OAuth 2.0 Token Validation - BEARER</l7:Name>
@@ -10530,7 +10530,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK v2GenerateRequestMac</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd0f6</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.847Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.429Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="31b00c3c-a333-4e44-8e00-6bfd51b974a8" id="e001cfd0c1c1ffaa18e187b5e72fd0f6" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fc898" guid="31b00c3c-a333-4e44-8e00-6bfd51b974a8" id="e001cfd0c1c1ffaa18e187b5e72fd0f6" version="0">
@@ -10940,7 +10940,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK v2GenerateRequestMac</l7:Name>
                     <l7:Id>35f5ccf02323692c2c4a2f0545010a90</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.847Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.429Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="35f5ccf02323692c2c4a2f0545010a90" version="1">
                             <l7:Name>OTK v2GenerateRequestMac</l7:Name>
@@ -11031,7 +11031,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK OAuth 2.0 Token Validation - MAC</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd1e7</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.869Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.450Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="55caa40c-7b56-40ff-a5b1-2933934b787f" id="e001cfd0c1c1ffaa18e187b5e72fd1e7" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fd08e" guid="55caa40c-7b56-40ff-a5b1-2933934b787f" id="e001cfd0c1c1ffaa18e187b5e72fd1e7" version="0">
@@ -11767,7 +11767,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK OAuth 2.0 Token Validation - MAC</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd336</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.870Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.450Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="e001cfd0c1c1ffaa18e187b5e72fd336" version="1">
                             <l7:Name>OTK OAuth 2.0 Token Validation - MAC</l7:Name>
@@ -11884,7 +11884,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Require OAuth 2.0 Token</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd841</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.922Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.503Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="495c191d-9fb1-4f22-a8ec-76ecacf8bef4" id="e001cfd0c1c1ffaa18e187b5e72fd841" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fd08e" guid="495c191d-9fb1-4f22-a8ec-76ecacf8bef4" id="e001cfd0c1c1ffaa18e187b5e72fd841" version="0">
@@ -13883,7 +13883,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Require OAuth 2.0 Token</l7:Name>
                     <l7:Id>3f6b5c92ca2ac3665bc7d8780bc4d718</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.922Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.504Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="3f6b5c92ca2ac3665bc7d8780bc4d718" version="1">
                             <l7:Name>OTK Require OAuth 2.0 Token</l7:Name>
@@ -14050,7 +14050,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>IFTTT Triggers Account Monitor</l7:Name>
                     <l7:Id>d0c2108b72b11af05b03eb6dd44c7fa2</l7:Id>
                     <l7:Type>SERVICE</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.946Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.514Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Service id="d0c2108b72b11af05b03eb6dd44c7fa2" version="2">
                             <l7:ServiceDetail folderId="457652ee7bfc6625aa2134eb519226d9" id="d0c2108b72b11af05b03eb6dd44c7fa2" version="2">
@@ -14392,7 +14392,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK User Attribute Look Up Extension</l7:Name>
                     <l7:Id>3b6761a5d0ee0e2d4452b1065da584bf</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.958Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.523Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="c922f32d-8814-4d82-be00-71e16586396b" id="3b6761a5d0ee0e2d4452b1065da584bf" version="0">
                             <l7:PolicyDetail folderId="bc9a31b7578652a08a514d7d4fef309b" guid="c922f32d-8814-4d82-be00-71e16586396b" id="3b6761a5d0ee0e2d4452b1065da584bf" version="0">
@@ -14717,7 +14717,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK User Attribute Look Up</l7:Name>
                     <l7:Id>3b6761a5d0ee0e2d4452b1065da5d85c</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.961Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.525Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="97d7268c-b68c-4035-bb45-28dfc2a4db88" id="3b6761a5d0ee0e2d4452b1065da5d85c" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fd6e8" guid="97d7268c-b68c-4035-bb45-28dfc2a4db88" id="3b6761a5d0ee0e2d4452b1065da5d85c" version="0">
@@ -14851,7 +14851,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK User Attribute Look Up</l7:Name>
                     <l7:Id>3b6761a5d0ee0e2d4452b1065da5d88a</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.961Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.525Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="3b6761a5d0ee0e2d4452b1065da5d88a" version="1">
                             <l7:Name>OTK User Attribute Look Up</l7:Name>
@@ -14926,7 +14926,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>IFTTT Actions Account Management</l7:Name>
                     <l7:Id>d0c2108b72b11af05b03eb6dd44cca29</l7:Id>
                     <l7:Type>SERVICE</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.970Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.532Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Service id="d0c2108b72b11af05b03eb6dd44cca29" version="2">
                             <l7:ServiceDetail folderId="457652ee7bfc6625aa2134eb51922719" id="d0c2108b72b11af05b03eb6dd44cca29" version="2">
@@ -15240,7 +15240,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>#OTK Token Lifetime Configuration</l7:Name>
                     <l7:Id>24e6fd7c5b6fb3a96690246c8ac4931d</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.972Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.533Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="de4c1e4a-969b-4812-b5d9-a6d356d58c65" id="24e6fd7c5b6fb3a96690246c8ac4931d" version="0">
                             <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d16914781" guid="de4c1e4a-969b-4812-b5d9-a6d356d58c65" id="24e6fd7c5b6fb3a96690246c8ac4931d" version="0">
@@ -15281,7 +15281,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token Lifetime Configuration</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd8ba</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.977Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.537Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="04ae2694-e12c-4568-83df-aee29995d82b" id="e001cfd0c1c1ffaa18e187b5e72fd8ba" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fc858" guid="04ae2694-e12c-4568-83df-aee29995d82b" id="e001cfd0c1c1ffaa18e187b5e72fd8ba" version="0">
@@ -15531,7 +15531,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token Lifetime Configuration</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fdbf2</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.977Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.537Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="e001cfd0c1c1ffaa18e187b5e72fdbf2" version="1">
                             <l7:Name>OTK Token Lifetime Configuration</l7:Name>
@@ -15618,7 +15618,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Generate OAuth Token</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd932</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.993Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.551Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="42cdc537-b6e1-432f-a9cd-27fc61182d77" id="e001cfd0c1c1ffaa18e187b5e72fd932" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fc858" guid="42cdc537-b6e1-432f-a9cd-27fc61182d77" id="e001cfd0c1c1ffaa18e187b5e72fd932" version="0">
@@ -16051,7 +16051,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Generate OAuth Token</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fdb08</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.993Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.552Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="e001cfd0c1c1ffaa18e187b5e72fdb08" version="1">
                             <l7:Name>OTK Generate OAuth Token</l7:Name>
@@ -16184,15 +16184,15 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token DB Count Check</l7:Name>
                     <l7:Id>97975cf167f141f884f61a2392d544d2</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.998Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.555Z</l7:TimeStamp>
                     <l7:Resource>
-                        <l7:Policy guid="876cbb25-92f0-4448-82b9-4d2a8ac1d4ea" id="97975cf167f141f884f61a2392d544d2" version="0">
-                            <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fcbcd" guid="876cbb25-92f0-4448-82b9-4d2a8ac1d4ea" id="97975cf167f141f884f61a2392d544d2" version="0">
+                        <l7:Policy guid="876cbb25-92f0-4448-82b9-4d2a8ac1d4ea" id="97975cf167f141f884f61a2392d544d2" version="3">
+                            <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fcbcd" guid="876cbb25-92f0-4448-82b9-4d2a8ac1d4ea" id="97975cf167f141f884f61a2392d544d2" version="3">
 <l7:Name>OTK Token DB Count Check</l7:Name>
 <l7:PolicyType>Include</l7:PolicyType>
 <l7:Properties>
     <l7:Property key="revision">
-        <l7:LongValue>1</l7:LongValue>
+        <l7:LongValue>4</l7:LongValue>
     </l7:Property>
     <l7:Property key="soap">
         <l7:BooleanValue>false</l7:BooleanValue>
@@ -16345,7 +16345,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token DB Count Check</l7:Name>
                     <l7:Id>49ed796ade964a2e886f779711689fd2</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:11.998Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.555Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="49ed796ade964a2e886f779711689fd2" version="2">
                             <l7:Name>OTK Token DB Count Check</l7:Name>
@@ -16421,15 +16421,15 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token DB Revocation</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fcc99</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:12.023Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.581Z</l7:TimeStamp>
                     <l7:Resource>
-                        <l7:Policy guid="189e582f-078e-4fb9-b016-a7d419cd2fa6" id="e001cfd0c1c1ffaa18e187b5e72fcc99" version="0">
-                            <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fcbcd" guid="189e582f-078e-4fb9-b016-a7d419cd2fa6" id="e001cfd0c1c1ffaa18e187b5e72fcc99" version="0">
+                        <l7:Policy guid="189e582f-078e-4fb9-b016-a7d419cd2fa6" id="e001cfd0c1c1ffaa18e187b5e72fcc99" version="3">
+                            <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fcbcd" guid="189e582f-078e-4fb9-b016-a7d419cd2fa6" id="e001cfd0c1c1ffaa18e187b5e72fcc99" version="3">
 <l7:Name>OTK Token DB Revocation</l7:Name>
 <l7:PolicyType>Include</l7:PolicyType>
 <l7:Properties>
     <l7:Property key="revision">
-        <l7:LongValue>1</l7:LongValue>
+        <l7:LongValue>4</l7:LongValue>
     </l7:Property>
     <l7:Property key="soap">
         <l7:BooleanValue>false</l7:BooleanValue>
@@ -17082,7 +17082,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token DB Revocation</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fce4a</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:12.023Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.581Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="e001cfd0c1c1ffaa18e187b5e72fce4a" version="2">
                             <l7:Name>OTK Token DB Revocation</l7:Name>
@@ -17169,15 +17169,15 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token Revocation</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd95a</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:12.039Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.595Z</l7:TimeStamp>
                     <l7:Resource>
-                        <l7:Policy guid="0ebddc40-9c7e-4e26-8cf3-527afc9d8591" id="e001cfd0c1c1ffaa18e187b5e72fd95a" version="0">
-                            <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fcfce" guid="0ebddc40-9c7e-4e26-8cf3-527afc9d8591" id="e001cfd0c1c1ffaa18e187b5e72fd95a" version="0">
+                        <l7:Policy guid="0ebddc40-9c7e-4e26-8cf3-527afc9d8591" id="e001cfd0c1c1ffaa18e187b5e72fd95a" version="3">
+                            <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fcfce" guid="0ebddc40-9c7e-4e26-8cf3-527afc9d8591" id="e001cfd0c1c1ffaa18e187b5e72fd95a" version="3">
 <l7:Name>OTK Token Revocation</l7:Name>
 <l7:PolicyType>Include</l7:PolicyType>
 <l7:Properties>
     <l7:Property key="revision">
-        <l7:LongValue>1</l7:LongValue>
+        <l7:LongValue>4</l7:LongValue>
     </l7:Property>
     <l7:Property key="soap">
         <l7:BooleanValue>false</l7:BooleanValue>
@@ -17577,7 +17577,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token Revocation</l7:Name>
                     <l7:Id>3f6b5c92ca2ac3665bc7d8780bc4d892</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:12.039Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.596Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="3f6b5c92ca2ac3665bc7d8780bc4d892" version="2">
                             <l7:Name>OTK Token Revocation</l7:Name>
@@ -17665,15 +17665,15 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token Count</l7:Name>
                     <l7:Id>3f42c73314d6b36fb7ebe93f600808ff</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:12.050Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.605Z</l7:TimeStamp>
                     <l7:Resource>
-                        <l7:Policy guid="2714f797-3e21-4954-a1d8-894b18e338af" id="3f42c73314d6b36fb7ebe93f600808ff" version="0">
-                            <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fc898" guid="2714f797-3e21-4954-a1d8-894b18e338af" id="3f42c73314d6b36fb7ebe93f600808ff" version="0">
+                        <l7:Policy guid="2714f797-3e21-4954-a1d8-894b18e338af" id="3f42c73314d6b36fb7ebe93f600808ff" version="3">
+                            <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fc898" guid="2714f797-3e21-4954-a1d8-894b18e338af" id="3f42c73314d6b36fb7ebe93f600808ff" version="3">
 <l7:Name>OTK Token Count</l7:Name>
 <l7:PolicyType>Include</l7:PolicyType>
 <l7:Properties>
     <l7:Property key="revision">
-        <l7:LongValue>1</l7:LongValue>
+        <l7:LongValue>4</l7:LongValue>
     </l7:Property>
     <l7:Property key="soap">
         <l7:BooleanValue>false</l7:BooleanValue>
@@ -17986,7 +17986,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token Count</l7:Name>
                     <l7:Id>35f5ccf02323692c2c4a2f0545010a1d</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:12.050Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.605Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="35f5ccf02323692c2c4a2f0545010a1d" version="2">
                             <l7:Name>OTK Token Count</l7:Name>
@@ -18073,15 +18073,15 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token DB Storage</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fccd5</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:12.079Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.637Z</l7:TimeStamp>
                     <l7:Resource>
-                        <l7:Policy guid="4fce0792-26df-4b69-88af-976d8408d1b8" id="e001cfd0c1c1ffaa18e187b5e72fccd5" version="0">
-                            <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fcbcd" guid="4fce0792-26df-4b69-88af-976d8408d1b8" id="e001cfd0c1c1ffaa18e187b5e72fccd5" version="0">
+                        <l7:Policy guid="4fce0792-26df-4b69-88af-976d8408d1b8" id="e001cfd0c1c1ffaa18e187b5e72fccd5" version="3">
+                            <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fcbcd" guid="4fce0792-26df-4b69-88af-976d8408d1b8" id="e001cfd0c1c1ffaa18e187b5e72fccd5" version="3">
 <l7:Name>OTK Token DB Storage</l7:Name>
 <l7:PolicyType>Include</l7:PolicyType>
 <l7:Properties>
     <l7:Property key="revision">
-        <l7:LongValue>1</l7:LongValue>
+        <l7:LongValue>4</l7:LongValue>
     </l7:Property>
     <l7:Property key="soap">
         <l7:BooleanValue>false</l7:BooleanValue>
@@ -18806,7 +18806,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token DB Storage</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fcdd8</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:12.080Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.637Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="e001cfd0c1c1ffaa18e187b5e72fcdd8" version="2">
                             <l7:Name>OTK Token DB Storage</l7:Name>
@@ -18973,7 +18973,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token Storage (access_token, refresh_token)</l7:Name>
                     <l7:Id>e001cfd0c1c1ffaa18e187b5e72fd7b5</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:12.097Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.654Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="84a2a148-f963-4a45-a2ea-9f3de864bf2b" id="e001cfd0c1c1ffaa18e187b5e72fd7b5" version="0">
                             <l7:PolicyDetail folderId="e001cfd0c1c1ffaa18e187b5e72fcfce" guid="84a2a148-f963-4a45-a2ea-9f3de864bf2b" id="e001cfd0c1c1ffaa18e187b5e72fd7b5" version="0">
@@ -19476,7 +19476,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Token Storage (access_token, refresh_token)</l7:Name>
                     <l7:Id>3f6b5c92ca2ac3665bc7d8780bc4d7fc</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:12.098Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.654Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="3f6b5c92ca2ac3665bc7d8780bc4d7fc" version="1">
                             <l7:Name>OTK Token Storage (access_token, refresh_token)</l7:Name>
@@ -19616,7 +19616,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>IFTTT Test Setup</l7:Name>
                     <l7:Id>5dbe8b411167eae8d109f6a968bc9e46</l7:Id>
                     <l7:Type>SERVICE</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:12.104Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.661Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Service id="5dbe8b411167eae8d109f6a968bc9e46" version="2">
                             <l7:ServiceDetail folderId="457652ee7bfc6625aa2134eb51924873" id="5dbe8b411167eae8d109f6a968bc9e46" version="2">
@@ -19936,7 +19936,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>IFTTT User Info</l7:Name>
                     <l7:Id>5dbe8b411167eae8d109f6a968bca775</l7:Id>
                     <l7:Type>SERVICE</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:12.107Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.665Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Service id="5dbe8b411167eae8d109f6a968bca775" version="2">
                             <l7:ServiceDetail folderId="457652ee7bfc6625aa2134eb51924873" id="5dbe8b411167eae8d109f6a968bca775" version="2">
@@ -20084,7 +20084,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>IFTTT Status</l7:Name>
                     <l7:Id>5dbe8b411167eae8d109f6a968bca2f4</l7:Id>
                     <l7:Type>SERVICE</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:12.109Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.668Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Service id="5dbe8b411167eae8d109f6a968bca2f4" version="2">
                             <l7:ServiceDetail folderId="457652ee7bfc6625aa2134eb51924873" id="5dbe8b411167eae8d109f6a968bca2f4" version="2">
@@ -20182,15 +20182,15 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Cache Remove</l7:Name>
                     <l7:Id>161861da3a78c5dcdc62696d16914bd0</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:12.117Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.676Z</l7:TimeStamp>
                     <l7:Resource>
-                        <l7:Policy guid="d4895a15-3131-4ae3-8f3f-5e13acf40642" id="161861da3a78c5dcdc62696d16914bd0" version="0">
-                            <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d1691481a" guid="d4895a15-3131-4ae3-8f3f-5e13acf40642" id="161861da3a78c5dcdc62696d16914bd0" version="0">
+                        <l7:Policy guid="d4895a15-3131-4ae3-8f3f-5e13acf40642" id="161861da3a78c5dcdc62696d16914bd0" version="3">
+                            <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d1691481a" guid="d4895a15-3131-4ae3-8f3f-5e13acf40642" id="161861da3a78c5dcdc62696d16914bd0" version="3">
 <l7:Name>OTK Cache Remove</l7:Name>
 <l7:PolicyType>Include</l7:PolicyType>
 <l7:Properties>
     <l7:Property key="revision">
-        <l7:LongValue>1</l7:LongValue>
+        <l7:LongValue>4</l7:LongValue>
     </l7:Property>
     <l7:Property key="soap">
         <l7:BooleanValue>false</l7:BooleanValue>
@@ -20393,7 +20393,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>OTK Cache Remove</l7:Name>
                     <l7:Id>161861da3a78c5dcdc62696d16914c2d</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:12.117Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.676Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="161861da3a78c5dcdc62696d16914c2d" version="2">
                             <l7:Name>OTK Cache Remove</l7:Name>
@@ -20486,7 +20486,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                     <l7:Name>CA OTK Tutorial Bank</l7:Name>
                     <l7:Id>457652ee7bfc6625aa2134eb519249e7</l7:Id>
                     <l7:Type>SERVICE</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:12.154Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:45.712Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Service id="457652ee7bfc6625aa2134eb519249e7" version="2">
                             <l7:ServiceDetail folderId="457652ee7bfc6625aa2134eb51926919" id="457652ee7bfc6625aa2134eb519249e7" version="2">
@@ -21531,52 +21531,51 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                 </l7:Item>
             </l7:References>
             <l7:Mappings>
-                <l7:Mapping action="NewOrExisting" srcId="0000000000000000ffffffffffffec76" srcUri="https://89af4956e5eb:443/restman/1.0/folders/0000000000000000ffffffffffffec76" type="FOLDER">
+                <l7:Mapping action="NewOrExisting" srcId="0000000000000000ffffffffffffec76" srcUri="https://2d00f828eab9:443/restman/1.0/folders/0000000000000000ffffffffffffec76" type="FOLDER">
                     <l7:Properties>
                         <l7:Property key="FailOnNew">
                             <l7:BooleanValue>true</l7:BooleanValue>
                         </l7:Property>
                     </l7:Properties>
                 </l7:Mapping>
-                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bc9792" srcUri="https://89af4956e5eb:443/restman/1.0/folders/5dbe8b411167eae8d109f6a968bc9792" type="FOLDER"/>
-                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca4f8" srcUri="https://89af4956e5eb:443/restman/1.0/folders/5dbe8b411167eae8d109f6a968bca4f8" type="FOLDER"/>
-                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca968" srcUri="https://89af4956e5eb:443/restman/1.0/folders/5dbe8b411167eae8d109f6a968bca968" type="FOLDER"/>
-                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca5ac" srcUri="https://89af4956e5eb:443/restman/1.0/folders/5dbe8b411167eae8d109f6a968bca5ac" type="FOLDER"/>
-                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca569" srcUri="https://89af4956e5eb:443/restman/1.0/folders/5dbe8b411167eae8d109f6a968bca569" type="FOLDER"/>
-                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca63a" srcUri="https://89af4956e5eb:443/restman/1.0/folders/5dbe8b411167eae8d109f6a968bca63a" type="FOLDER"/>
-                <l7:Mapping action="NewOrUpdate" srcId="457652ee7bfc6625aa2134eb519226d9" srcUri="https://89af4956e5eb:443/restman/1.0/folders/457652ee7bfc6625aa2134eb519226d9" type="FOLDER"/>
-                <l7:Mapping action="NewOrUpdate" srcId="457652ee7bfc6625aa2134eb51922719" srcUri="https://89af4956e5eb:443/restman/1.0/folders/457652ee7bfc6625aa2134eb51922719" type="FOLDER"/>
-                <l7:Mapping action="NewOrUpdate" srcId="457652ee7bfc6625aa2134eb51924873" srcUri="https://89af4956e5eb:443/restman/1.0/folders/457652ee7bfc6625aa2134eb51924873" type="FOLDER"/>
-                <l7:Mapping action="NewOrUpdate" srcId="457652ee7bfc6625aa2134eb51926919" srcUri="https://89af4956e5eb:443/restman/1.0/folders/457652ee7bfc6625aa2134eb51926919" type="FOLDER"/>
-                
-                <l7:Mapping action="NewOrExisting" srcId="161861da3a78c5dcdc62696d169147d0" srcUri="https://89af4956e5eb:443/restman/1.0/folders/161861da3a78c5dcdc62696d169147d0" type="FOLDER">
+                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bc9792" srcUri="https://2d00f828eab9:443/restman/1.0/folders/5dbe8b411167eae8d109f6a968bc9792" type="FOLDER"/>
+                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca4f8" srcUri="https://2d00f828eab9:443/restman/1.0/folders/5dbe8b411167eae8d109f6a968bca4f8" type="FOLDER"/>
+                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca968" srcUri="https://2d00f828eab9:443/restman/1.0/folders/5dbe8b411167eae8d109f6a968bca968" type="FOLDER"/>
+                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca5ac" srcUri="https://2d00f828eab9:443/restman/1.0/folders/5dbe8b411167eae8d109f6a968bca5ac" type="FOLDER"/>
+                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca569" srcUri="https://2d00f828eab9:443/restman/1.0/folders/5dbe8b411167eae8d109f6a968bca569" type="FOLDER"/>
+                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca63a" srcUri="https://2d00f828eab9:443/restman/1.0/folders/5dbe8b411167eae8d109f6a968bca63a" type="FOLDER"/>
+                <l7:Mapping action="NewOrUpdate" srcId="457652ee7bfc6625aa2134eb519226d9" srcUri="https://2d00f828eab9:443/restman/1.0/folders/457652ee7bfc6625aa2134eb519226d9" type="FOLDER"/>
+                <l7:Mapping action="NewOrUpdate" srcId="457652ee7bfc6625aa2134eb51922719" srcUri="https://2d00f828eab9:443/restman/1.0/folders/457652ee7bfc6625aa2134eb51922719" type="FOLDER"/>
+                <l7:Mapping action="NewOrUpdate" srcId="457652ee7bfc6625aa2134eb51924873" srcUri="https://2d00f828eab9:443/restman/1.0/folders/457652ee7bfc6625aa2134eb51924873" type="FOLDER"/>
+                <l7:Mapping action="NewOrUpdate" srcId="457652ee7bfc6625aa2134eb51926919" srcUri="https://2d00f828eab9:443/restman/1.0/folders/457652ee7bfc6625aa2134eb51926919" type="FOLDER"/>
+                <l7:Mapping action="NewOrExisting" srcId="161861da3a78c5dcdc62696d169147d0" srcUri="https://2d00f828eab9:443/restman/1.0/folders/161861da3a78c5dcdc62696d169147d0" type="FOLDER">
                     <l7:Properties>
                         <l7:Property key="FailOnNew">
                             <l7:BooleanValue>true</l7:BooleanValue>
                         </l7:Property>
                     </l7:Properties>
                 </l7:Mapping>
-                <l7:Mapping action="NewOrUpdate" srcId="c2656fd5ff575252902a7e330e355f53" srcUri="https://89af4956e5eb:443/restman/1.0/policies/c2656fd5ff575252902a7e330e355f53" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="161861da3a78c5dcdc62696d16914896" srcUri="https://89af4956e5eb:443/restman/1.0/policies/161861da3a78c5dcdc62696d16914896" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="161861da3a78c5dcdc62696d16914883" srcUri="https://89af4956e5eb:443/restman/1.0/policies/161861da3a78c5dcdc62696d16914883" type="POLICY"/>
-                <l7:Mapping action="NewOrExisting" srcId="161861da3a78c5dcdc62696d1691481a" srcUri="https://89af4956e5eb:443/restman/1.0/folders/161861da3a78c5dcdc62696d1691481a" type="FOLDER">
+                <l7:Mapping action="NewOrUpdate" srcId="c2656fd5ff575252902a7e330e355f53" srcUri="https://2d00f828eab9:443/restman/1.0/policies/c2656fd5ff575252902a7e330e355f53" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="161861da3a78c5dcdc62696d16914896" srcUri="https://2d00f828eab9:443/restman/1.0/policies/161861da3a78c5dcdc62696d16914896" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="161861da3a78c5dcdc62696d16914883" srcUri="https://2d00f828eab9:443/restman/1.0/policies/161861da3a78c5dcdc62696d16914883" type="POLICY"/>
+                <l7:Mapping action="NewOrExisting" srcId="161861da3a78c5dcdc62696d1691481a" srcUri="https://2d00f828eab9:443/restman/1.0/folders/161861da3a78c5dcdc62696d1691481a" type="FOLDER">
                     <l7:Properties>
                         <l7:Property key="FailOnNew">
                             <l7:BooleanValue>true</l7:BooleanValue>
                         </l7:Property>
                     </l7:Properties>
                 </l7:Mapping>
-                <l7:Mapping action="NewOrUpdate" srcId="161861da3a78c5dcdc62696d16914861" srcUri="https://89af4956e5eb:443/restman/1.0/policies/161861da3a78c5dcdc62696d16914861" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="161861da3a78c5dcdc62696d16914bbb" srcUri="https://89af4956e5eb:443/restman/1.0/policies/161861da3a78c5dcdc62696d16914bbb" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="161861da3a78c5dcdc62696d16914c21" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/161861da3a78c5dcdc62696d16914c21" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrExisting" srcId="161861da3a78c5dcdc62696d16914781" srcUri="https://89af4956e5eb:443/restman/1.0/folders/161861da3a78c5dcdc62696d16914781" type="FOLDER">
+                <l7:Mapping action="NewOrUpdate" srcId="161861da3a78c5dcdc62696d16914861" srcUri="https://2d00f828eab9:443/restman/1.0/policies/161861da3a78c5dcdc62696d16914861" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="161861da3a78c5dcdc62696d16914bbb" srcUri="https://2d00f828eab9:443/restman/1.0/policies/161861da3a78c5dcdc62696d16914bbb" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="161861da3a78c5dcdc62696d16914c21" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/161861da3a78c5dcdc62696d16914c21" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrExisting" srcId="161861da3a78c5dcdc62696d16914781" srcUri="https://2d00f828eab9:443/restman/1.0/folders/161861da3a78c5dcdc62696d16914781" type="FOLDER">
                     <l7:Properties>
                         <l7:Property key="FailOnNew">
                             <l7:BooleanValue>true</l7:BooleanValue>
                         </l7:Property>
                     </l7:Properties>
                 </l7:Mapping>
-                <l7:Mapping action="NewOrUpdate" srcId="bc9a31b7578652a08a514d7d4fef9afd" srcUri="https://89af4956e5eb:443/restman/1.0/policies/bc9a31b7578652a08a514d7d4fef9afd" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="bc9a31b7578652a08a514d7d4fef9afd" srcUri="https://2d00f828eab9:443/restman/1.0/policies/bc9a31b7578652a08a514d7d4fef9afd" type="POLICY"/>
                 <l7:Mapping action="Ignore" type="ENCAPSULATED_ASSERTION">
                     <l7:Properties>
                         <l7:Property key="MapBy">
@@ -21587,138 +21586,139 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
                         </l7:Property>
                     </l7:Properties>
                 </l7:Mapping>
-                <l7:Mapping action="NewOrUpdate" srcId="161861da3a78c5dcdc62696d16914be5" srcUri="https://89af4956e5eb:443/restman/1.0/policies/161861da3a78c5dcdc62696d16914be5" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="161861da3a78c5dcdc62696d16914c44" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/161861da3a78c5dcdc62696d16914c44" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrExisting" srcId="e001cfd0c1c1ffaa18e187b5e72fd08e" srcUri="https://89af4956e5eb:443/restman/1.0/folders/e001cfd0c1c1ffaa18e187b5e72fd08e" type="FOLDER">
+                <l7:Mapping action="NewOrUpdate" srcId="161861da3a78c5dcdc62696d16914be5" srcUri="https://2d00f828eab9:443/restman/1.0/policies/161861da3a78c5dcdc62696d16914be5" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="161861da3a78c5dcdc62696d16914c44" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/161861da3a78c5dcdc62696d16914c44" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrExisting" srcId="e001cfd0c1c1ffaa18e187b5e72fd08e" srcUri="https://2d00f828eab9:443/restman/1.0/folders/e001cfd0c1c1ffaa18e187b5e72fd08e" type="FOLDER">
                     <l7:Properties>
                         <l7:Property key="FailOnNew">
                             <l7:BooleanValue>true</l7:BooleanValue>
                         </l7:Property>
                     </l7:Properties>
                 </l7:Mapping>
-                <l7:Mapping action="NewOrUpdate" srcId="d1bde3d2021a469e82ebf8cac288bbd1" srcUri="https://89af4956e5eb:443/restman/1.0/policies/d1bde3d2021a469e82ebf8cac288bbd1" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="d1bde3d2021a469e82ebf8cac288bd97" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/d1bde3d2021a469e82ebf8cac288bd97" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca807" srcUri="https://89af4956e5eb:443/restman/1.0/policies/5dbe8b411167eae8d109f6a968bca807" type="POLICY"/>
-                <l7:Mapping action="NewOrExisting" srcId="e001cfd0c1c1ffaa18e187b5e72fd6e8" srcUri="https://89af4956e5eb:443/restman/1.0/folders/e001cfd0c1c1ffaa18e187b5e72fd6e8" type="FOLDER">
+                <l7:Mapping action="NewOrUpdate" srcId="d1bde3d2021a469e82ebf8cac288bbd1" srcUri="https://2d00f828eab9:443/restman/1.0/policies/d1bde3d2021a469e82ebf8cac288bbd1" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="d1bde3d2021a469e82ebf8cac288bd97" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/d1bde3d2021a469e82ebf8cac288bd97" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrExisting" srcId="e001cfd0c1c1ffaa18e187b5e72fd6e8" srcUri="https://2d00f828eab9:443/restman/1.0/folders/e001cfd0c1c1ffaa18e187b5e72fd6e8" type="FOLDER">
                     <l7:Properties>
                         <l7:Property key="FailOnNew">
                             <l7:BooleanValue>true</l7:BooleanValue>
                         </l7:Property>
                     </l7:Properties>
                 </l7:Mapping>
-                <l7:Mapping action="NewOrUpdate" srcId="d1bde3d2021a469e82ebf8cac288b778" srcUri="https://89af4956e5eb:443/restman/1.0/policies/d1bde3d2021a469e82ebf8cac288b778" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="d1bde3d2021a469e82ebf8cac288b7c9" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/d1bde3d2021a469e82ebf8cac288b7c9" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca37d" srcUri="https://89af4956e5eb:443/restman/1.0/policies/5dbe8b411167eae8d109f6a968bca37d" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd946" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd946" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="3f6b5c92ca2ac3665bc7d8780bc4d876" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/3f6b5c92ca2ac3665bc7d8780bc4d876" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="24e6fd7c5b6fb3a96690246c8ac492ec" srcUri="https://89af4956e5eb:443/restman/1.0/policies/24e6fd7c5b6fb3a96690246c8ac492ec" type="POLICY"/>
-                <l7:Mapping action="NewOrExisting" srcId="e001cfd0c1c1ffaa18e187b5e72fc858" srcUri="https://89af4956e5eb:443/restman/1.0/folders/e001cfd0c1c1ffaa18e187b5e72fc858" type="FOLDER">
-                    <l7:Properties>
-                        <l7:Property key="FailOnNew">
-                            <l7:BooleanValue>true</l7:BooleanValue>
-                        </l7:Property>
-                    </l7:Properties>
-                </l7:Mapping>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd82d" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd82d" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fda9a" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fda9a" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrExisting" srcId="e001cfd0c1c1ffaa18e187b5e72fcfce" srcUri="https://89af4956e5eb:443/restman/1.0/folders/e001cfd0c1c1ffaa18e187b5e72fcfce" type="FOLDER">
-                    <l7:Properties>
-                        <l7:Property key="FailOnNew">
-                            <l7:BooleanValue>true</l7:BooleanValue>
-                        </l7:Property>
-                    </l7:Properties>
-                </l7:Mapping>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd86a" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd86a" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fdaa0" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fdaa0" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="24e6fd7c5b6fb3a96690246c8ac49304" srcUri="https://89af4956e5eb:443/restman/1.0/policies/24e6fd7c5b6fb3a96690246c8ac49304" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fc9d0" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fc9d0" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fcac5" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fcac5" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="d1bde3d2021a469e82ebf8cac288b778" srcUri="https://2d00f828eab9:443/restman/1.0/policies/d1bde3d2021a469e82ebf8cac288b778" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="d1bde3d2021a469e82ebf8cac288b7c9" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/d1bde3d2021a469e82ebf8cac288b7c9" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca37d" srcUri="https://2d00f828eab9:443/restman/1.0/policies/5dbe8b411167eae8d109f6a968bca37d" type="POLICY"/>
                 
-                <l7:Mapping action="NewOrExisting" srcId="e001cfd0c1c1ffaa18e187b5e72fcbcd" srcUri="https://89af4956e5eb:443/restman/1.0/folders/e001cfd0c1c1ffaa18e187b5e72fcbcd" type="FOLDER">
+                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca807" srcUri="https://2d00f828eab9:443/restman/1.0/policies/5dbe8b411167eae8d109f6a968bca807" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd946" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd946" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="3f6b5c92ca2ac3665bc7d8780bc4d876" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/3f6b5c92ca2ac3665bc7d8780bc4d876" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="24e6fd7c5b6fb3a96690246c8ac492ec" srcUri="https://2d00f828eab9:443/restman/1.0/policies/24e6fd7c5b6fb3a96690246c8ac492ec" type="POLICY"/>
+                <l7:Mapping action="NewOrExisting" srcId="e001cfd0c1c1ffaa18e187b5e72fc858" srcUri="https://2d00f828eab9:443/restman/1.0/folders/e001cfd0c1c1ffaa18e187b5e72fc858" type="FOLDER">
                     <l7:Properties>
                         <l7:Property key="FailOnNew">
                             <l7:BooleanValue>true</l7:BooleanValue>
                         </l7:Property>
                     </l7:Properties>
                 </l7:Mapping>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fcc49" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fcc49" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fce1e" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fce1e" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrExisting" srcId="00000000000000000000000000000002:SSL" srcUri="https://89af4956e5eb:443/restman/1.0/privateKeys/00000000000000000000000000000002:SSL" type="SSG_KEY_ENTRY">
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd82d" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd82d" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fda9a" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fda9a" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrExisting" srcId="e001cfd0c1c1ffaa18e187b5e72fcfce" srcUri="https://2d00f828eab9:443/restman/1.0/folders/e001cfd0c1c1ffaa18e187b5e72fcfce" type="FOLDER">
                     <l7:Properties>
                         <l7:Property key="FailOnNew">
                             <l7:BooleanValue>true</l7:BooleanValue>
                         </l7:Property>
                     </l7:Properties>
                 </l7:Mapping>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd1ab" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd1ab" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd20f" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fd20f" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="d2fa9e7e0db9f0c56c13fe57e46309e1" srcUri="https://89af4956e5eb:443/restman/1.0/policies/d2fa9e7e0db9f0c56c13fe57e46309e1" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="d003cc363d3af3fa8c1c0dfed091ccfe" srcUri="https://89af4956e5eb:443/restman/1.0/policies/d003cc363d3af3fa8c1c0dfed091ccfe" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="d003cc363d3af3fa8c1c0dfed091cd38" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/d003cc363d3af3fa8c1c0dfed091cd38" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd86a" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd86a" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fdaa0" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fdaa0" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="24e6fd7c5b6fb3a96690246c8ac49304" srcUri="https://2d00f828eab9:443/restman/1.0/policies/24e6fd7c5b6fb3a96690246c8ac49304" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fc9d0" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fc9d0" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fcac5" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fcac5" type="ENCAPSULATED_ASSERTION"/>
                 
-                
-                <l7:Mapping action="NewOrUpdate" srcId="24e6fd7c5b6fb3a96690246c8ac49335" srcUri="https://89af4956e5eb:443/restman/1.0/policies/24e6fd7c5b6fb3a96690246c8ac49335" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd183" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd183" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd2da" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fd2da" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd147" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd147" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd28f" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fd28f" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fccc1" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fccc1" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fcdfa" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fcdfa" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd16f" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd16f" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd25d" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fd25d" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd1d3" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd1d3" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd322" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fd322" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrExisting" srcId="e001cfd0c1c1ffaa18e187b5e72fc898" srcUri="https://89af4956e5eb:443/restman/1.0/folders/e001cfd0c1c1ffaa18e187b5e72fc898" type="FOLDER">
+                <l7:Mapping action="NewOrExisting" srcId="e001cfd0c1c1ffaa18e187b5e72fcbcd" srcUri="https://2d00f828eab9:443/restman/1.0/folders/e001cfd0c1c1ffaa18e187b5e72fcbcd" type="FOLDER">
                     <l7:Properties>
                         <l7:Property key="FailOnNew">
                             <l7:BooleanValue>true</l7:BooleanValue>
                         </l7:Property>
                     </l7:Properties>
                 </l7:Mapping>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd0f6" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd0f6" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="35f5ccf02323692c2c4a2f0545010a90" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/35f5ccf02323692c2c4a2f0545010a90" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd1e7" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd1e7" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd336" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fd336" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd841" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd841" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="3f6b5c92ca2ac3665bc7d8780bc4d718" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/3f6b5c92ca2ac3665bc7d8780bc4d718" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="d0c2108b72b11af05b03eb6dd44c7fa2" srcUri="https://89af4956e5eb:443/restman/1.0/services/d0c2108b72b11af05b03eb6dd44c7fa2" type="SERVICE"/>
-                <l7:Mapping action="NewOrExisting" srcId="bc9a31b7578652a08a514d7d4fef309b" srcUri="https://89af4956e5eb:443/restman/1.0/folders/bc9a31b7578652a08a514d7d4fef309b" type="FOLDER">
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fcc49" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fcc49" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fce1e" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fce1e" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrExisting" srcId="00000000000000000000000000000002:SSL" srcUri="https://2d00f828eab9:443/restman/1.0/privateKeys/00000000000000000000000000000002:SSL" type="SSG_KEY_ENTRY">
                     <l7:Properties>
                         <l7:Property key="FailOnNew">
                             <l7:BooleanValue>true</l7:BooleanValue>
                         </l7:Property>
                     </l7:Properties>
                 </l7:Mapping>
-                <l7:Mapping action="NewOrUpdate" srcId="3b6761a5d0ee0e2d4452b1065da584bf" srcUri="https://89af4956e5eb:443/restman/1.0/policies/3b6761a5d0ee0e2d4452b1065da584bf" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="3b6761a5d0ee0e2d4452b1065da5d85c" srcUri="https://89af4956e5eb:443/restman/1.0/policies/3b6761a5d0ee0e2d4452b1065da5d85c" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="3b6761a5d0ee0e2d4452b1065da5d88a" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/3b6761a5d0ee0e2d4452b1065da5d88a" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="d0c2108b72b11af05b03eb6dd44cca29" srcUri="https://89af4956e5eb:443/restman/1.0/services/d0c2108b72b11af05b03eb6dd44cca29" type="SERVICE"/>
-                <l7:Mapping action="NewOrUpdate" srcId="24e6fd7c5b6fb3a96690246c8ac4931d" srcUri="https://89af4956e5eb:443/restman/1.0/policies/24e6fd7c5b6fb3a96690246c8ac4931d" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd8ba" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd8ba" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fdbf2" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fdbf2" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd932" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd932" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fdb08" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fdb08" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="97975cf167f141f884f61a2392d544d2" srcUri="https://89af4956e5eb:443/restman/1.0/policies/97975cf167f141f884f61a2392d544d2" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="49ed796ade964a2e886f779711689fd2" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/49ed796ade964a2e886f779711689fd2" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fcc99" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fcc99" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fce4a" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fce4a" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd95a" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd95a" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="3f6b5c92ca2ac3665bc7d8780bc4d892" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/3f6b5c92ca2ac3665bc7d8780bc4d892" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="3f42c73314d6b36fb7ebe93f600808ff" srcUri="https://89af4956e5eb:443/restman/1.0/policies/3f42c73314d6b36fb7ebe93f600808ff" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="35f5ccf02323692c2c4a2f0545010a1d" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/35f5ccf02323692c2c4a2f0545010a1d" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fccd5" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fccd5" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fcdd8" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fcdd8" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd7b5" srcUri="https://89af4956e5eb:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd7b5" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="3f6b5c92ca2ac3665bc7d8780bc4d7fc" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/3f6b5c92ca2ac3665bc7d8780bc4d7fc" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bc9e46" srcUri="https://89af4956e5eb:443/restman/1.0/services/5dbe8b411167eae8d109f6a968bc9e46" type="SERVICE"/>
-                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca775" srcUri="https://89af4956e5eb:443/restman/1.0/services/5dbe8b411167eae8d109f6a968bca775" type="SERVICE"/>
-                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca2f4" srcUri="https://89af4956e5eb:443/restman/1.0/services/5dbe8b411167eae8d109f6a968bca2f4" type="SERVICE"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd1ab" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd1ab" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd20f" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fd20f" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="d2fa9e7e0db9f0c56c13fe57e46309e1" srcUri="https://2d00f828eab9:443/restman/1.0/policies/d2fa9e7e0db9f0c56c13fe57e46309e1" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="d003cc363d3af3fa8c1c0dfed091ccfe" srcUri="https://2d00f828eab9:443/restman/1.0/policies/d003cc363d3af3fa8c1c0dfed091ccfe" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="d003cc363d3af3fa8c1c0dfed091cd38" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/d003cc363d3af3fa8c1c0dfed091cd38" type="ENCAPSULATED_ASSERTION"/>
                 
                 
-                <l7:Mapping action="NewOrUpdate" srcId="161861da3a78c5dcdc62696d16914bd0" srcUri="https://89af4956e5eb:443/restman/1.0/policies/161861da3a78c5dcdc62696d16914bd0" type="POLICY"/>
-                <l7:Mapping action="NewOrUpdate" srcId="161861da3a78c5dcdc62696d16914c2d" srcUri="https://89af4956e5eb:443/restman/1.0/encapsulatedAssertions/161861da3a78c5dcdc62696d16914c2d" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="24e6fd7c5b6fb3a96690246c8ac49335" srcUri="https://2d00f828eab9:443/restman/1.0/policies/24e6fd7c5b6fb3a96690246c8ac49335" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd183" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd183" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd2da" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fd2da" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd147" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd147" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd28f" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fd28f" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fccc1" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fccc1" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fcdfa" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fcdfa" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd16f" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd16f" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd25d" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fd25d" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd1d3" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd1d3" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd322" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fd322" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrExisting" srcId="e001cfd0c1c1ffaa18e187b5e72fc898" srcUri="https://2d00f828eab9:443/restman/1.0/folders/e001cfd0c1c1ffaa18e187b5e72fc898" type="FOLDER">
+                    <l7:Properties>
+                        <l7:Property key="FailOnNew">
+                            <l7:BooleanValue>true</l7:BooleanValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd0f6" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd0f6" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="35f5ccf02323692c2c4a2f0545010a90" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/35f5ccf02323692c2c4a2f0545010a90" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd1e7" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd1e7" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd336" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fd336" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd841" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd841" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="3f6b5c92ca2ac3665bc7d8780bc4d718" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/3f6b5c92ca2ac3665bc7d8780bc4d718" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="d0c2108b72b11af05b03eb6dd44c7fa2" srcUri="https://2d00f828eab9:443/restman/1.0/services/d0c2108b72b11af05b03eb6dd44c7fa2" type="SERVICE"/>
+                <l7:Mapping action="NewOrExisting" srcId="bc9a31b7578652a08a514d7d4fef309b" srcUri="https://2d00f828eab9:443/restman/1.0/folders/bc9a31b7578652a08a514d7d4fef309b" type="FOLDER">
+                    <l7:Properties>
+                        <l7:Property key="FailOnNew">
+                            <l7:BooleanValue>true</l7:BooleanValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrUpdate" srcId="3b6761a5d0ee0e2d4452b1065da584bf" srcUri="https://2d00f828eab9:443/restman/1.0/policies/3b6761a5d0ee0e2d4452b1065da584bf" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="3b6761a5d0ee0e2d4452b1065da5d85c" srcUri="https://2d00f828eab9:443/restman/1.0/policies/3b6761a5d0ee0e2d4452b1065da5d85c" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="3b6761a5d0ee0e2d4452b1065da5d88a" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/3b6761a5d0ee0e2d4452b1065da5d88a" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="d0c2108b72b11af05b03eb6dd44cca29" srcUri="https://2d00f828eab9:443/restman/1.0/services/d0c2108b72b11af05b03eb6dd44cca29" type="SERVICE"/>
+                <l7:Mapping action="NewOrUpdate" srcId="24e6fd7c5b6fb3a96690246c8ac4931d" srcUri="https://2d00f828eab9:443/restman/1.0/policies/24e6fd7c5b6fb3a96690246c8ac4931d" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd8ba" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd8ba" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fdbf2" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fdbf2" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd932" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd932" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fdb08" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fdb08" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="97975cf167f141f884f61a2392d544d2" srcUri="https://2d00f828eab9:443/restman/1.0/policies/97975cf167f141f884f61a2392d544d2" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="49ed796ade964a2e886f779711689fd2" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/49ed796ade964a2e886f779711689fd2" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fcc99" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fcc99" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fce4a" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fce4a" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd95a" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd95a" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="3f6b5c92ca2ac3665bc7d8780bc4d892" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/3f6b5c92ca2ac3665bc7d8780bc4d892" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="3f42c73314d6b36fb7ebe93f600808ff" srcUri="https://2d00f828eab9:443/restman/1.0/policies/3f42c73314d6b36fb7ebe93f600808ff" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="35f5ccf02323692c2c4a2f0545010a1d" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/35f5ccf02323692c2c4a2f0545010a1d" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fccd5" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fccd5" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fcdd8" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fcdd8" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="e001cfd0c1c1ffaa18e187b5e72fd7b5" srcUri="https://2d00f828eab9:443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd7b5" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="3f6b5c92ca2ac3665bc7d8780bc4d7fc" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/3f6b5c92ca2ac3665bc7d8780bc4d7fc" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bc9e46" srcUri="https://2d00f828eab9:443/restman/1.0/services/5dbe8b411167eae8d109f6a968bc9e46" type="SERVICE"/>
+                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca775" srcUri="https://2d00f828eab9:443/restman/1.0/services/5dbe8b411167eae8d109f6a968bca775" type="SERVICE"/>
+                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca2f4" srcUri="https://2d00f828eab9:443/restman/1.0/services/5dbe8b411167eae8d109f6a968bca2f4" type="SERVICE"/>
                 
                 
-                <l7:Mapping action="NewOrUpdate" srcId="457652ee7bfc6625aa2134eb519249e7" srcUri="https://89af4956e5eb:443/restman/1.0/services/457652ee7bfc6625aa2134eb519249e7" type="SERVICE"/>
+                <l7:Mapping action="NewOrUpdate" srcId="161861da3a78c5dcdc62696d16914bd0" srcUri="https://2d00f828eab9:443/restman/1.0/policies/161861da3a78c5dcdc62696d16914bd0" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="161861da3a78c5dcdc62696d16914c2d" srcUri="https://2d00f828eab9:443/restman/1.0/encapsulatedAssertions/161861da3a78c5dcdc62696d16914c2d" type="ENCAPSULATED_ASSERTION"/>
+                
+                
+                <l7:Mapping action="NewOrUpdate" srcId="457652ee7bfc6625aa2134eb519249e7" srcUri="https://2d00f828eab9:443/restman/1.0/services/457652ee7bfc6625aa2134eb519249e7" type="SERVICE"/>
             </l7:Mappings>
         </l7:Bundle>

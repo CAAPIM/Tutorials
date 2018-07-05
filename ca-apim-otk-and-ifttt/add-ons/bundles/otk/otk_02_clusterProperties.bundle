@@ -4,7 +4,7 @@
                     <l7:Name>otk.port</l7:Name>
                     <l7:Id>33a6275037893961d8ba3bdfdb33c101</l7:Id>
                     <l7:Type>CLUSTER_PROPERTY</l7:Type>
-                    <l7:TimeStamp>2018-07-04T06:07:15.594Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-07-04T20:57:49.255Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:ClusterProperty id="33a6275037893961d8ba3bdfdb33c101" version="0">
                             <l7:Name>otk.port</l7:Name>
@@ -14,7 +14,7 @@
                 </l7:Item>
             </l7:References>
             <l7:Mappings>
-                <l7:Mapping action="NewOrUpdate" srcId="33a6275037893961d8ba3bdfdb33c101" srcUri="https://89af4956e5eb:443/restman/1.0/clusterProperties/33a6275037893961d8ba3bdfdb33c101" type="CLUSTER_PROPERTY">
+                <l7:Mapping action="NewOrUpdate" srcId="33a6275037893961d8ba3bdfdb33c101" srcUri="https://2d00f828eab9:443/restman/1.0/clusterProperties/33a6275037893961d8ba3bdfdb33c101" type="CLUSTER_PROPERTY">
                     <l7:Properties>
                         <l7:Property key="MapBy">
                             <l7:StringValue>name</l7:StringValue>

@@ -16,7 +16,7 @@ java -jar lib/saxon9he.jar -xsl:xsl/removeEntitiesFromFolderBundle.xsl -s:../add
 #
 # get jdbc connection 'OAuth':
 curl -k -u admin:password "https://otk-ifttt.tutorial.com/restman/1.0/bundle?defaultAction=NewOrUpdate&jdbcConnection=6c4cbf41983a96e34d69b488770929a3" -o raw/otk_01_jdbc.bundle.raw
-java -jar lib/saxon9he.jar -xsl:xsl/bundle.xsl -s:raw/otk_01_jdbc.bundle.raw -o:../add-ons/bundles/ifttt/otk_01_jdbc.bundle
+java -jar lib/saxon9he.jar -xsl:xsl/bundle.xsl -s:raw/otk_01_jdbc.bundle.raw -o:../add-ons/bundles/otk/otk_01_jdbc.bundle
 java -jar lib/saxon9he.jar -xsl:xsl/addJdbcConnectionPassword.xsl -s:../add-ons/bundles/otk/otk_01_jdbc.bundle -o:../add-ons/bundles/otk/otk_01_jdbc.bundle
 #
 # get cluster properties for 'OTK'
@@ -55,8 +55,8 @@ java -jar lib/saxon9he.jar -xsl:xsl/bundle.xsl -s:raw/otk_05_scheduledTasks.bund
 java -jar lib/saxon9he.jar -xsl:xsl/removeEntitiesFromFolderBundle.xsl -s:../add-ons/bundles/otk/otk_05_scheduledTasks.bundle -o:../add-ons/bundles/otk/otk_05_scheduledTasks.bundle
 #
 # Fixing a broken reference
-sed 's#&lt;L7p:KeyGoid goidValue="0000000000000000ffffffffffffffff"/&gt;#\&lt;L7p:KeyAlias stringValue="ssl"/\&gt;\&lt;L7p:KeyGoid goidValue="00000000000000000000000000000002"/\&gt;#g' ../add-ons/bundles/otk_03_folders.bundle > ../add-ons/bundles/otk_03_folders-fixed.bundle
-sed 's#&lt;L7p:SourceKeyGoid goidValue="0000000000000000ffffffffffffffff"/&gt;#\&lt;L7p:SourceKeyAlias stringValue="ssl"/\&gt;\&lt;L7p:SourceKeyGoid goidValue="00000000000000000000000000000002"/\&gt;#g' ../add-ons/bundles/otk_03_folders-fixed.bundle > ../add-ons/bundles/otk_03_folders.bundle
+sed 's#&lt;L7p:KeyGoid goidValue="0000000000000000ffffffffffffffff"/&gt;#\&lt;L7p:KeyAlias stringValue="ssl"/\&gt;\&lt;L7p:KeyGoid goidValue="00000000000000000000000000000002"/\&gt;#g' ../add-ons/bundles/otk/otk_03_folders.bundle > ../add-ons/bundles/otk/otk_03_folders-fixed.bundle
+sed 's#&lt;L7p:SourceKeyGoid goidValue="0000000000000000ffffffffffffffff"/&gt;#\&lt;L7p:SourceKeyAlias stringValue="ssl"/\&gt;\&lt;L7p:SourceKeyGoid goidValue="00000000000000000000000000000002"/\&gt;#g' ../add-ons/bundles/otk/otk_03_folders-fixed.bundle > ../add-ons/bundles/otk/otk_03_folders.bundle
 #
 # Removing temporary files
 rm ../add-ons/bundles/otk/otk_03_folders-fixed.bundle
