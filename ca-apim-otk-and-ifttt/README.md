@@ -10,7 +10,7 @@ However, I have tried to enable interested users to get going fast and easy.
 
 **IMPORTANT:** 
 
-This tutorial comes with pre-configured client_id and client_secret and a fake username and password. Please
+This tutorial comes with pre-configured client_id and client_secret and usernames and passwords. Please
  note that these are included to give you an idea how the system should look like once it is configured. Before you 
  start implementing any apps use your own client_id and client_secret and usernames! The instructions further down will 
  explain what you need to do! 
@@ -32,10 +32,9 @@ the content artifacts can be found here so that anybody can try it out themselve
 
 **Dependencies**
 1. A gateway license. This can be requested [here](https://transform.ca.com/API-Management-Trial.html)
-2. A CA API Gateway policy manager (for gateway 9.3)
-3. Optional: SOAPUI is a free and open source tool. To use it needs to be downloaded from [here](https://www.soapui.org/downloads/latest-release.html)
-4. Optional: Docker. The system runs in docker which gets you started fast. Otherwise, any other CA API Gateway can be used but requires manual installation steps. However, these are shown further down
-5. When using Docker, the docker-compose file will also launch a MySQL image. The tutorial will not work without it. However, the policies could still be viewed via policy manager
+2. A CA API Gateway Policy Manager (for gateway 9.3)
+3. Docker. The system runs in docker which gets you started fast. The provided docker-compose file will also launch a MySQL container. The tutorial will not work without it. However, the policies could still be viewed via policy manager if the MySQL database gets removed from the compose file
+4. Optional: SOAPUI is a free open source tool. To use it, it can be downloaded from [here](https://www.soapui.org/downloads/latest-release.html)
 
 ## Getting started
 
@@ -47,49 +46,50 @@ Please note that these instructions are made to run on a MacBook. If you are a W
 
 ### Docker
 
-Using docker gets you started very fast. When using the provided docker-compose file, these ports will be occupied:
+Follow these steps:
+
+- **sudo vi /etc/hosts**, add **127.0.0.1 otk-ifttt.tutorial.com** // add the hostname otk-ifttt.tutorial.com
+- **[user]$ vi docker-compose.yml**, replace **/path/to/your/gateway/license** with your path to your gateway license
+- **[user]$ docker-compose -p otk_ifttt up** // launches the gateway
+
+**That's it, the system is up and running!**
+
+FYI: These ports will be occupied:
 
 - 80: for http connections
 - 443: for https connections
 - 8443: for https connections (policy manager)
 - 3306: MySQL
 
-Follow these steps:
+#### Policy Manager
 
-- **sudo vi /etc/hosts**, add **127.0.0.1 otk-ifttt.tutorial.com** // add the hostname otk-ifttt.tutorial.com
-- **[user]$ vi docker-compose.yml**, replace **/path/to/your/gateway/license** with your path to your gateway license
-- **[user]$ docker-compose -p otk_ifttt up** // launches the gateway
-- **[user]$ /path/to/java/bin/java -jar /path/to/policy/manager/Manager.jar** // launches the policy manager
+To have a look and modify the the policy implementation, the policy manager is required:
+
+- **[user]$ /path/to/java/bin/java -jar /path/to/policy/manager/Manager.jar** // launches the policy manager, JDK 1.8 is required
 - Use **admin/password** to login // these credentials are configured in the docker-compose.yml file
   - Use **otk-ifttt.tutorial.com** as hostname
+  
+There are two main folders in the lower left window:
 
-#### In policy manager do the following:
+- IFTTT: this contains policies made for the IFTTT integration/ tutorial
 
-Add a new user to the gateway:
-- Click the button **Create Internal User**, add 'mr_ifttt/Mr_ift_@234pas$word' 
-
-For some reason cluster-properties need to be 'clicked':
-- Tasks -> Global Settings -> Manage Cluster-Wide Properties
-- Select each one, click 'Edit', followed by 'OK'
-- Close the dialog
-
-Do not worry about values, these will be updated later!
+- OTK: this contains OTK-4.3 with a few modifications. Some are made for convenience, others were required for IFTTT.
 
 ##### Updated policies
 
-While in the policy manager, you may want to have a look around and pay attention to these pieces:
+If you are interested in knowing what was changed in OTK, check out these policies:
 
-- Folder OTK
+- *Folder OTK*
   - Open all folders in the Server/DMZ subfolder, you can see a few disabled services. These are disabled since they are not required for this tutorial. Enable them if you want to play around with them
-- Folder OTK/Customizations: A few policies have been modified to integrate with IFTTT. For any OTK used with IFTTT those are required. Here is the list:
+- *Folder OTK/Customizations* A few policies have been modified to integrate with IFTTT. For any OTK used with IFTTT those are required. Here is the list:
   - \#OTK Storage Configuration: max_oauth_token_count=2, default=1
   - \#OTK OVP Configuration: reuse_refresh_token=true, default=false
   - \#OTK Fail with error message: overwriting error 990 (expired or unknown access_token) and 103 (missing or invalid parameters) to match IFTTTs error response expectations
   - \#OTK Authorization Server Website Template: added and modified 'content' and 'error.msg' to display 'CA OTK Tutorial Bank' at the authorization servers page. This modification is optional
-- Modified services: For development purposes some services have been updated to disable the requirement for SSL (enabling http):
+- *Modified services* For development purposes some services have been updated to disable the requirement for SSL (enabling http):
   - /auth/oauth/v2/authorize
   - /auth/oauth/v2/token
-- Add cluster property (otk.port) to configure the port used with OTK: It is used here:
+- *cluster property* (otk.port) to configure the port used with OTK: It is used here:
   - /oauth/manager/tokens
   - /oauth/manager/clients
   - \#OTK Variable Configuration
@@ -113,7 +113,7 @@ To confirm even the last piece, open a browser:
 - https://otk-ifttt.tutorial.com/tutorial/otk/ifttt/bank
 - Login using **admin/password** or **mr_ifttt/Mr_ift_@234pas$word**
 - Select the menu item *Account Management* from the left and get an overview of available accounts.
-  - that menu is the only ones that works!
+  - that menu is the only one that works!
   
 If all these above steps were successful, you are good to go! Our IFTTT endpoints and OTK are up and running! 
 
@@ -307,7 +307,7 @@ The service-key was generated by IFTTT earlier. This needs to be used now:
 
 IFTTT has provided a redirect_uri earlier. This needs to be used now:
 
-- open a browser and go to [OAuth Manager](https://otk-ifttt.tutorial.com/oauth/manager)
+- open a browser and go to [OAuth Manager](https://otk-ifttt.tutorial.com/oauth/manager)(https://otk-ifttt.tutorial.com/oauth/manager)
 - Login using *admin/password*
 - Find the client named 'IFTTT' and select *List Keys* at the right end of the row
 - Click *Edit* in the opening dialog
@@ -372,58 +372,85 @@ The only difference in comparison to above:
 
 ## Configure unique credentials
 
-Now, that your system is up and running, you need to configure credentials for your system:
+Now, that your system is up and running, you need to configure credentials for your system. We will do that by updating 
+ *bundle* files so that the next launch of your containers contain your unique values!
 
-- *client_id* and *client_secret*
-- *mr_ifttt*
+These values need to be configured:
 
-### Configure a user
+- In your docker environment
+  - *admin*
+  - *mr_ifttt*
+  - *client_id* and *client_secret*
+  - *ifttt-service-key*
 
-1. in policy manager, add a new user or change the password of *mr_ifttt*, whatever you prefer
-2. update the IFTTT platform to use this new username (or the updated password)
-3. update the SOAPUI project. To do so, do not modify the custom properties in SOAPUI but update do this:
+- In your IFTTT Dashboard
+  - *client credentials*  
+
+### Configure the admin account
+
+1. Open the *docker-compose.yml* file and replace *admin* and *password" with your unique values
+
+### Configure the test user
+
+1. Open this file: *./add-ons/bundles/ifttt/z_ifttt_testuser.bundle*
+2. Look for *mr_ifttt* and its password. Update those values to something else
+
+### Update SOAPUI tests
+
+Update the SOAPUI projects. Do this:
   * copy and paste this file: *./apitest/properties/ifttt-otk-tutorial.template.properties*
   * name it to something else
-  * update the content. At this point, you may also update the *ifttt-service-key* value
+  * configure the user/ password
+  * configure your *ifttt-service-key*
   * save the file
   * in SOAPUI, both projects after another, select the custom properties tab in the lower left corner, and load the properties file
 
-### Configure OAuth client credentials
+### Configure OAuth client credentials and IFTTT-Service-Key
 
-There are two sets of oauth credentials. One for *IFTTT* and one for *CA OTK Tutorial Bank*.
+1. Open this file: *./add-ons/bundles/ifttt/z_ifttt_clusterProperties.bundle*
+2. Look for *ifttt.bank.client.secret* and *ifttt.client.secret*
+3. Configure new secrets, expressed as UUID (36 characters)
+4. In the same file, replace the value of *ifttt.service.key*
 
-#### IFTTT OAuth client
+### Update the OTK database
 
-1. Open OAuth Manager
+To configure the new client secrets in the database you can either stop the containers and blow away the database files:
+
+-  ./data/mysql-otk-ifttt/data/*
+
+and update the file *./add-ons/database/b_otk_db_ifttt_clients.sql*.
+
+Or, you can use OAuth Manager:
+
+1. Open [OAuth Manager](https://otk-ifttt.tutorial.com/oauth/manager)(https://otk-ifttt.tutorial.com/oauth/manager)
 2. Select the *Clients* tab and look for the app named *IFTTT*
 3. Select *List Keys*
 4. Select *Edit*
-5. Update the client secret
+5. Update the client secret // re-use the newer value you just created
 6. Click *Save*
 
-Alternatively, you can also add a new client key (which is the OAuth client_id) and use that! Now update the IFTTT app 
-in the IFTTT Dashboard and the cluster-properties in policy manager (*ifttt.client.id* and *ifttt.client.secret*)
+7. Select the *Clients* tab and look for the app named *CA OTK Tutorial Bank*
+8. Select *List Keys*
+9. Select *Edit*
+5. Update the client secret // re-use the newer value you just created
+11. Click *Save*
 
-#### CA OTK Tutorial Bank OAuth client
+### Update IFTTT Dashboard
 
-1. Open OAuth Manager
-2. Select the *Clients* tab and look for the app named *CA OTK Tutorial Bank*
-3. Select *List Keys*
-4. Select *Edit*
-5. Update the client secret
-6. Click *Save*
+Open the IFTTT Dashboard and set your new client secret that you have used with *ifttt.client.secret*
 
-Alternatively, you can also add a new client key (which is the OAuth client_id) and use that! Now update the cluster-properties 
-in policy manager (*ifttt.bank.client.id* and *ifttt.bank.client.secret*)
+## A new Docker image
 
-Run your SOAPUI and IFTTT endpoint tests again to see if everything is still working. If not just make sure that you have updated 
-all values appropriately.
+### Re-Launch
 
-## Build a new Docker image
+Assuming you just configured your own credentials, the only thing you need to do is to re-launch your running docker containers. 
+All values, configured in the *bundle* files, will be picked up!
 
-With all your updates you can now create a new docker image that includes all your changes that have been applied to the gateway.
+### New image, with policy updates
 
-To make it easy, do the following:
+Assuming you implemented changes to the existing policies, you can build a new docker image with all your changes. It is really easy.
+
+Do the following:
 
 1. Follow the instructions in *./scripts/lib/info.txt*. A saxon parser (*.jar) needs to be placed in *./scripts/lib*
 2. cd ./scripts

@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?><l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+            <l7:References>
+                
+                <l7:Item>
+                    <l7:Name>OTK Database Maintenance - Client</l7:Name>
+                    <l7:Id>c4bc0de10c1b6cad6bdb4e564db83746</l7:Id>
+                    <l7:Type>POLICY</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:58:03.355Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:Policy guid="b3368ee8-9a24-41ac-9755-6ed05236a123" id="c4bc0de10c1b6cad6bdb4e564db83746" version="0">
+                            <l7:PolicyDetail folderId="c4bc0de10c1b6cad6bdb4e564db836fa" guid="b3368ee8-9a24-41ac-9755-6ed05236a123" id="c4bc0de10c1b6cad6bdb4e564db83746" version="0">
+<l7:Name>OTK Database Maintenance - Client</l7:Name>
+<l7:PolicyType>Service Operation</l7:PolicyType>
+<l7:Properties>
+    <l7:Property key="revision">
+        <l7:LongValue>1</l7:LongValue>
+    </l7:Property>
+    <l7:Property key="soap">
+        <l7:BooleanValue>false</l7:BooleanValue>
+    </l7:Property>
+    <l7:Property key="subtag">
+        <l7:StringValue>run</l7:StringValue>
+    </l7:Property>
+    <l7:Property key="tag">
+        <l7:StringValue>com.l7tech.objectmodel.polback.BackgroundTask</l7:StringValue>
+    </l7:Property>
+</l7:Properties>
+                            </l7:PolicyDetail>
+                            <l7:Resources>
+<l7:ResourceSet tag="policy">
+    <l7:Resource type="policy">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" ============================================"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" === ***  THIS POLICY IS READ ONLY ***"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" === If you have the need to customize this policy"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" === please contact CA APIM Support so we can improve customization capability"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" ============================================"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="Deletes all expired clients with an expiration &gt; 0"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue=""/&gt;
+            &lt;L7p:DataType variableDataType="dateTime"/&gt;
+            &lt;L7p:DateOffsetExpression stringValue=""/&gt;
+            &lt;L7p:VariableToSet stringValue="now"/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;L7p:JdbcQuery&gt;
+                &lt;L7p:AssertionComment assertionComment="included"&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="delete expired client keys"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:AssertionComment&gt;
+                &lt;L7p:AssertionFailureEnabled booleanValue="false"/&gt;
+                &lt;L7p:ConnectionName stringValue="OAuth"/&gt;
+                &lt;L7p:MaxRecords intValue="1000"/&gt;
+                &lt;L7p:SqlQuery stringValueReference="inline"&gt;&lt;![CDATA[DELETE FROM oauth_client_key
+                                WHERE expiration &gt; 0 AND expiration &lt; ${now.seconds}]]&gt;&lt;/L7p:SqlQuery&gt;
+            &lt;/L7p:JdbcQuery&gt;
+            &lt;L7p:AuditDetailAssertion&gt;
+                &lt;L7p:Detail stringValue="An error occured when searching for expired client_keys"/&gt;
+            &lt;/L7p:AuditDetailAssertion&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="LEFT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="clients"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+</l7:ResourceSet>
+                            </l7:Resources>
+                        </l7:Policy>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>OTK Database Maintenance - Client</l7:Name>
+                    <l7:Id>33c21ebb59b7cae5cd069fe74a951e69</l7:Id>
+                    <l7:Type>SCHEDULED_TASK</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:58:03.355Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ScheduledTask id="33c21ebb59b7cae5cd069fe74a951e69" version="0">
+                            <l7:Name>OTK Database Maintenance - Client</l7:Name>
+                            <l7:PolicyReference id="c4bc0de10c1b6cad6bdb4e564db83746" resourceUri="http://ns.l7tech.com/2010/04/gateway-management/policies"/>
+                            <l7:OneNode>true</l7:OneNode>
+                            <l7:JobType>Recurring</l7:JobType>
+                            <l7:JobStatus>Scheduled</l7:JobStatus>
+                            <l7:CronExpression>0 */31 * * * ?</l7:CronExpression>
+                            <l7:ExecuteOnCreate>false</l7:ExecuteOnCreate>
+                            <l7:Properties/>
+                        </l7:ScheduledTask>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>OTK Database Maintenance - id_token</l7:Name>
+                    <l7:Id>33c21ebb59b7cae5cd069fe74a951ddb</l7:Id>
+                    <l7:Type>POLICY</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:58:03.356Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:Policy guid="33451d5b-cee0-41d7-bcf3-9a79815e5521" id="33c21ebb59b7cae5cd069fe74a951ddb" version="0">
+                            <l7:PolicyDetail folderId="c4bc0de10c1b6cad6bdb4e564db836fa" guid="33451d5b-cee0-41d7-bcf3-9a79815e5521" id="33c21ebb59b7cae5cd069fe74a951ddb" version="0">
+<l7:Name>OTK Database Maintenance - id_token</l7:Name>
+<l7:PolicyType>Service Operation</l7:PolicyType>
+<l7:Properties>
+    <l7:Property key="revision">
+        <l7:LongValue>1</l7:LongValue>
+    </l7:Property>
+    <l7:Property key="soap">
+        <l7:BooleanValue>false</l7:BooleanValue>
+    </l7:Property>
+    <l7:Property key="subtag">
+        <l7:StringValue>run</l7:StringValue>
+    </l7:Property>
+    <l7:Property key="tag">
+        <l7:StringValue>com.l7tech.objectmodel.polback.BackgroundTask</l7:StringValue>
+    </l7:Property>
+</l7:Properties>
+                            </l7:PolicyDetail>
+                            <l7:Resources>
+<l7:ResourceSet tag="policy">
+    <l7:Resource type="policy">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" ============================================"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" === ***  THIS POLICY IS READ ONLY ***"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" === If you have the need to customize this policy"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" === please contact CA APIM Support so we can improve customization capability"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" ============================================"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="Deletes all expired id_token"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue=""/&gt;
+            &lt;L7p:DataType variableDataType="dateTime"/&gt;
+            &lt;L7p:DateOffsetExpression stringValue=""/&gt;
+            &lt;L7p:VariableToSet stringValue="now"/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;L7p:JdbcQuery&gt;
+                &lt;L7p:AssertionComment assertionComment="included"&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="LEFT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="DELETE"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:AssertionComment&gt;
+                &lt;L7p:AssertionFailureEnabled booleanValue="false"/&gt;
+                &lt;L7p:ConnectionName stringValue="OAuth"/&gt;
+                &lt;L7p:ConvertVariablesToStrings booleanValue="false"/&gt;
+                &lt;L7p:MaxRecords intValue="1000"/&gt;
+                &lt;L7p:SqlQuery stringValueReference="inline"&gt;&lt;![CDATA[DELETE FROM oauth_id_token
+                                WHERE expiration &gt; 0
+                                AND expiration &lt; ${now.seconds}]]&gt;&lt;/L7p:SqlQuery&gt;
+            &lt;/L7p:JdbcQuery&gt;
+            &lt;L7p:AuditDetailAssertion&gt;
+                &lt;L7p:Detail stringValue="An error occured when searching for expired id_token"/&gt;
+            &lt;/L7p:AuditDetailAssertion&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="LEFT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="id_token"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+</l7:ResourceSet>
+                            </l7:Resources>
+                        </l7:Policy>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>OTK Database Maintenance - id_token</l7:Name>
+                    <l7:Id>33c21ebb59b7cae5cd069fe74a951e70</l7:Id>
+                    <l7:Type>SCHEDULED_TASK</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:58:03.356Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ScheduledTask id="33c21ebb59b7cae5cd069fe74a951e70" version="0">
+                            <l7:Name>OTK Database Maintenance - id_token</l7:Name>
+                            <l7:PolicyReference id="33c21ebb59b7cae5cd069fe74a951ddb" resourceUri="http://ns.l7tech.com/2010/04/gateway-management/policies"/>
+                            <l7:OneNode>true</l7:OneNode>
+                            <l7:JobType>Recurring</l7:JobType>
+                            <l7:JobStatus>Scheduled</l7:JobStatus>
+                            <l7:CronExpression>0 */29 * * * ?</l7:CronExpression>
+                            <l7:ExecuteOnCreate>false</l7:ExecuteOnCreate>
+                            <l7:Properties/>
+                        </l7:ScheduledTask>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>OTK Database Maintenance - sessions</l7:Name>
+                    <l7:Id>33c21ebb59b7cae5cd069fe74a951e1d</l7:Id>
+                    <l7:Type>POLICY</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:58:03.358Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:Policy guid="a8d71b2c-1ebd-4173-a25a-efdb3c75ccc0" id="33c21ebb59b7cae5cd069fe74a951e1d" version="0">
+                            <l7:PolicyDetail folderId="c4bc0de10c1b6cad6bdb4e564db836fa" guid="a8d71b2c-1ebd-4173-a25a-efdb3c75ccc0" id="33c21ebb59b7cae5cd069fe74a951e1d" version="0">
+<l7:Name>OTK Database Maintenance - sessions</l7:Name>
+<l7:PolicyType>Service Operation</l7:PolicyType>
+<l7:Properties>
+    <l7:Property key="revision">
+        <l7:LongValue>1</l7:LongValue>
+    </l7:Property>
+    <l7:Property key="soap">
+        <l7:BooleanValue>false</l7:BooleanValue>
+    </l7:Property>
+    <l7:Property key="subtag">
+        <l7:StringValue>run</l7:StringValue>
+    </l7:Property>
+    <l7:Property key="tag">
+        <l7:StringValue>com.l7tech.objectmodel.polback.BackgroundTask</l7:StringValue>
+    </l7:Property>
+</l7:Properties>
+                            </l7:PolicyDetail>
+                            <l7:Resources>
+<l7:ResourceSet tag="policy">
+    <l7:Resource type="policy">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" ============================================"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" === ***  THIS POLICY IS READ ONLY ***"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" === If you have the need to customize this policy"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" === please contact CA APIM Support so we can improve customization capability"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" ============================================"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="Deletes all expired sessions from oauth_session"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue=""/&gt;
+            &lt;L7p:DataType variableDataType="dateTime"/&gt;
+            &lt;L7p:DateOffsetExpression stringValue=""/&gt;
+            &lt;L7p:VariableToSet stringValue="now"/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;L7p:JdbcQuery&gt;
+                &lt;L7p:AssertionFailureEnabled booleanValue="false"/&gt;
+                &lt;L7p:ConnectionName stringValue="OAuth"/&gt;
+                &lt;L7p:MaxRecords intValue="1000"/&gt;
+                &lt;L7p:QueryName stringValue="Delete expired sessions"/&gt;
+                &lt;L7p:SqlQuery stringValueReference="inline"&gt;&lt;![CDATA[DELETE FROM oauth_session
+                WHERE expiration &lt;= ${now.seconds}]]&gt;&lt;/L7p:SqlQuery&gt;
+                &lt;L7p:VariablePrefix stringValue="deleteExpired"/&gt;
+            &lt;/L7p:JdbcQuery&gt;
+            &lt;L7p:AuditDetailAssertion&gt;
+                &lt;L7p:Detail stringValue="An error occured when searching for expired sessions"/&gt;
+            &lt;/L7p:AuditDetailAssertion&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="LEFT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="sessions"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+</l7:ResourceSet>
+                            </l7:Resources>
+                        </l7:Policy>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>OTK Database Maintenance - sessions</l7:Name>
+                    <l7:Id>33c21ebb59b7cae5cd069fe74a951e77</l7:Id>
+                    <l7:Type>SCHEDULED_TASK</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:58:03.358Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ScheduledTask id="33c21ebb59b7cae5cd069fe74a951e77" version="0">
+                            <l7:Name>OTK Database Maintenance - sessions</l7:Name>
+                            <l7:PolicyReference id="33c21ebb59b7cae5cd069fe74a951e1d" resourceUri="http://ns.l7tech.com/2010/04/gateway-management/policies"/>
+                            <l7:OneNode>true</l7:OneNode>
+                            <l7:JobType>Recurring</l7:JobType>
+                            <l7:JobStatus>Scheduled</l7:JobStatus>
+                            <l7:CronExpression>0 */7 * * * ?</l7:CronExpression>
+                            <l7:ExecuteOnCreate>false</l7:ExecuteOnCreate>
+                            <l7:Properties/>
+                        </l7:ScheduledTask>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>OTK Database Maintenance - token</l7:Name>
+                    <l7:Id>33c21ebb59b7cae5cd069fe74a951e39</l7:Id>
+                    <l7:Type>POLICY</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:58:03.360Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:Policy guid="66513848-dfad-437b-a891-26e58f93f246" id="33c21ebb59b7cae5cd069fe74a951e39" version="0">
+                            <l7:PolicyDetail folderId="c4bc0de10c1b6cad6bdb4e564db836fa" guid="66513848-dfad-437b-a891-26e58f93f246" id="33c21ebb59b7cae5cd069fe74a951e39" version="0">
+<l7:Name>OTK Database Maintenance - token</l7:Name>
+<l7:PolicyType>Service Operation</l7:PolicyType>
+<l7:Properties>
+    <l7:Property key="revision">
+        <l7:LongValue>1</l7:LongValue>
+    </l7:Property>
+    <l7:Property key="soap">
+        <l7:BooleanValue>false</l7:BooleanValue>
+    </l7:Property>
+    <l7:Property key="subtag">
+        <l7:StringValue>run</l7:StringValue>
+    </l7:Property>
+    <l7:Property key="tag">
+        <l7:StringValue>com.l7tech.objectmodel.polback.BackgroundTask</l7:StringValue>
+    </l7:Property>
+</l7:Properties>
+                            </l7:PolicyDetail>
+                            <l7:Resources>
+<l7:ResourceSet tag="policy">
+    <l7:Resource type="policy">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" ============================================"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" === ***  THIS POLICY IS READ ONLY ***"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" === If you have the need to customize this policy"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" === please contact CA APIM Support so we can improve customization capability"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue=" ============================================"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="Deletes all expired tokens from oauth_token and oauth_initiate"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue=""/&gt;
+            &lt;L7p:DataType variableDataType="dateTime"/&gt;
+            &lt;L7p:DateOffsetExpression stringValue=""/&gt;
+            &lt;L7p:VariableToSet stringValue="now"/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:JdbcQuery&gt;
+                    &lt;L7p:AssertionComment assertionComment="included"&gt;
+                        &lt;L7p:Properties mapValue="included"&gt;
+                            &lt;L7p:entry&gt;
+                                &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                                &lt;L7p:value stringValue="Delete expired temporary tokens"/&gt;
+                            &lt;/L7p:entry&gt;
+                        &lt;/L7p:Properties&gt;
+                    &lt;/L7p:AssertionComment&gt;
+                    &lt;L7p:AssertionFailureEnabled booleanValue="false"/&gt;
+                    &lt;L7p:ConnectionName stringValue="OAuth"/&gt;
+                    &lt;L7p:MaxRecords intValue="1000"/&gt;
+                    &lt;L7p:SqlQuery stringValueReference="inline"&gt;&lt;![CDATA[DELETE FROM oauth_initiate
+                WHERE expiration &lt; ${now.seconds}]]&gt;&lt;/L7p:SqlQuery&gt;
+                &lt;/L7p:JdbcQuery&gt;
+                &lt;L7p:JdbcQuery&gt;
+                    &lt;L7p:AssertionComment assertionComment="included"&gt;
+                        &lt;L7p:Properties mapValue="included"&gt;
+                            &lt;L7p:entry&gt;
+                                &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                                &lt;L7p:value stringValue="Delete all entries with expired refresh tokens"/&gt;
+                            &lt;/L7p:entry&gt;
+                        &lt;/L7p:Properties&gt;
+                    &lt;/L7p:AssertionComment&gt;
+                    &lt;L7p:AssertionFailureEnabled booleanValue="false"/&gt;
+                    &lt;L7p:ConnectionName stringValue="OAuth"/&gt;
+                    &lt;L7p:MaxRecords intValue="1000"/&gt;
+                    &lt;L7p:SqlQuery stringValueReference="inline"&gt;&lt;![CDATA[DELETE FROM oauth_token
+                WHERE rtoken IS NOT NULL
+                AND rexpiration &lt; ${now.seconds}]]&gt;&lt;/L7p:SqlQuery&gt;
+                &lt;/L7p:JdbcQuery&gt;
+                &lt;L7p:JdbcQuery&gt;
+                    &lt;L7p:AssertionComment assertionComment="included"&gt;
+                        &lt;L7p:Properties mapValue="included"&gt;
+                            &lt;L7p:entry&gt;
+                                &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                                &lt;L7p:value stringValue="Delete expired access tokens"/&gt;
+                            &lt;/L7p:entry&gt;
+                        &lt;/L7p:Properties&gt;
+                    &lt;/L7p:AssertionComment&gt;
+                    &lt;L7p:AssertionFailureEnabled booleanValue="false"/&gt;
+                    &lt;L7p:ConnectionName stringValue="OAuth"/&gt;
+                    &lt;L7p:MaxRecords intValue="1000"/&gt;
+                    &lt;L7p:SqlQuery stringValueReference="inline"&gt;&lt;![CDATA[DELETE FROM oauth_token
+                WHERE expiration &lt; ${now.seconds}
+                AND rtoken is null]]&gt;&lt;/L7p:SqlQuery&gt;
+                &lt;/L7p:JdbcQuery&gt;
+            &lt;/wsp:All&gt;
+            &lt;L7p:AuditDetailAssertion&gt;
+                &lt;L7p:Detail stringValue="Could not delete expired tokens from the token store"/&gt;
+            &lt;/L7p:AuditDetailAssertion&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="LEFT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="token"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+</l7:ResourceSet>
+                            </l7:Resources>
+                        </l7:Policy>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>OTK Database Maintenance - token</l7:Name>
+                    <l7:Id>33c21ebb59b7cae5cd069fe74a951e7f</l7:Id>
+                    <l7:Type>SCHEDULED_TASK</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:58:03.360Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ScheduledTask id="33c21ebb59b7cae5cd069fe74a951e7f" version="0">
+                            <l7:Name>OTK Database Maintenance - token</l7:Name>
+                            <l7:PolicyReference id="33c21ebb59b7cae5cd069fe74a951e39" resourceUri="http://ns.l7tech.com/2010/04/gateway-management/policies"/>
+                            <l7:OneNode>true</l7:OneNode>
+                            <l7:JobType>Recurring</l7:JobType>
+                            <l7:JobStatus>Scheduled</l7:JobStatus>
+                            <l7:CronExpression>0 */13 * * * ?</l7:CronExpression>
+                            <l7:ExecuteOnCreate>false</l7:ExecuteOnCreate>
+                            <l7:Properties/>
+                        </l7:ScheduledTask>
+                    </l7:Resource>
+                </l7:Item>
+            </l7:References>
+            <l7:Mappings>
+                
+                <l7:Mapping action="NewOrExisting" srcId="c4bc0de10c1b6cad6bdb4e564db836fa" srcUri="https://2d00f828eab9:443/restman/1.0/folders/c4bc0de10c1b6cad6bdb4e564db836fa" type="FOLDER">
+                    <l7:Properties>
+                        <l7:Property key="FailOnNew">
+                            <l7:BooleanValue>true</l7:BooleanValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrUpdate" srcId="c4bc0de10c1b6cad6bdb4e564db83746" srcUri="https://2d00f828eab9:443/restman/1.0/policies/c4bc0de10c1b6cad6bdb4e564db83746" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="33c21ebb59b7cae5cd069fe74a951e69" srcUri="https://2d00f828eab9:443/restman/1.0/scheduledTasks/33c21ebb59b7cae5cd069fe74a951e69" type="SCHEDULED_TASK"/>
+                <l7:Mapping action="NewOrUpdate" srcId="33c21ebb59b7cae5cd069fe74a951ddb" srcUri="https://2d00f828eab9:443/restman/1.0/policies/33c21ebb59b7cae5cd069fe74a951ddb" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="33c21ebb59b7cae5cd069fe74a951e70" srcUri="https://2d00f828eab9:443/restman/1.0/scheduledTasks/33c21ebb59b7cae5cd069fe74a951e70" type="SCHEDULED_TASK"/>
+                <l7:Mapping action="NewOrUpdate" srcId="33c21ebb59b7cae5cd069fe74a951e1d" srcUri="https://2d00f828eab9:443/restman/1.0/policies/33c21ebb59b7cae5cd069fe74a951e1d" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="33c21ebb59b7cae5cd069fe74a951e77" srcUri="https://2d00f828eab9:443/restman/1.0/scheduledTasks/33c21ebb59b7cae5cd069fe74a951e77" type="SCHEDULED_TASK"/>
+                <l7:Mapping action="NewOrUpdate" srcId="33c21ebb59b7cae5cd069fe74a951e39" srcUri="https://2d00f828eab9:443/restman/1.0/policies/33c21ebb59b7cae5cd069fe74a951e39" type="POLICY"/>
+                <l7:Mapping action="NewOrUpdate" srcId="33c21ebb59b7cae5cd069fe74a951e7f" srcUri="https://2d00f828eab9:443/restman/1.0/scheduledTasks/33c21ebb59b7cae5cd069fe74a951e7f" type="SCHEDULED_TASK"/>
+            </l7:Mappings>
+        </l7:Bundle>

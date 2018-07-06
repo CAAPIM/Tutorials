@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?><l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+            <l7:References>
+                <l7:Item>
+                    <l7:Name>ifttt.service.key</l7:Name>
+                    <l7:Id>5dbe8b411167eae8d109f6a968bc9f47</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:57:43.746Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="5dbe8b411167eae8d109f6a968bc9f47" version="0">
+                            <l7:Name>ifttt.service.key</l7:Name>
+                            <l7:Value>CONFIGURE_YOUR_OWN_VALUE</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>ifttt.client.secret</l7:Name>
+                    <l7:Id>5dbe8b411167eae8d109f6a968bca162</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:57:43.746Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="5dbe8b411167eae8d109f6a968bca162" version="0">
+                            <l7:Name>ifttt.client.secret</l7:Name>
+                            <l7:Value>98c14eee-39ab-4bf4-b3d6-d42262a884d9</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>ifttt.client.id</l7:Name>
+                    <l7:Id>5dbe8b411167eae8d109f6a968bca15b</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:57:43.746Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="5dbe8b411167eae8d109f6a968bca15b" version="0">
+                            <l7:Name>ifttt.client.id</l7:Name>
+                            <l7:Value>8dd8d732-3e76-405e-8598-c26453d9a99f</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>ifttt.user</l7:Name>
+                    <l7:Id>5dbe8b411167eae8d109f6a968bca188</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:57:43.746Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="5dbe8b411167eae8d109f6a968bca188" version="0">
+                            <l7:Name>ifttt.user</l7:Name>
+                            <l7:Value>mr_ifttt</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>ifttt.user.password</l7:Name>
+                    <l7:Id>5dbe8b411167eae8d109f6a968bca18f</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:57:43.746Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="5dbe8b411167eae8d109f6a968bca18f" version="0">
+                            <l7:Name>ifttt.user.password</l7:Name>
+                            <l7:Value>Mr_ift_@234pas$word</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>ifttt.client</l7:Name>
+                    <l7:Id>5dbe8b411167eae8d109f6a968bca1f6</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:57:43.746Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="5dbe8b411167eae8d109f6a968bca1f6" version="0">
+                            <l7:Name>ifttt.client</l7:Name>
+                            <l7:Value>IFTTT-123456800-otk</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>ifttt.client.name</l7:Name>
+                    <l7:Id>5dbe8b411167eae8d109f6a968bca21b</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:57:43.746Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="5dbe8b411167eae8d109f6a968bca21b" version="0">
+                            <l7:Name>ifttt.client.name</l7:Name>
+                            <l7:Value>CA APIM Tutorial OTK App</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>ifttt.bank.client.redirect</l7:Name>
+                    <l7:Id>d0c2108b72b11af05b03eb6dd44d2928</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:57:43.746Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="d0c2108b72b11af05b03eb6dd44d2928" version="0">
+                            <l7:Name>ifttt.bank.client.redirect</l7:Name>
+                            <l7:Value>https://otk-ifttt.tutorial.com/tutorial/otk/ifttt/bank?action=token&amp;provider=bank</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>ifttt.bank.client.secret</l7:Name>
+                    <l7:Id>d0c2108b72b11af05b03eb6dd44d2920</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:57:43.746Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="d0c2108b72b11af05b03eb6dd44d2920" version="0">
+                            <l7:Name>ifttt.bank.client.secret</l7:Name>
+                            <l7:Value>4dd0c819-378c-4ead-8c27-e1a23f0e79b9</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>ifttt.bank.client.id</l7:Name>
+                    <l7:Id>d0c2108b72b11af05b03eb6dd44d291e</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:57:43.746Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="d0c2108b72b11af05b03eb6dd44d291e" version="0">
+                            <l7:Name>ifttt.bank.client.id</l7:Name>
+                            <l7:Value>4416dc58-6d00-41c5-b30a-c1d2c6d8dfc0</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>ifttt.bank.client.scope</l7:Name>
+                    <l7:Id>a57c57c3590f4b15ce94b8845cbffff9</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-07-04T20:57:43.746Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="a57c57c3590f4b15ce94b8845cbffff9" version="0">
+                            <l7:Name>ifttt.bank.client.scope</l7:Name>
+                            <l7:Value>openid email profile banking</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+            </l7:References>
+            <l7:Mappings>
+                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bc9f47" srcUri="https://2d00f828eab9:443/restman/1.0/clusterProperties/5dbe8b411167eae8d109f6a968bc9f47" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca162" srcUri="https://2d00f828eab9:443/restman/1.0/clusterProperties/5dbe8b411167eae8d109f6a968bca162" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca15b" srcUri="https://2d00f828eab9:443/restman/1.0/clusterProperties/5dbe8b411167eae8d109f6a968bca15b" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca188" srcUri="https://2d00f828eab9:443/restman/1.0/clusterProperties/5dbe8b411167eae8d109f6a968bca188" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca18f" srcUri="https://2d00f828eab9:443/restman/1.0/clusterProperties/5dbe8b411167eae8d109f6a968bca18f" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca1f6" srcUri="https://2d00f828eab9:443/restman/1.0/clusterProperties/5dbe8b411167eae8d109f6a968bca1f6" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrUpdate" srcId="5dbe8b411167eae8d109f6a968bca21b" srcUri="https://2d00f828eab9:443/restman/1.0/clusterProperties/5dbe8b411167eae8d109f6a968bca21b" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrUpdate" srcId="d0c2108b72b11af05b03eb6dd44d2928" srcUri="https://2d00f828eab9:443/restman/1.0/clusterProperties/d0c2108b72b11af05b03eb6dd44d2928" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrUpdate" srcId="d0c2108b72b11af05b03eb6dd44d2920" srcUri="https://2d00f828eab9:443/restman/1.0/clusterProperties/d0c2108b72b11af05b03eb6dd44d2920" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrUpdate" srcId="d0c2108b72b11af05b03eb6dd44d291e" srcUri="https://2d00f828eab9:443/restman/1.0/clusterProperties/d0c2108b72b11af05b03eb6dd44d291e" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrUpdate" srcId="a57c57c3590f4b15ce94b8845cbffff9" srcUri="https://2d00f828eab9:443/restman/1.0/clusterProperties/a57c57c3590f4b15ce94b8845cbffff9" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+            </l7:Mappings>
+        </l7:Bundle>
