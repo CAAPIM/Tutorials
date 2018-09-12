@@ -1,0 +1,26 @@
+version: '3.4'
+services:
+
+  azure.tutorial.com:
+    hostname: theauthorizer.ca.com
+    build:
+      context: .
+    ports:
+      - "8443:8443"
+      - "443:9443"
+    volumes:
+      - /opt/SecureSpan/Gateway/node/default/etc/bootstrap/services/restman
+    secrets:
+      - source: license
+        target: /opt/SecureSpan/Gateway/node/default/etc/bootstrap/license/license.xml
+    environment:
+      ACCEPT_LICENSE: "true"
+      SSG_ADMIN_USERNAME: "admin"
+      SSG_ADMIN_PASSWORD: "password"
+      SSG_CLUSTER_PASSWORD: "password"
+      SSG_CLUSTER_HOST: "theauthorizer.ca.com"
+      EXTRA_JAVA_ARGS: "-XX:ParallelGCThreads=4 -Dcom.l7tech.bootstrap.autoTrustSslKey=trustAnchor,TrustedFor.SSL -Dderby.language.statementCacheSize=0"
+
+secrets:
+  license:
+    file: ./license.xml

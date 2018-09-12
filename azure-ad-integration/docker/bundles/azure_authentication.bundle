@@ -1,0 +1,1785 @@
+<?xml version="1.0" encoding="UTF-8"?><l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+            <l7:References>
+                <l7:Item>
+                    <l7:Name>Azure Active Directory Integration</l7:Name>
+                    <l7:Id>2c5c45743106e7dc43954dd5291bf0be</l7:Id>
+                    <l7:Type>FOLDER</l7:Type>
+                    <l7:TimeStamp>2018-09-05T18:26:44.448Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:Folder folderId="0000000000000000ffffffffffffec76" id="2c5c45743106e7dc43954dd5291bf0be" version="0">
+                            <l7:Name>Azure Active Directory Integration</l7:Name>
+                        </l7:Folder>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>stamp2.login.microsoftonline.com</l7:Name>
+                    <l7:Id>2c5c45743106e7dc43954dd5291bf159</l7:Id>
+                    <l7:Type>TRUSTED_CERT</l7:Type>
+                    <l7:TimeStamp>2018-09-05T18:26:44.454Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:TrustedCertificate id="2c5c45743106e7dc43954dd5291bf159" version="0">
+                            <l7:Name>stamp2.login.microsoftonline.com</l7:Name>
+                            <l7:CertificateData>
+<l7:IssuerName>CN%3DMicrosoft+IT+TLS+CA+4%2COU%3DMicrosoft+IT%2CO%3DMicrosoft+Corporation%2CL%3DRedmond%2CST%3DWashington%2CC%3DUS</l7:IssuerName>
+<l7:SerialNumber>490616562462489038252041417326036080639639157</l7:SerialNumber>
+<l7:SubjectName>CN%3Dstamp2.login.microsoftonline.com</l7:SubjectName>
+<l7:Encoded>MIIHJjCCBQ6gAwIBAgITFgAAfnXiQu+gpgoemAAAAAB+dTANBgkqhkiG9w0BAQsFADCBizELMAkGA1UEBhMCVVMxEzARBgNVBAgTCldhc2hpbmd0b24xEDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEVMBMGA1UECxMMTWljcm9zb2Z0IElUMR4wHAYDVQQDExVNaWNyb3NvZnQgSVQgVExTIENBIDQwHhcNMTcxMjI4MjAwNTA2WhcNMTkxMjI4MjAwNTA2WjArMSkwJwYDVQQDEyBzdGFtcDIubG9naW4ubWljcm9zb2Z0b25saW5lLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANO1qnPu4j3B3VDByCNtDDJCKJKqRCwRIMsfaLzJxqSRSUVwA0xK6UlpY4QoOZY81WOrLagJR4IZR7iPymaFgLI3ZYXI0sEZCXgDbkFL4/WHBYpVVbYORxhVNzd3uJWnQLvYdqYe4fs2CFNU7jT47gPNubixigkvR6b8D7Jj8cPBZRFH8ixkqwuxXmfWCO8kNb8XeYD3y8eA2ZwNRewu+uVuotNRrVVs9uJyJH5bOpcDX0Qbu4mSkHZ68+z3XGzztuHLHvAtjdU+v97ISMPOzu9RdbQV10GFr6t0zxJHyxuWBtU8KIGnXtVt6NNmQDU3Y2i5gnKJZ+2AujH8hNEqYSUCAwEAAaOCAuAwggLcMAsGA1UdDwQEAwIEsDAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwHQYDVR0OBBYEFB1Yew9+d48Owg+qw+d+FgHukFUDMH8GA1UdEQR4MHaCGWxvZ2luLm1pY3Jvc29mdG9ubGluZS5jb22CG2xvZ2luZXgubWljcm9zb2Z0b25saW5lLmNvbYIabG9naW4yLm1pY3Jvc29mdG9ubGluZS5jb22CIHN0YW1wMi5sb2dpbi5taWNyb3NvZnRvbmxpbmUuY29tMB8GA1UdIwQYMBaAFHp7jMHP56DKHNRr+vvhM8MPGqKdMIGsBgNVHR8EgaQwgaEwgZ6ggZuggZiGS2h0dHA6Ly9tc2NybC5taWNyb3NvZnQuY29tL3BraS9tc2NvcnAvY3JsL01pY3Jvc29mdCUyMElUJTIwVExTJTIwQ0ElMjA0LmNybIZJaHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraS9tc2NvcnAvY3JsL01pY3Jvc29mdCUyMElUJTIwVExTJTIwQ0ElMjA0LmNybDCBhQYIKwYBBQUHAQEEeTB3MFEGCCsGAQUFBzAChkVodHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20vcGtpL21zY29ycC9NaWNyb3NvZnQlMjBJVCUyMFRMUyUyMENBJTIwNC5jcnQwIgYIKwYBBQUHMAGGFmh0dHA6Ly9vY3NwLm1zb2NzcC5jb20wPgYJKwYBBAGCNxUHBDEwLwYnKwYBBAGCNxUIh9qGdYPu2QGCyYUbgbWeYYX062CBXYTS30KC55N6AgFkAgEaME0GA1UdIARGMEQwQgYJKwYBBAGCNyoBMDUwMwYIKwYBBQUHAgEWJ2h0dHA6Ly93d3cubWljcm9zb2Z0LmNvbS9wa2kvbXNjb3JwL2NwczAnBgkrBgEEAYI3FQoEGjAYMAoGCCsGAQUFBwMCMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEBCwUAA4ICAQAImQkgZK62VMf/CGcSHnjVb16tD1sCtDM0Vyx5oavKGKPYMt5e39NJvmuAJBB0AW6Sz3+XJWEJisIpNZDdyIekcwPh7n8VchN0phhf1tQHD+NknvOxox3lBIeZ9O18HruDlbhbZYQ1YlX76qem277o5Xa5A2t5mNtLXXuqx9xVjqt7KVCXBbLrAyMnB+J2KqYSKji1blF3ms4wl77s+QQ72lmskEnnT2c2TcquARPQvomcYitkAjih0xdd5ke+r0DfnjLcYOgb2n5MBCtcBByKVXuMd9Vnu4iOo0Df1U4F+ueaK49xnuqzPxZEJTzOgh6AbFHkU7+vwMGoPbVW33u5hExbDFq0ApiB92jLT7W5K4iVtDp8gwvZo1zvsZGlFDO36G+YLwW5yVebWuocCsVKFmgD7UlcHmuwU1yElXVgLKXdt6P4vQtZLfKQ68qm2UUW6v8sSUCfRQYJViYWv1Em9l9TZC089xgyZC/m2bf/TZUvm9TCbUkSPqg+yIQa8EdfqOUyA/3bWCvBHpc7k/1WlmIfxPM9RqVdBS/juBywM986Et1/2bjXLSRk6kIcruBt5yDGA0cTHF8UDTit+/RV2Fe3qqZiiipTBxU45a5sQiyJM4YqNJy/UZYBeKYFIbj/qzGHqqjq6H45cbIibPXH0WfAioLl5Z1YIQ5MAML6bw==</l7:Encoded>
+                            </l7:CertificateData>
+                            <l7:Properties>
+<l7:Property key="revocationCheckingEnabled">
+    <l7:BooleanValue>true</l7:BooleanValue>
+</l7:Property>
+<l7:Property key="trustAnchor">
+    <l7:BooleanValue>true</l7:BooleanValue>
+</l7:Property>
+<l7:Property key="trustedAsSamlAttestingEntity">
+    <l7:BooleanValue>false</l7:BooleanValue>
+</l7:Property>
+<l7:Property key="trustedAsSamlIssuer">
+    <l7:BooleanValue>false</l7:BooleanValue>
+</l7:Property>
+<l7:Property key="trustedForSigningClientCerts">
+    <l7:BooleanValue>false</l7:BooleanValue>
+</l7:Property>
+<l7:Property key="trustedForSigningServerCerts">
+    <l7:BooleanValue>false</l7:BooleanValue>
+</l7:Property>
+<l7:Property key="trustedForSsl">
+    <l7:BooleanValue>true</l7:BooleanValue>
+</l7:Property>
+<l7:Property key="verifyHostname">
+    <l7:BooleanValue>false</l7:BooleanValue>
+</l7:Property>
+                            </l7:Properties>
+                        </l7:TrustedCertificate>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>azure.tenant</l7:Name>
+                    <l7:Id>7afffb9d56b81b8a824b3c07981515d3</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-09-05T18:26:44.454Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="7afffb9d56b81b8a824b3c07981515d3" version="0">
+                            <l7:Name>azure.tenant</l7:Name>
+                            <l7:Value>your-tenant-id</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>azure.redirect_uri</l7:Name>
+                    <l7:Id>7afffb9d56b81b8a824b3c07981515cf</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-09-05T18:26:44.454Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="7afffb9d56b81b8a824b3c07981515cf" version="1">
+                            <l7:Name>azure.redirect_uri</l7:Name>
+                            <l7:Value>https://{your-server-name}/azure/ad/authorize/redirect</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>azure.applicationId</l7:Name>
+                    <l7:Id>7afffb9d56b81b8a824b3c07981515cd</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-09-05T18:26:44.454Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="7afffb9d56b81b8a824b3c07981515cd" version="0">
+                            <l7:Name>azure.applicationId</l7:Name>
+                            <l7:Value>{your-application-id}</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>azure.tenant.displayName</l7:Name>
+                    <l7:Id>e23884300b9f3d2da78ecbed9ae0aa1a</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-09-12T16:47:46.768Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="e23884300b9f3d2da78ecbed9ae0aa1a" version="1">
+                            <l7:Name>azure.tenant.displayName</l7:Name>
+                            <l7:Value>your-tenant-display-name</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>Azure AD - OpenID Configuration</l7:Name>
+                    <l7:Id>37092643bd1c9e4fc433ac7e510fb6a0</l7:Id>
+                    <l7:Type>POLICY</l7:Type>
+                    <l7:TimeStamp>2018-09-05T18:26:44.467Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:Policy guid="8cac6f9e-b491-4f04-9a5d-3c48b08edf18" id="37092643bd1c9e4fc433ac7e510fb6a0" version="1">
+                            <l7:PolicyDetail folderId="2c5c45743106e7dc43954dd5291bf0be" guid="8cac6f9e-b491-4f04-9a5d-3c48b08edf18" id="37092643bd1c9e4fc433ac7e510fb6a0" version="1">
+<l7:Name>Azure AD - OpenID Configuration</l7:Name>
+<l7:PolicyType>Include</l7:PolicyType>
+<l7:Properties>
+    <l7:Property key="revision">
+        <l7:LongValue>2</l7:LongValue>
+    </l7:Property>
+    <l7:Property key="soap">
+        <l7:BooleanValue>false</l7:BooleanValue>
+    </l7:Property>
+</l7:Properties>
+                            </l7:PolicyDetail>
+                            <l7:Resources>
+<l7:ResourceSet tag="policy">
+    <l7:Resource type="policy">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="Retrieves the OpenID Configuration"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="***"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="- INPUT:"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="-- azure.tenant: required"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="- OUTPUT:"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="-- azure.authorization_endpoint"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="-- azure.jwks_endpoint: the URI that provides the JWKS"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="-- azure.resp: complete response message"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="-- error.code: used with error cases"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="***"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:AssertionComment assertionComment="included"&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// initialize"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:AssertionComment&gt;
+            &lt;L7p:Base64Expression stringValue=""/&gt;
+            &lt;L7p:VariableToSet stringValue="error.code"/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;L7p:ComparisonAssertion&gt;
+                &lt;L7p:CaseSensitive booleanValue="false"/&gt;
+                &lt;L7p:Expression1 stringValue="${azure.tenant}"/&gt;
+                &lt;L7p:Expression2 stringValue=""/&gt;
+                &lt;L7p:Negate booleanValue="true"/&gt;
+                &lt;L7p:Operator operator="EMPTY"/&gt;
+                &lt;L7p:Predicates predicates="included"&gt;
+                    &lt;L7p:item binary="included"&gt;
+                        &lt;L7p:CaseSensitive booleanValue="false"/&gt;
+                        &lt;L7p:Negated booleanValue="true"/&gt;
+                        &lt;L7p:Operator operator="EMPTY"/&gt;
+                        &lt;L7p:RightValue stringValue=""/&gt;
+                    &lt;/L7p:item&gt;
+                &lt;/L7p:Predicates&gt;
+            &lt;/L7p:ComparisonAssertion&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:AuditDetailAssertion&gt;
+                    &lt;L7p:Detail stringValue="No tenant was given: '${azure.tenant}'"/&gt;
+                &lt;/L7p:AuditDetailAssertion&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:AssertionComment assertionComment="included"&gt;
+                        &lt;L7p:Properties mapValue="included"&gt;
+                            &lt;L7p:entry&gt;
+                                &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                                &lt;L7p:value stringValue="// setting an error.code '103' (missing paramer). This matches the OTK behaviour"/&gt;
+                            &lt;/L7p:entry&gt;
+                        &lt;/L7p:Properties&gt;
+                    &lt;/L7p:AssertionComment&gt;
+                    &lt;L7p:Base64Expression stringValue="MTAz"/&gt;
+                    &lt;L7p:VariableToSet stringValue="error.code"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:FalseAssertion/&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// error"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// check for parameters"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue=""/&gt;
+            &lt;L7p:ContentType stringValue="text/plain; charset=utf-8"/&gt;
+            &lt;L7p:DataType variableDataType="message"/&gt;
+            &lt;L7p:VariableToSet stringValue="emptyMsg"/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;L7p:HttpRoutingAssertion&gt;
+            &lt;L7p:AssertionComment assertionComment="included"&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// retrieve the openid configuration"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:AssertionComment&gt;
+            &lt;L7p:CurrentSecurityHeaderHandling intValue="3"/&gt;
+            &lt;L7p:FailOnErrorStatus booleanValue="false"/&gt;
+            &lt;L7p:HttpMethod httpMethod="GET"/&gt;
+            &lt;L7p:ProtectedServiceUrl stringValue="https://login.microsoftonline.com/${azure.tenant}/.well-known/openid-configuration"/&gt;
+            &lt;L7p:ProxyPassword stringValueNull="null"/&gt;
+            &lt;L7p:ProxyUsername stringValueNull="null"/&gt;
+            &lt;L7p:RequestHeaderRules httpPassthroughRuleSet="included"&gt;
+                &lt;L7p:ForwardAll booleanValue="true"/&gt;
+                &lt;L7p:Rules httpPassthroughRules="included"&gt;
+                    &lt;L7p:item httpPassthroughRule="included"&gt;
+                        &lt;L7p:Name stringValue="Cookie"/&gt;
+                    &lt;/L7p:item&gt;
+                    &lt;L7p:item httpPassthroughRule="included"&gt;
+                        &lt;L7p:Name stringValue="SOAPAction"/&gt;
+                    &lt;/L7p:item&gt;
+                &lt;/L7p:Rules&gt;
+            &lt;/L7p:RequestHeaderRules&gt;
+            &lt;L7p:RequestMsgSrc stringValue="emptyMsg"/&gt;
+            &lt;L7p:RequestParamRules httpPassthroughRuleSet="included"&gt;
+                &lt;L7p:ForwardAll booleanValue="true"/&gt;
+                &lt;L7p:Rules httpPassthroughRules="included"/&gt;
+            &lt;/L7p:RequestParamRules&gt;
+            &lt;L7p:ResponseHeaderRules httpPassthroughRuleSet="included"&gt;
+                &lt;L7p:ForwardAll booleanValue="true"/&gt;
+                &lt;L7p:Rules httpPassthroughRules="included"&gt;
+                    &lt;L7p:item httpPassthroughRule="included"&gt;
+                        &lt;L7p:Name stringValue="Set-Cookie"/&gt;
+                    &lt;/L7p:item&gt;
+                &lt;/L7p:Rules&gt;
+            &lt;/L7p:ResponseHeaderRules&gt;
+            &lt;L7p:ResponseMsgDest stringValue="azure.resp"/&gt;
+            &lt;L7p:SamlAssertionVersion intValue="2"/&gt;
+            &lt;L7p:UsesNoKey booleanValue="true"/&gt;
+        &lt;/L7p:HttpRoutingAssertion&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;L7p:ComparisonAssertion&gt;
+                &lt;L7p:CaseSensitive booleanValue="false"/&gt;
+                &lt;L7p:Expression1 stringValue="${httpRouting.reasonCode}"/&gt;
+                &lt;L7p:Expression2 stringValue="200"/&gt;
+                &lt;L7p:Predicates predicates="included"&gt;
+                    &lt;L7p:item binary="included"&gt;
+                        &lt;L7p:CaseSensitive booleanValue="false"/&gt;
+                        &lt;L7p:RightValue stringValue="200"/&gt;
+                    &lt;/L7p:item&gt;
+                &lt;/L7p:Predicates&gt;
+            &lt;/L7p:ComparisonAssertion&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:AuditDetailAssertion&gt;
+                    &lt;L7p:Detail stringValue="OpenID COnfiguration could not be retrieved: '${azure.resp,mainpart}'"/&gt;
+                &lt;/L7p:AuditDetailAssertion&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:AssertionComment assertionComment="included"&gt;
+                        &lt;L7p:Properties mapValue="included"&gt;
+                            &lt;L7p:entry&gt;
+                                &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                                &lt;L7p:value stringValue="// set error.code to 000. No clue what happened! Need to check the log"/&gt;
+                            &lt;/L7p:entry&gt;
+                        &lt;/L7p:Properties&gt;
+                    &lt;/L7p:AssertionComment&gt;
+                    &lt;L7p:Base64Expression stringValue="MDAw"/&gt;
+                    &lt;L7p:VariableToSet stringValue="error.code"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:FalseAssertion/&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="LEFT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="error"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// routing error"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+        &lt;L7p:EvaluateJsonPathExpression&gt;
+            &lt;L7p:Expression stringValue="authorization_endpoint"/&gt;
+            &lt;L7p:OtherTargetMessageVariable stringValue="azure.resp"/&gt;
+            &lt;L7p:Target target="OTHER"/&gt;
+            &lt;L7p:VariablePrefix stringValue="azure.authorization"/&gt;
+        &lt;/L7p:EvaluateJsonPathExpression&gt;
+        &lt;L7p:EvaluateJsonPathExpression&gt;
+            &lt;L7p:Expression stringValue="jwks_uri"/&gt;
+            &lt;L7p:OtherTargetMessageVariable stringValue="azure.resp"/&gt;
+            &lt;L7p:Target target="OTHER"/&gt;
+            &lt;L7p:VariablePrefix stringValue="azure.jwks"/&gt;
+        &lt;/L7p:EvaluateJsonPathExpression&gt;
+        &lt;L7p:EvaluateJsonPathExpression&gt;
+            &lt;L7p:Expression stringValue="issuer"/&gt;
+            &lt;L7p:OtherTargetMessageVariable stringValue="azure.resp"/&gt;
+            &lt;L7p:Target target="OTHER"/&gt;
+            &lt;L7p:VariablePrefix stringValue="azure.issuer"/&gt;
+        &lt;/L7p:EvaluateJsonPathExpression&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue="JHthenVyZS5hdXRob3JpemF0aW9uLnJlc3VsdH0="/&gt;
+            &lt;L7p:VariableToSet stringValue="azure.authorization_endpoint"/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue="JHthenVyZS5qd2tzLnJlc3VsdH0="/&gt;
+            &lt;L7p:VariableToSet stringValue="azure.jwks_endpoint"/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue="JHthenVyZS5pc3N1ZXIucmVzdWx0fQ=="/&gt;
+            &lt;L7p:VariableToSet stringValue="azure.issuer"/&gt;
+        &lt;/L7p:SetVariable&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+</l7:ResourceSet>
+                            </l7:Resources>
+                        </l7:Policy>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>Azure AD - OpenID Configuration</l7:Name>
+                    <l7:Id>37092643bd1c9e4fc433ac7e510fb6b3</l7:Id>
+                    <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
+                    <l7:TimeStamp>2018-09-05T18:26:44.467Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:EncapsulatedAssertion id="37092643bd1c9e4fc433ac7e510fb6b3" version="1">
+                            <l7:Name>Azure AD - OpenID Configuration</l7:Name>
+                            <l7:Guid>eded295b-ee86-41d7-8e63-ea1105bbe409</l7:Guid>
+                            <l7:PolicyReference id="37092643bd1c9e4fc433ac7e510fb6a0" resourceUri="http://ns.l7tech.com/2010/04/gateway-management/policies"/>
+                            <l7:EncapsulatedArguments>
+<l7:EncapsulatedAssertionArgument>
+    <l7:Ordinal>1</l7:Ordinal>
+    <l7:ArgumentName>azure.tenant</l7:ArgumentName>
+    <l7:ArgumentType>string</l7:ArgumentType>
+    <l7:GuiLabel>Azure AD Tenant</l7:GuiLabel>
+    <l7:GuiPrompt>true</l7:GuiPrompt>
+</l7:EncapsulatedAssertionArgument>
+                            </l7:EncapsulatedArguments>
+                            <l7:EncapsulatedResults>
+<l7:EncapsulatedAssertionResult>
+    <l7:ResultName>azure.authorization_endpoint</l7:ResultName>
+    <l7:ResultType>string</l7:ResultType>
+</l7:EncapsulatedAssertionResult>
+<l7:EncapsulatedAssertionResult>
+    <l7:ResultName>azure.issuer</l7:ResultName>
+    <l7:ResultType>string</l7:ResultType>
+</l7:EncapsulatedAssertionResult>
+<l7:EncapsulatedAssertionResult>
+    <l7:ResultName>azure.jwks_endpoint</l7:ResultName>
+    <l7:ResultType>string</l7:ResultType>
+</l7:EncapsulatedAssertionResult>
+<l7:EncapsulatedAssertionResult>
+    <l7:ResultName>azure.resp</l7:ResultName>
+    <l7:ResultType>message</l7:ResultType>
+</l7:EncapsulatedAssertionResult>
+<l7:EncapsulatedAssertionResult>
+    <l7:ResultName>error.code</l7:ResultName>
+    <l7:ResultType>string</l7:ResultType>
+</l7:EncapsulatedAssertionResult>
+                            </l7:EncapsulatedResults>
+                            <l7:Properties>
+<l7:Property key="allowTracing">
+    <l7:StringValue>true</l7:StringValue>
+</l7:Property>
+<l7:Property key="description">
+    <l7:StringValue>Retrieve the OpenID Configuration for the given tenant</l7:StringValue>
+</l7:Property>
+<l7:Property key="paletteFolder">
+    <l7:StringValue>internalAssertions</l7:StringValue>
+</l7:Property>
+<l7:Property key="paletteIconResourceName">
+    <l7:StringValue>server16.gif</l7:StringValue>
+</l7:Property>
+<l7:Property key="passMetricsToParent">
+    <l7:StringValue>false</l7:StringValue>
+</l7:Property>
+<l7:Property key="policyGuid">
+    <l7:StringValue>8cac6f9e-b491-4f04-9a5d-3c48b08edf18</l7:StringValue>
+</l7:Property>
+                            </l7:Properties>
+                        </l7:EncapsulatedAssertion>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>Azure AD - Initialize Authorization</l7:Name>
+                    <l7:Id>37092643bd1c9e4fc433ac7e510fb68d</l7:Id>
+                    <l7:Type>POLICY</l7:Type>
+                    <l7:TimeStamp>2018-09-05T18:26:44.494Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:Policy guid="1ced3814-87ff-4252-b063-6d2c44c0d753" id="37092643bd1c9e4fc433ac7e510fb68d" version="3">
+                            <l7:PolicyDetail folderId="2c5c45743106e7dc43954dd5291bf0be" guid="1ced3814-87ff-4252-b063-6d2c44c0d753" id="37092643bd1c9e4fc433ac7e510fb68d" version="3">
+<l7:Name>Azure AD - Initialize Authorization</l7:Name>
+<l7:PolicyType>Include</l7:PolicyType>
+<l7:Properties>
+    <l7:Property key="revision">
+        <l7:LongValue>4</l7:LongValue>
+    </l7:Property>
+    <l7:Property key="soap">
+        <l7:BooleanValue>false</l7:BooleanValue>
+    </l7:Property>
+</l7:Properties>
+                            </l7:PolicyDetail>
+                            <l7:Resources>
+<l7:ResourceSet tag="policy">
+    <l7:Resource type="policy">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="Initiate the authorization flow"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="***"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="- INPUT:"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="-- login_hint: optional, will be excluded from request if missing"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="-- azure.applicationId: Required, this is also the OAuth client_id"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="-- azure.authorizationUrl: Required, provided by 'Azure AD - OpenID Configuration'"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="-- azure.redirectUri: Required, this is the 'Reply URL'"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="- OUTPUT:"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="-- azure.authorization.location: The values to be used as 'Location' header to redirect to Azure"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="-- error.code: used with error cases"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="***"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:AssertionComment assertionComment="included"&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// initialize"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:AssertionComment&gt;
+            &lt;L7p:Base64Expression stringValue=""/&gt;
+            &lt;L7p:VariableToSet stringValue="error.code"/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:ComparisonAssertion&gt;
+                    &lt;L7p:CaseSensitive booleanValue="false"/&gt;
+                    &lt;L7p:Expression1 stringValue="${azure.applicationId}"/&gt;
+                    &lt;L7p:Expression2 stringValue=""/&gt;
+                    &lt;L7p:Negate booleanValue="true"/&gt;
+                    &lt;L7p:Operator operator="EMPTY"/&gt;
+                    &lt;L7p:Predicates predicates="included"&gt;
+                        &lt;L7p:item binary="included"&gt;
+                            &lt;L7p:CaseSensitive booleanValue="false"/&gt;
+                            &lt;L7p:Negated booleanValue="true"/&gt;
+                            &lt;L7p:Operator operator="EMPTY"/&gt;
+                            &lt;L7p:RightValue stringValue=""/&gt;
+                        &lt;/L7p:item&gt;
+                    &lt;/L7p:Predicates&gt;
+                &lt;/L7p:ComparisonAssertion&gt;
+                &lt;L7p:ComparisonAssertion&gt;
+                    &lt;L7p:CaseSensitive booleanValue="false"/&gt;
+                    &lt;L7p:Expression1 stringValue="${azure.authorizationUrl}"/&gt;
+                    &lt;L7p:Expression2 stringValue=""/&gt;
+                    &lt;L7p:Negate booleanValue="true"/&gt;
+                    &lt;L7p:Operator operator="EMPTY"/&gt;
+                    &lt;L7p:Predicates predicates="included"&gt;
+                        &lt;L7p:item binary="included"&gt;
+                            &lt;L7p:CaseSensitive booleanValue="false"/&gt;
+                            &lt;L7p:Negated booleanValue="true"/&gt;
+                            &lt;L7p:Operator operator="EMPTY"/&gt;
+                            &lt;L7p:RightValue stringValue=""/&gt;
+                        &lt;/L7p:item&gt;
+                    &lt;/L7p:Predicates&gt;
+                &lt;/L7p:ComparisonAssertion&gt;
+                &lt;L7p:ComparisonAssertion&gt;
+                    &lt;L7p:CaseSensitive booleanValue="false"/&gt;
+                    &lt;L7p:Expression1 stringValue="${azure.redirectUri}"/&gt;
+                    &lt;L7p:Expression2 stringValue=""/&gt;
+                    &lt;L7p:Negate booleanValue="true"/&gt;
+                    &lt;L7p:Operator operator="EMPTY"/&gt;
+                    &lt;L7p:Predicates predicates="included"&gt;
+                        &lt;L7p:item binary="included"&gt;
+                            &lt;L7p:CaseSensitive booleanValue="false"/&gt;
+                            &lt;L7p:Negated booleanValue="true"/&gt;
+                            &lt;L7p:Operator operator="EMPTY"/&gt;
+                            &lt;L7p:RightValue stringValue=""/&gt;
+                        &lt;/L7p:item&gt;
+                    &lt;/L7p:Predicates&gt;
+                &lt;/L7p:ComparisonAssertion&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// success"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:AuditDetailAssertion&gt;
+                    &lt;L7p:Detail stringValue="At least one required parameter was missing!"/&gt;
+                &lt;/L7p:AuditDetailAssertion&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:AssertionComment assertionComment="included"&gt;
+                        &lt;L7p:Properties mapValue="included"&gt;
+                            &lt;L7p:entry&gt;
+                                &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                                &lt;L7p:value stringValue="// setting an error.code '103' (missing paramer). This matches the OTK behaviour"/&gt;
+                            &lt;/L7p:entry&gt;
+                        &lt;/L7p:Properties&gt;
+                    &lt;/L7p:AssertionComment&gt;
+                    &lt;L7p:Base64Expression stringValue="MTAz"/&gt;
+                    &lt;L7p:VariableToSet stringValue="error.code"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:FalseAssertion/&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// error"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// check for parameters"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;L7p:ComparisonAssertion&gt;
+                &lt;L7p:CaseSensitive booleanValue="false"/&gt;
+                &lt;L7p:Expression1 stringValue="${login_hint}"/&gt;
+                &lt;L7p:Expression2 stringValue=""/&gt;
+                &lt;L7p:Operator operator="EMPTY"/&gt;
+                &lt;L7p:Predicates predicates="included"&gt;
+                    &lt;L7p:item binary="included"&gt;
+                        &lt;L7p:CaseSensitive booleanValue="false"/&gt;
+                        &lt;L7p:Operator operator="EMPTY"/&gt;
+                        &lt;L7p:RightValue stringValue=""/&gt;
+                    &lt;/L7p:item&gt;
+                &lt;/L7p:Predicates&gt;
+            &lt;/L7p:ComparisonAssertion&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:EncodeDecode&gt;
+                    &lt;L7p:SourceVariableName stringValue="login_hint"/&gt;
+                    &lt;L7p:TargetDataType variableDataType="string"/&gt;
+                    &lt;L7p:TargetVariableName stringValue="login_hint"/&gt;
+                    &lt;L7p:TransformType transformType="URL_ENCODE"/&gt;
+                &lt;/L7p:EncodeDecode&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue="JmxvZ2luX2hpbnQ9JHtsb2dpbl9oaW50fQ=="/&gt;
+                    &lt;L7p:VariableToSet stringValue="login_hint"/&gt;
+                &lt;/L7p:SetVariable&gt;
+            &lt;/wsp:All&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// check for login_hint"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+        &lt;L7p:EncodeDecode&gt;
+            &lt;L7p:SourceVariableName stringValue="azure.redirectUri"/&gt;
+            &lt;L7p:TargetDataType variableDataType="string"/&gt;
+            &lt;L7p:TargetVariableName stringValue="redirect_uri"/&gt;
+            &lt;L7p:TransformType transformType="URL_ENCODE"/&gt;
+        &lt;/L7p:EncodeDecode&gt;
+        &lt;L7p:UUIDGenerator&gt;
+            &lt;L7p:AssertionComment assertionComment="included"&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// generate state and nonce"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:AssertionComment&gt;
+            &lt;L7p:MaximumQuantity intValue="2"/&gt;
+            &lt;L7p:Quantity stringValue="2"/&gt;
+            &lt;L7p:TargetVariable stringValue="stateNonce"/&gt;
+        &lt;/L7p:UUIDGenerator&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue="JHtzdGF0ZU5vbmNlWzBdfQ=="/&gt;
+            &lt;L7p:VariableToSet stringValue="state"/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue="JHtzdGF0ZU5vbmNlWzFdfQ=="/&gt;
+            &lt;L7p:VariableToSet stringValue="nonce"/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue="JHthenVyZS5hdXRob3JpemF0aW9uVXJsfT9jbGllbnRfaWQ9JHthenVyZS5hcHBsaWNhdGlvbklkfSR7bG9naW5faGludH0mc2NvcGU9b3BlbmlkJnJlc3BvbnNlX21vZGU9Zm9ybV9wb3N0JnJlc3BvbnNlX3R5cGU9aWRfdG9rZW4mbm9uY2U9JHtub25jZX0mc3RhdGU9JHtzdGF0ZX0mcmVkaXJlY3RfdXJpPSR7cmVkaXJlY3RfdXJpfQ=="/&gt;
+            &lt;L7p:VariableToSet stringValue="azure.authorization.location"/&gt;
+        &lt;/L7p:SetVariable&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+</l7:ResourceSet>
+                            </l7:Resources>
+                        </l7:Policy>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>Azure AD - Initialize Authorization</l7:Name>
+                    <l7:Id>37092643bd1c9e4fc433ac7e510fb7df</l7:Id>
+                    <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
+                    <l7:TimeStamp>2018-09-05T18:26:44.494Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:EncapsulatedAssertion id="37092643bd1c9e4fc433ac7e510fb7df" version="1">
+                            <l7:Name>Azure AD - Initialize Authorization</l7:Name>
+                            <l7:Guid>9b2f61ad-b5fa-46e9-b809-bb1b5ff886ee</l7:Guid>
+                            <l7:PolicyReference id="37092643bd1c9e4fc433ac7e510fb68d" resourceUri="http://ns.l7tech.com/2010/04/gateway-management/policies"/>
+                            <l7:EncapsulatedArguments>
+<l7:EncapsulatedAssertionArgument>
+    <l7:Ordinal>1</l7:Ordinal>
+    <l7:ArgumentName>login_hint</l7:ArgumentName>
+    <l7:ArgumentType>string</l7:ArgumentType>
+    <l7:GuiLabel>Username (used as Login_Hint)</l7:GuiLabel>
+    <l7:GuiPrompt>true</l7:GuiPrompt>
+</l7:EncapsulatedAssertionArgument>
+<l7:EncapsulatedAssertionArgument>
+    <l7:Ordinal>2</l7:Ordinal>
+    <l7:ArgumentName>azure.applicationId</l7:ArgumentName>
+    <l7:ArgumentType>string</l7:ArgumentType>
+    <l7:GuiLabel>Azure AD Application ID</l7:GuiLabel>
+    <l7:GuiPrompt>true</l7:GuiPrompt>
+</l7:EncapsulatedAssertionArgument>
+<l7:EncapsulatedAssertionArgument>
+    <l7:Ordinal>3</l7:Ordinal>
+    <l7:ArgumentName>azure.authorizationUrl</l7:ArgumentName>
+    <l7:ArgumentType>string</l7:ArgumentType>
+    <l7:GuiLabel>Azure AD Authorization URL</l7:GuiLabel>
+    <l7:GuiPrompt>true</l7:GuiPrompt>
+</l7:EncapsulatedAssertionArgument>
+<l7:EncapsulatedAssertionArgument>
+    <l7:Ordinal>4</l7:Ordinal>
+    <l7:ArgumentName>azure.redirectUri</l7:ArgumentName>
+    <l7:ArgumentType>string</l7:ArgumentType>
+    <l7:GuiLabel>Azure AD Reply_URL (redirect_uri)</l7:GuiLabel>
+    <l7:GuiPrompt>true</l7:GuiPrompt>
+</l7:EncapsulatedAssertionArgument>
+                            </l7:EncapsulatedArguments>
+                            <l7:EncapsulatedResults>
+<l7:EncapsulatedAssertionResult>
+    <l7:ResultName>azure.authorization.location</l7:ResultName>
+    <l7:ResultType>string</l7:ResultType>
+</l7:EncapsulatedAssertionResult>
+<l7:EncapsulatedAssertionResult>
+    <l7:ResultName>error.code</l7:ResultName>
+    <l7:ResultType>string</l7:ResultType>
+</l7:EncapsulatedAssertionResult>
+                            </l7:EncapsulatedResults>
+                            <l7:Properties>
+<l7:Property key="allowTracing">
+    <l7:StringValue>true</l7:StringValue>
+</l7:Property>
+<l7:Property key="description">
+    <l7:StringValue>Initializes the authorization flow with Azure AD</l7:StringValue>
+</l7:Property>
+<l7:Property key="paletteFolder">
+    <l7:StringValue>accessControl</l7:StringValue>
+</l7:Property>
+<l7:Property key="paletteIconResourceName">
+    <l7:StringValue>server16.gif</l7:StringValue>
+</l7:Property>
+<l7:Property key="passMetricsToParent">
+    <l7:StringValue>false</l7:StringValue>
+</l7:Property>
+<l7:Property key="policyGuid">
+    <l7:StringValue>1ced3814-87ff-4252-b063-6d2c44c0d753</l7:StringValue>
+</l7:Property>
+                            </l7:Properties>
+                        </l7:EncapsulatedAssertion>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>azure/ad/authorize</l7:Name>
+                    <l7:Id>2c5c45743106e7dc43954dd5291bf0fe</l7:Id>
+                    <l7:Type>SERVICE</l7:Type>
+                    <l7:TimeStamp>2018-09-05T18:26:44.528Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:Service id="2c5c45743106e7dc43954dd5291bf0fe" version="10">
+                            <l7:ServiceDetail folderId="2c5c45743106e7dc43954dd5291bf0be" id="2c5c45743106e7dc43954dd5291bf0fe" version="10">
+<l7:Name>azure/ad/authorize</l7:Name>
+<l7:Enabled>true</l7:Enabled>
+<l7:ServiceMappings>
+    <l7:HttpMapping>
+        <l7:UrlPattern>/azure/ad/authorize</l7:UrlPattern>
+        <l7:Verbs>
+            <l7:Verb>GET</l7:Verb>
+            <l7:Verb>POST</l7:Verb>
+            <l7:Verb>PUT</l7:Verb>
+            <l7:Verb>DELETE</l7:Verb>
+        </l7:Verbs>
+    </l7:HttpMapping>
+</l7:ServiceMappings>
+<l7:Properties>
+    <l7:Property key="internal">
+        <l7:BooleanValue>false</l7:BooleanValue>
+    </l7:Property>
+    <l7:Property key="policyRevision">
+        <l7:LongValue>4</l7:LongValue>
+    </l7:Property>
+    <l7:Property key="soap">
+        <l7:BooleanValue>false</l7:BooleanValue>
+    </l7:Property>
+    <l7:Property key="tracingEnabled">
+        <l7:BooleanValue>false</l7:BooleanValue>
+    </l7:Property>
+    <l7:Property key="wssProcessingEnabled">
+        <l7:BooleanValue>false</l7:BooleanValue>
+    </l7:Property>
+</l7:Properties>
+                            </l7:ServiceDetail>
+                            <l7:Resources>
+<l7:ResourceSet tag="policy">
+    <l7:Resource type="policy" version="3">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="Call this service from a browser. It will redirect to Azures authorization endpoint"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="***"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;wsp:All wsp:Usage="Required"&gt;
+            &lt;L7p:CustomizeErrorResponse&gt;
+                &lt;L7p:Content stringValue="${error.msg}"/&gt;
+                &lt;L7p:ContentType stringValue="${content-type}"/&gt;
+                &lt;L7p:ExtraHeaders nameValuePairArray="included"&gt;
+                    &lt;L7p:item nameValuePair="included"&gt;
+                        &lt;L7p:Key stringValue="Pragma"/&gt;
+                        &lt;L7p:Value stringValue="no-cache"/&gt;
+                    &lt;/L7p:item&gt;
+                    &lt;L7p:item nameValuePair="included"&gt;
+                        &lt;L7p:Key stringValue="Cache-Control"/&gt;
+                        &lt;L7p:Value stringValue="no-store"/&gt;
+                    &lt;/L7p:item&gt;
+                    &lt;L7p:item nameValuePair="included"&gt;
+                        &lt;L7p:Key stringValue="x-ca-err"/&gt;
+                        &lt;L7p:Value stringValue="${error.code}"/&gt;
+                    &lt;/L7p:item&gt;
+                &lt;/L7p:ExtraHeaders&gt;
+                &lt;L7p:HttpStatus stringValue="${status}"/&gt;
+            &lt;/L7p:CustomizeErrorResponse&gt;
+            &lt;L7p:SetVariable&gt;
+                &lt;L7p:Base64Expression stringValue="NDAw"/&gt;
+                &lt;L7p:VariableToSet stringValue="status"/&gt;
+            &lt;/L7p:SetVariable&gt;
+            &lt;L7p:SetVariable&gt;
+                &lt;L7p:Base64Expression stringValue="MDAw"/&gt;
+                &lt;L7p:VariableToSet stringValue="error.code"/&gt;
+            &lt;/L7p:SetVariable&gt;
+            &lt;L7p:SetVariable&gt;
+                &lt;L7p:Base64Expression stringValue="eyJlcnJvciI6ImluaXRpYWxpemluZyB0aGUgYXV0aG9yaXphdGlvbiBmbG93IGZhaWxlZC4gQ2hlY2sgdGhlIGxvZ3MgZm9yIGRldGFpbHMifQ=="/&gt;
+                &lt;L7p:VariableToSet stringValue="error.msg"/&gt;
+            &lt;/L7p:SetVariable&gt;
+            &lt;L7p:SetVariable&gt;
+                &lt;L7p:Base64Expression stringValue="YXBwbGljYXRpb24vanNvbg=="/&gt;
+                &lt;L7p:VariableToSet stringValue="content-type"/&gt;
+            &lt;/L7p:SetVariable&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// Prepare an error message"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:All&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;L7p:SslAssertion/&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue="MjAz"/&gt;
+                    &lt;L7p:VariableToSet stringValue="error.code"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue="NDAz"/&gt;
+                    &lt;L7p:VariableToSet stringValue="status"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue="ew0KICAiZXJyb3IiOiJpbnZhbGlkX3JlcXVlc3QiLA0KICAiZXJyb3JfZGVzY3JpcHRpb24iOiJTU0wgaXMgcmVxdWlyZWQiDQp9"/&gt;
+                    &lt;L7p:VariableToSet stringValue="error.msg"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:FalseAssertion/&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// error, as configured in OTK = SSL required"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// Require SSL"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:HtmlFormDataAssertion&gt;
+                    &lt;L7p:AllowGet booleanValue="true"/&gt;
+                    &lt;L7p:AllowPost booleanValue="true"/&gt;
+                    &lt;L7p:DisallowOtherFields booleanValue="true"/&gt;
+                    &lt;L7p:FieldSpecs htmlFormFieldSpecArray="included"&gt;
+                        &lt;L7p:item htmlFormFieldSpec="included"&gt;
+                            &lt;L7p:AllowEmpty boxedBooleanValue="true"/&gt;
+                            &lt;L7p:DataType fieldDataType="any"/&gt;
+                            &lt;L7p:MaxOccurs intValue="1"/&gt;
+                            &lt;L7p:Name stringValue="username"/&gt;
+                        &lt;/L7p:item&gt;
+                    &lt;/L7p:FieldSpecs&gt;
+                &lt;/L7p:HtmlFormDataAssertion&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue="JHtyZXF1ZXN0Lmh0dHAucGFyYW1ldGVyLnVzZXJuYW1lfQ=="/&gt;
+                    &lt;L7p:VariableToSet stringValue="username"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// only 'username' is accepted"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:AuditDetailAssertion&gt;
+                    &lt;L7p:Detail stringValue="The given username is invalid: '${request.http.parameter.username}'"/&gt;
+                &lt;/L7p:AuditDetailAssertion&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:AssertionComment assertionComment="included"&gt;
+                        &lt;L7p:Properties mapValue="included"&gt;
+                            &lt;L7p:entry&gt;
+                                &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                                &lt;L7p:value stringValue="// error.code = 103, as configured in OTK"/&gt;
+                            &lt;/L7p:entry&gt;
+                        &lt;/L7p:Properties&gt;
+                    &lt;/L7p:AssertionComment&gt;
+                    &lt;L7p:Base64Expression stringValue="MTAz"/&gt;
+                    &lt;L7p:VariableToSet stringValue="error.code"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:FalseAssertion/&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// error"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// Check for parameters"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+        &lt;L7p:Encapsulated&gt;
+            &lt;L7p:AssertionComment assertionComment="included"&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// configured with cluster properties"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:AssertionComment&gt;
+            &lt;L7p:EncapsulatedAssertionConfigGuid stringValue="eded295b-ee86-41d7-8e63-ea1105bbe409"/&gt;
+            &lt;L7p:EncapsulatedAssertionConfigName stringValue="Azure AD - OpenID Configuration"/&gt;
+            &lt;L7p:Parameters mapValue="included"&gt;
+                &lt;L7p:entry&gt;
+                    &lt;L7p:key stringValue="azure.tenant"/&gt;
+                    &lt;L7p:value stringValue="${gateway.azure.tenant}"/&gt;
+                &lt;/L7p:entry&gt;
+            &lt;/L7p:Parameters&gt;
+        &lt;/L7p:Encapsulated&gt;
+        &lt;L7p:Encapsulated&gt;
+            &lt;L7p:AssertionComment assertionComment="included"&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// configured with cluster properties and outout of 'Azure AD - OpenID Configuration'"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:AssertionComment&gt;
+            &lt;L7p:EncapsulatedAssertionConfigGuid stringValue="9b2f61ad-b5fa-46e9-b809-bb1b5ff886ee"/&gt;
+            &lt;L7p:EncapsulatedAssertionConfigName stringValue="Azure AD - Initialize Authorization"/&gt;
+            &lt;L7p:Parameters mapValue="included"&gt;
+                &lt;L7p:entry&gt;
+                    &lt;L7p:key stringValue="azure.applicationId"/&gt;
+                    &lt;L7p:value stringValue="${gateway.azure.applicationId}"/&gt;
+                &lt;/L7p:entry&gt;
+                &lt;L7p:entry&gt;
+                    &lt;L7p:key stringValue="azure.authorizationUrl"/&gt;
+                    &lt;L7p:value stringValue="${azure.authorization_endpoint}"/&gt;
+                &lt;/L7p:entry&gt;
+                &lt;L7p:entry&gt;
+                    &lt;L7p:key stringValue="azure.redirectUri"/&gt;
+                    &lt;L7p:value stringValue="${gateway.azure.redirect_uri}"/&gt;
+                &lt;/L7p:entry&gt;
+                &lt;L7p:entry&gt;
+                    &lt;L7p:key stringValue="login_hint"/&gt;
+                    &lt;L7p:value stringValue="${username}"/&gt;
+                &lt;/L7p:entry&gt;
+                &lt;L7p:entry&gt;
+                    &lt;L7p:key stringValue="logint_hint"/&gt;
+                    &lt;L7p:value stringValue="${username}"/&gt;
+                &lt;/L7p:entry&gt;
+            &lt;/L7p:Parameters&gt;
+        &lt;/L7p:Encapsulated&gt;
+        &lt;L7p:HardcodedResponse&gt;
+            &lt;L7p:AssertionComment assertionComment="included"&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// HTTP status=302, redirect"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:AssertionComment&gt;
+            &lt;L7p:ResponseContentType stringValue="text/plain; charset=UTF-8"/&gt;
+            &lt;L7p:ResponseStatus stringValue="302"/&gt;
+        &lt;/L7p:HardcodedResponse&gt;
+        &lt;L7p:AddHeader&gt;
+            &lt;L7p:AssertionComment assertionComment="included"&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// Add the location header"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:AssertionComment&gt;
+            &lt;L7p:HeaderName stringValue="Location"/&gt;
+            &lt;L7p:HeaderValue stringValue="${azure.authorization.location}"/&gt;
+            &lt;L7p:RemoveExisting booleanValue="true"/&gt;
+            &lt;L7p:Target target="RESPONSE"/&gt;
+        &lt;/L7p:AddHeader&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+</l7:ResourceSet>
+                            </l7:Resources>
+                        </l7:Service>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>azure/ad/authorize/redirect</l7:Name>
+                    <l7:Id>2c5c45743106e7dc43954dd5291bf15d</l7:Id>
+                    <l7:Type>SERVICE</l7:Type>
+                    <l7:TimeStamp>2018-09-05T18:26:44.557Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:Service id="2c5c45743106e7dc43954dd5291bf15d" version="10">
+                            <l7:ServiceDetail folderId="2c5c45743106e7dc43954dd5291bf0be" id="2c5c45743106e7dc43954dd5291bf15d" version="10">
+<l7:Name>azure/ad/authorize/redirect</l7:Name>
+<l7:Enabled>true</l7:Enabled>
+<l7:ServiceMappings>
+    <l7:HttpMapping>
+        <l7:UrlPattern>/azure/ad/authorize/redirect</l7:UrlPattern>
+        <l7:Verbs>
+            <l7:Verb>GET</l7:Verb>
+            <l7:Verb>POST</l7:Verb>
+            <l7:Verb>PUT</l7:Verb>
+            <l7:Verb>DELETE</l7:Verb>
+        </l7:Verbs>
+    </l7:HttpMapping>
+</l7:ServiceMappings>
+<l7:Properties>
+    <l7:Property key="internal">
+        <l7:BooleanValue>false</l7:BooleanValue>
+    </l7:Property>
+    <l7:Property key="policyRevision">
+        <l7:LongValue>30</l7:LongValue>
+    </l7:Property>
+    <l7:Property key="soap">
+        <l7:BooleanValue>false</l7:BooleanValue>
+    </l7:Property>
+    <l7:Property key="tracingEnabled">
+        <l7:BooleanValue>false</l7:BooleanValue>
+    </l7:Property>
+    <l7:Property key="wssProcessingEnabled">
+        <l7:BooleanValue>false</l7:BooleanValue>
+    </l7:Property>
+</l7:Properties>
+                            </l7:ServiceDetail>
+                            <l7:Resources>
+<l7:ResourceSet tag="policy">
+    <l7:Resource type="policy" version="29">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="This is the redirect target. This API will be called after the authorization flow was completed"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="***"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;wsp:All wsp:Usage="Required"&gt;
+            &lt;L7p:CustomizeErrorResponse&gt;
+                &lt;L7p:Content stringValue="${error.msg}"/&gt;
+                &lt;L7p:ContentType stringValue="${content-type}"/&gt;
+                &lt;L7p:ExtraHeaders nameValuePairArray="included"&gt;
+                    &lt;L7p:item nameValuePair="included"&gt;
+                        &lt;L7p:Key stringValue="Pragma"/&gt;
+                        &lt;L7p:Value stringValue="no-cache"/&gt;
+                    &lt;/L7p:item&gt;
+                    &lt;L7p:item nameValuePair="included"&gt;
+                        &lt;L7p:Key stringValue="Cache-Control"/&gt;
+                        &lt;L7p:Value stringValue="no-store"/&gt;
+                    &lt;/L7p:item&gt;
+                    &lt;L7p:item nameValuePair="included"&gt;
+                        &lt;L7p:Key stringValue="x-ca-err"/&gt;
+                        &lt;L7p:Value stringValue="${error.code}"/&gt;
+                    &lt;/L7p:item&gt;
+                &lt;/L7p:ExtraHeaders&gt;
+                &lt;L7p:HttpStatus stringValue="${status}"/&gt;
+            &lt;/L7p:CustomizeErrorResponse&gt;
+            &lt;L7p:SetVariable&gt;
+                &lt;L7p:Base64Expression stringValue="NDAw"/&gt;
+                &lt;L7p:VariableToSet stringValue="status"/&gt;
+            &lt;/L7p:SetVariable&gt;
+            &lt;L7p:SetVariable&gt;
+                &lt;L7p:Base64Expression stringValue="MDAw"/&gt;
+                &lt;L7p:VariableToSet stringValue="error.code"/&gt;
+            &lt;/L7p:SetVariable&gt;
+            &lt;L7p:SetVariable&gt;
+                &lt;L7p:Base64Expression stringValue="eyJlcnJvciI6InVzZXIgYXV0aG9yaXphdGlvbiBmYWlsZWQuIENoZWNrIHRoZSBsb2dzIGZvciBkZXRhaWxzIn0="/&gt;
+                &lt;L7p:VariableToSet stringValue="error.msg"/&gt;
+            &lt;/L7p:SetVariable&gt;
+            &lt;L7p:SetVariable&gt;
+                &lt;L7p:Base64Expression stringValue="YXBwbGljYXRpb24vanNvbg=="/&gt;
+                &lt;L7p:VariableToSet stringValue="content-type"/&gt;
+            &lt;/L7p:SetVariable&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// Prepare an error message"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:All&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;L7p:SslAssertion/&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue="MjAz"/&gt;
+                    &lt;L7p:VariableToSet stringValue="error.code"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue="NDAz"/&gt;
+                    &lt;L7p:VariableToSet stringValue="status"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue="ew0KICAiZXJyb3IiOiJpbnZhbGlkX3JlcXVlc3QiLA0KICAiZXJyb3JfZGVzY3JpcHRpb24iOiJTU0wgaXMgcmVxdWlyZWQiDQp9"/&gt;
+                    &lt;L7p:VariableToSet stringValue="error.msg"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:FalseAssertion/&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// error, as configured in OTK = SSL required"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// Require SSL"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue="JHtyZXF1ZXN0Lmh0dHAucGFyYW1ldGVyLmVycm9yfQ=="/&gt;
+                    &lt;L7p:VariableToSet stringValue="error"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:ComparisonAssertion&gt;
+                    &lt;L7p:CaseSensitive booleanValue="false"/&gt;
+                    &lt;L7p:Expression1 stringValue="${error}"/&gt;
+                    &lt;L7p:Expression2 stringValue=""/&gt;
+                    &lt;L7p:Operator operator="EMPTY"/&gt;
+                    &lt;L7p:Predicates predicates="included"&gt;
+                        &lt;L7p:item binary="included"&gt;
+                            &lt;L7p:CaseSensitive booleanValue="false"/&gt;
+                            &lt;L7p:Operator operator="EMPTY"/&gt;
+                            &lt;L7p:RightValue stringValue=""/&gt;
+                        &lt;/L7p:item&gt;
+                    &lt;/L7p:Predicates&gt;
+                &lt;/L7p:ComparisonAssertion&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// no error"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:AuditDetailAssertion&gt;
+                    &lt;L7p:Detail stringValue="Azure returned an error: '${error}'"/&gt;
+                &lt;/L7p:AuditDetailAssertion&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue="JHtlcnJvcn0="/&gt;
+                    &lt;L7p:VariableToSet stringValue="error.msg"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:FalseAssertion/&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// error found"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// check for errors returned from Azure"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:HtmlFormDataAssertion&gt;
+                    &lt;L7p:AllowGet booleanValue="true"/&gt;
+                    &lt;L7p:AllowPost booleanValue="true"/&gt;
+                    &lt;L7p:FieldSpecs htmlFormFieldSpecArray="included"&gt;
+                        &lt;L7p:item htmlFormFieldSpec="included"&gt;
+                            &lt;L7p:AllowEmpty boxedBooleanValue="false"/&gt;
+                            &lt;L7p:DataType fieldDataType="any"/&gt;
+                            &lt;L7p:MaxOccurs intValue="1"/&gt;
+                            &lt;L7p:MinOccurs intValue="1"/&gt;
+                            &lt;L7p:Name stringValue="id_token"/&gt;
+                        &lt;/L7p:item&gt;
+                    &lt;/L7p:FieldSpecs&gt;
+                &lt;/L7p:HtmlFormDataAssertion&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue="JHtyZXF1ZXN0Lmh0dHAucGFyYW1ldGVyLmlkX3Rva2VufQ=="/&gt;
+                    &lt;L7p:VariableToSet stringValue="jwt"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// 'id_token' is expected"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:AuditDetailAssertion&gt;
+                    &lt;L7p:Detail stringValue="An id_token was expected but not provided"/&gt;
+                &lt;/L7p:AuditDetailAssertion&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:AssertionComment assertionComment="included"&gt;
+                        &lt;L7p:Properties mapValue="included"&gt;
+                            &lt;L7p:entry&gt;
+                                &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                                &lt;L7p:value stringValue="// error.code = 103, as configured in OTK"/&gt;
+                            &lt;/L7p:entry&gt;
+                        &lt;/L7p:Properties&gt;
+                    &lt;/L7p:AssertionComment&gt;
+                    &lt;L7p:Base64Expression stringValue="MTAz"/&gt;
+                    &lt;L7p:VariableToSet stringValue="error.code"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:FalseAssertion/&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// error"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// Check for parameters"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+        &lt;L7p:Encapsulated&gt;
+            &lt;L7p:AssertionComment assertionComment="included"&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// configured with cluster properties"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:AssertionComment&gt;
+            &lt;L7p:EncapsulatedAssertionConfigGuid stringValue="eded295b-ee86-41d7-8e63-ea1105bbe409"/&gt;
+            &lt;L7p:EncapsulatedAssertionConfigName stringValue="Azure AD - OpenID Configuration"/&gt;
+            &lt;L7p:Parameters mapValue="included"&gt;
+                &lt;L7p:entry&gt;
+                    &lt;L7p:key stringValue="azure.tenant"/&gt;
+                    &lt;L7p:value stringValue="${gateway.azure.tenant}"/&gt;
+                &lt;/L7p:entry&gt;
+            &lt;/L7p:Parameters&gt;
+        &lt;/L7p:Encapsulated&gt;
+        &lt;wsp:All wsp:Usage="Required"&gt;
+            &lt;L7p:DecodeJsonWebToken&gt;
+                &lt;L7p:AssertionComment assertionComment="included"&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// decode the jwt, no validation yet"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:AssertionComment&gt;
+                &lt;L7p:SourcePayload stringValue="${jwt}"/&gt;
+                &lt;L7p:TargetVariablePrefix stringValue="id_token"/&gt;
+                &lt;L7p:ValidationType stringValue="None"/&gt;
+            &lt;/L7p:DecodeJsonWebToken&gt;
+            &lt;L7p:CommentAssertion&gt;
+                &lt;L7p:Comment stringValue="***"/&gt;
+            &lt;/L7p:CommentAssertion&gt;
+            &lt;L7p:CommentAssertion&gt;
+                &lt;L7p:Comment stringValue="Extract all necessary keys from id_token header and payload"/&gt;
+            &lt;/L7p:CommentAssertion&gt;
+            &lt;L7p:CommentAssertion&gt;
+                &lt;L7p:Comment stringValue="*"/&gt;
+            &lt;/L7p:CommentAssertion&gt;
+            &lt;L7p:AuditDetailAssertion&gt;
+                &lt;L7p:AssertionComment assertionComment="included"&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// enable for debugging"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:AssertionComment&gt;
+                &lt;L7p:Detail stringValue="id_token.header: '${id_token.header}'"/&gt;
+                &lt;L7p:Enabled booleanValue="false"/&gt;
+            &lt;/L7p:AuditDetailAssertion&gt;
+            &lt;L7p:AuditDetailAssertion&gt;
+                &lt;L7p:AssertionComment assertionComment="included"&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// enable for debugging"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:AssertionComment&gt;
+                &lt;L7p:Detail stringValue="id_token.payload: '${id_token.payload}'"/&gt;
+                &lt;L7p:Enabled booleanValue="false"/&gt;
+            &lt;/L7p:AuditDetailAssertion&gt;
+            &lt;L7p:SetVariable&gt;
+                &lt;L7p:AssertionComment assertionComment="included"&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// turn the header into a 'json message'"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:AssertionComment&gt;
+                &lt;L7p:Base64Expression stringValue="JHtpZF90b2tlbi5oZWFkZXJ9"/&gt;
+                &lt;L7p:ContentType stringValue="application/json; charset=utf-8"/&gt;
+                &lt;L7p:DataType variableDataType="message"/&gt;
+                &lt;L7p:VariableToSet stringValue="id_token.header"/&gt;
+            &lt;/L7p:SetVariable&gt;
+            &lt;L7p:SetVariable&gt;
+                &lt;L7p:AssertionComment assertionComment="included"&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// turn the header into a 'json message'"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:AssertionComment&gt;
+                &lt;L7p:Base64Expression stringValue="JHtpZF90b2tlbi5wYXlsb2FkfQ=="/&gt;
+                &lt;L7p:ContentType stringValue="application/json; charset=utf-8"/&gt;
+                &lt;L7p:DataType variableDataType="message"/&gt;
+                &lt;L7p:VariableToSet stringValue="id_token.payload"/&gt;
+            &lt;/L7p:SetVariable&gt;
+            &lt;L7p:EvaluateJsonPathExpression&gt;
+                &lt;L7p:Expression stringValue="kid"/&gt;
+                &lt;L7p:OtherTargetMessageVariable stringValue="id_token.header"/&gt;
+                &lt;L7p:Target target="OTHER"/&gt;
+                &lt;L7p:VariablePrefix stringValue="id_token.kid"/&gt;
+            &lt;/L7p:EvaluateJsonPathExpression&gt;
+            &lt;L7p:EvaluateJsonPathExpression&gt;
+                &lt;L7p:Expression stringValue="iss"/&gt;
+                &lt;L7p:OtherTargetMessageVariable stringValue="id_token.payload"/&gt;
+                &lt;L7p:Target target="OTHER"/&gt;
+                &lt;L7p:VariablePrefix stringValue="id_token.iss"/&gt;
+            &lt;/L7p:EvaluateJsonPathExpression&gt;
+            &lt;L7p:EvaluateJsonPathExpression&gt;
+                &lt;L7p:Expression stringValue="aud"/&gt;
+                &lt;L7p:OtherTargetMessageVariable stringValue="id_token.payload"/&gt;
+                &lt;L7p:Target target="OTHER"/&gt;
+                &lt;L7p:VariablePrefix stringValue="id_token.aud"/&gt;
+            &lt;/L7p:EvaluateJsonPathExpression&gt;
+            &lt;L7p:EvaluateJsonPathExpression&gt;
+                &lt;L7p:Expression stringValue="exp"/&gt;
+                &lt;L7p:OtherTargetMessageVariable stringValue="id_token.payload"/&gt;
+                &lt;L7p:Target target="OTHER"/&gt;
+                &lt;L7p:VariablePrefix stringValue="id_token.exp"/&gt;
+            &lt;/L7p:EvaluateJsonPathExpression&gt;
+            &lt;L7p:EvaluateJsonPathExpression&gt;
+                &lt;L7p:Expression stringValue="unique_name"/&gt;
+                &lt;L7p:OtherTargetMessageVariable stringValue="id_token.payload"/&gt;
+                &lt;L7p:Target target="OTHER"/&gt;
+                &lt;L7p:VariablePrefix stringValue="id_token.unique_name"/&gt;
+            &lt;/L7p:EvaluateJsonPathExpression&gt;
+            &lt;L7p:SetVariable&gt;
+                &lt;L7p:AssertionComment assertionComment="included"&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// remember the 'unique_name' to be used right at the end of this policy!"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:AssertionComment&gt;
+                &lt;L7p:Base64Expression stringValue="JHtpZF90b2tlbi51bmlxdWVfbmFtZS5yZXN1bHR9"/&gt;
+                &lt;L7p:VariableToSet stringValue="unique_name"/&gt;
+            &lt;/L7p:SetVariable&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// extract details of the id_token"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:All&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:ComparisonAssertion&gt;
+                    &lt;L7p:AssertionComment assertionComment="included"&gt;
+                        &lt;L7p:Properties mapValue="included"&gt;
+                            &lt;L7p:entry&gt;
+                                &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                                &lt;L7p:value stringValue="// check for the issuer"/&gt;
+                            &lt;/L7p:entry&gt;
+                        &lt;/L7p:Properties&gt;
+                    &lt;/L7p:AssertionComment&gt;
+                    &lt;L7p:Expression1 stringValue="${id_token.iss.result}"/&gt;
+                    &lt;L7p:Expression2 stringValue="${azure.issuer}"/&gt;
+                    &lt;L7p:Predicates predicates="included"&gt;
+                        &lt;L7p:item binary="included"&gt;
+                            &lt;L7p:RightValue stringValue="${azure.issuer}"/&gt;
+                        &lt;/L7p:item&gt;
+                    &lt;/L7p:Predicates&gt;
+                &lt;/L7p:ComparisonAssertion&gt;
+                &lt;L7p:ComparisonAssertion&gt;
+                    &lt;L7p:AssertionComment assertionComment="included"&gt;
+                        &lt;L7p:Properties mapValue="included"&gt;
+                            &lt;L7p:entry&gt;
+                                &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                                &lt;L7p:value stringValue="// check that is has not expired"/&gt;
+                            &lt;/L7p:entry&gt;
+                        &lt;/L7p:Properties&gt;
+                    &lt;/L7p:AssertionComment&gt;
+                    &lt;L7p:Expression1 stringValue="${id_token.exp.result}"/&gt;
+                    &lt;L7p:Expression2 stringValue="${gateway.time.seconds}"/&gt;
+                    &lt;L7p:Operator operator="GT"/&gt;
+                    &lt;L7p:Predicates predicates="included"&gt;
+                        &lt;L7p:item binary="included"&gt;
+                            &lt;L7p:Operator operator="GT"/&gt;
+                            &lt;L7p:RightValue stringValue="${gateway.time.seconds}"/&gt;
+                        &lt;/L7p:item&gt;
+                    &lt;/L7p:Predicates&gt;
+                &lt;/L7p:ComparisonAssertion&gt;
+                &lt;L7p:ComparisonAssertion&gt;
+                    &lt;L7p:AssertionComment assertionComment="included"&gt;
+                        &lt;L7p:Properties mapValue="included"&gt;
+                            &lt;L7p:entry&gt;
+                                &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                                &lt;L7p:value stringValue="// check that is has been issued to your application"/&gt;
+                            &lt;/L7p:entry&gt;
+                        &lt;/L7p:Properties&gt;
+                    &lt;/L7p:AssertionComment&gt;
+                    &lt;L7p:Expression1 stringValue="${id_token.aud.result}"/&gt;
+                    &lt;L7p:Expression2 stringValue="${gateway.azure.applicationId}"/&gt;
+                    &lt;L7p:Predicates predicates="included"&gt;
+                        &lt;L7p:item binary="included"&gt;
+                            &lt;L7p:RightValue stringValue="${gateway.azure.applicationId}"/&gt;
+                        &lt;/L7p:item&gt;
+                    &lt;/L7p:Predicates&gt;
+                &lt;/L7p:ComparisonAssertion&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// a few comparisons"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:AuditDetailAssertion&gt;
+                    &lt;L7p:Detail stringValue="The id_token is invalid. Either the 'iss' ('${id_token.exp.result}') is invalid or it has expired ('${id_token.exp.result}' should be greater than '${gateway.time.seconds}') or the 'aud' is mismacthing. found: '${id_token.aud.result}', expected: '${gateway.azure.applicationId}'"/&gt;
+                &lt;/L7p:AuditDetailAssertion&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue="MTAz"/&gt;
+                    &lt;L7p:VariableToSet stringValue="error.code"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:FalseAssertion/&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// error"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// simple validations first"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue=""/&gt;
+                    &lt;L7p:ContentType stringValue="text/plain; charset=utf-8"/&gt;
+                    &lt;L7p:DataType variableDataType="message"/&gt;
+                    &lt;L7p:VariableToSet stringValue="emptyMsg"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:HttpRoutingAssertion&gt;
+                    &lt;L7p:AssertionComment assertionComment="included"&gt;
+                        &lt;L7p:Properties mapValue="included"&gt;
+                            &lt;L7p:entry&gt;
+                                &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                                &lt;L7p:value stringValue="// retrieve the JWKS"/&gt;
+                            &lt;/L7p:entry&gt;
+                        &lt;/L7p:Properties&gt;
+                    &lt;/L7p:AssertionComment&gt;
+                    &lt;L7p:CurrentSecurityHeaderHandling intValue="3"/&gt;
+                    &lt;L7p:HttpMethod httpMethod="GET"/&gt;
+                    &lt;L7p:ProtectedServiceUrl stringValue="${azure.jwks_endpoint}"/&gt;
+                    &lt;L7p:ProxyPassword stringValueNull="null"/&gt;
+                    &lt;L7p:ProxyUsername stringValueNull="null"/&gt;
+                    &lt;L7p:RequestHeaderRules httpPassthroughRuleSet="included"&gt;
+                        &lt;L7p:ForwardAll booleanValue="true"/&gt;
+                        &lt;L7p:Rules httpPassthroughRules="included"&gt;
+                            &lt;L7p:item httpPassthroughRule="included"&gt;
+                                &lt;L7p:Name stringValue="Cookie"/&gt;
+                            &lt;/L7p:item&gt;
+                            &lt;L7p:item httpPassthroughRule="included"&gt;
+                                &lt;L7p:Name stringValue="SOAPAction"/&gt;
+                            &lt;/L7p:item&gt;
+                        &lt;/L7p:Rules&gt;
+                    &lt;/L7p:RequestHeaderRules&gt;
+                    &lt;L7p:RequestMsgSrc stringValue="emptyMsg"/&gt;
+                    &lt;L7p:RequestParamRules httpPassthroughRuleSet="included"&gt;
+                        &lt;L7p:ForwardAll booleanValue="true"/&gt;
+                        &lt;L7p:Rules httpPassthroughRules="included"/&gt;
+                    &lt;/L7p:RequestParamRules&gt;
+                    &lt;L7p:ResponseHeaderRules httpPassthroughRuleSet="included"&gt;
+                        &lt;L7p:ForwardAll booleanValue="true"/&gt;
+                        &lt;L7p:Rules httpPassthroughRules="included"&gt;
+                            &lt;L7p:item httpPassthroughRule="included"&gt;
+                                &lt;L7p:Name stringValue="Set-Cookie"/&gt;
+                            &lt;/L7p:item&gt;
+                        &lt;/L7p:Rules&gt;
+                    &lt;/L7p:ResponseHeaderRules&gt;
+                    &lt;L7p:ResponseMsgDest stringValue="jwks"/&gt;
+                    &lt;L7p:SamlAssertionVersion intValue="2"/&gt;
+                &lt;/L7p:HttpRoutingAssertion&gt;
+                &lt;L7p:DecodeJsonWebToken&gt;
+                    &lt;L7p:AssertionComment assertionComment="included"&gt;
+                        &lt;L7p:Properties mapValue="included"&gt;
+                            &lt;L7p:entry&gt;
+                                &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                                &lt;L7p:value stringValue="// validate the signature"/&gt;
+                            &lt;/L7p:entry&gt;
+                        &lt;/L7p:Properties&gt;
+                    &lt;/L7p:AssertionComment&gt;
+                    &lt;L7p:FailUnverifiedSignature booleanValue="true"/&gt;
+                    &lt;L7p:KeyId stringValue="${id_token.kid.result}"/&gt;
+                    &lt;L7p:KeyType stringValue="JSON Web Key Set"/&gt;
+                    &lt;L7p:PrivateKeySource stringValue="${jwks.mainpart}"/&gt;
+                    &lt;L7p:SourcePayload stringValue="${jwt}"/&gt;
+                    &lt;L7p:TargetVariablePrefix stringValue="id_token"/&gt;
+                    &lt;L7p:ValidationType stringValue="Using Recipient Key From Context Variable"/&gt;
+                &lt;/L7p:DecodeJsonWebToken&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// valid"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:AuditDetailAssertion&gt;
+                    &lt;L7p:Detail stringValue="The JWKS could not be retrieved or the id_token signature is invalid"/&gt;
+                &lt;/L7p:AuditDetailAssertion&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue="MTAz"/&gt;
+                    &lt;L7p:VariableToSet stringValue="error.code"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:FalseAssertion/&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// error"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// signature validation"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+        &lt;L7p:HardcodedResponse&gt;
+            &lt;L7p:AssertionComment assertionComment="included"&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// return a simple 'Welcome' message"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:AssertionComment&gt;
+            &lt;L7p:Base64ResponseBody stringValue="PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CiAgICA8bWV0YSBjaGFyc2V0PSJ1dGYtOCI+CiAgICA8bWV0YSBodHRwLWVxdWl2PSJYLVVBLUNvbXBhdGlibGUiIGNvbnRlbnQ9IklFPWVkZ2UiPgogICAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xIj4KICAgIDwhLS0gVGhlIGFib3ZlIDMgbWV0YSB0YWdzICptdXN0KiBjb21lIGZpcnN0IGluIHRoZSBoZWFkOyBhbnkgb3RoZXIgaGVhZCBjb250ZW50IG11c3QgY29tZSAqYWZ0ZXIqIHRoZXNlIHRhZ3MgLS0+CiAgICA8dGl0bGU+QXp1cmUgVHV0b3JpYWw8L3RpdGxlPgoKICAgIDwhLS0gQm9vdHN0cmFwIC0tPgogICAgPCEtLSBMYXRlc3QgY29tcGlsZWQgYW5kIG1pbmlmaWVkIENTUyAtLT4KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly9tYXhjZG4uYm9vdHN0cmFwY2RuLmNvbS9ib290c3RyYXAvMy4zLjcvY3NzL2Jvb3RzdHJhcC5taW4uY3NzIgogICAgICAgICAgaW50ZWdyaXR5PSJzaGEzODQtQlZZaWlTSUZlSzFkR21KUkFreWN1SEFIUmczMk9tVWN3dzdvbjNSWWRnNFZhK1BtU1Rzei9LNjh2YmRFamg0dSIgY3Jvc3NvcmlnaW49ImFub255bW91cyI+CgogICAgPCEtLSBIVE1MNSBzaGltIGFuZCBSZXNwb25kLmpzIGZvciBJRTggc3VwcG9ydCBvZiBIVE1MNSBlbGVtZW50cyBhbmQgbWVkaWEgcXVlcmllcyAtLT4KICAgIDwhLS0gV0FSTklORzogUmVzcG9uZC5qcyBkb2Vzbid0IHdvcmsgaWYgeW91IHZpZXcgdGhlIHBhZ2UgdmlhIGZpbGU6Ly8gLS0+CiAgICA8IS0tW2lmIGx0IElFIDldPgogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vb3NzLm1heGNkbi5jb20vaHRtbDVzaGl2LzMuNy4zL2h0bWw1c2hpdi5taW4uanMiPjwvc2NyaXB0PgogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vb3NzLm1heGNkbi5jb20vcmVzcG9uZC8xLjQuMi9yZXNwb25kLm1pbi5qcyI+PC9zY3JpcHQ+CiAgICA8IVtlbmRpZl0tLT4KICAgIDwhLS0galF1ZXJ5IChuZWNlc3NhcnkgZm9yIEJvb3RzdHJhcCdzIEphdmFTY3JpcHQgcGx1Z2lucykgLS0+CiAgICA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9hamF4Lmdvb2dsZWFwaXMuY29tL2FqYXgvbGlicy9qcXVlcnkvMS4xMi40L2pxdWVyeS5taW4uanMiPjwvc2NyaXB0PgogICAgPCEtLSBJbmNsdWRlIGFsbCBjb21waWxlZCBwbHVnaW5zIChiZWxvdyksIG9yIGluY2x1ZGUgaW5kaXZpZHVhbCBmaWxlcyBhcyBuZWVkZWQgLS0+CiAgICA8IS0tIExhdGVzdCBjb21waWxlZCBhbmQgbWluaWZpZWQgSmF2YVNjcmlwdCAtLT4KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL21heGNkbi5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC8zLjMuNy9qcy9ib290c3RyYXAubWluLmpzIgogICAgICAgICAgICBpbnRlZ3JpdHk9InNoYTM4NC1UYzVJUWliMDI3cXZ5alNNZkhqT01hTGtmdVdWeFp4VVBuQ0pBN2wybUNXTklwRzltR0NEOHdHTkljUEQ3VHhhIgogICAgICAgICAgICBjcm9zc29yaWdpbj0iYW5vbnltb3VzIj48L3NjcmlwdD4KPC9oZWFkPgo8Ym9keT4KPGRpdiBjbGFzcz0iY29udGFpbmVyIj4KICAgIDxoMT5XZWxjb21lICR7dW5pcXVlX25hbWV9ITwvaDE+CiAgICA8Zm9ybSBhY3Rpb249Imh0dHBzOi8vJHtnYXRld2F5LmNsdXN0ZXIuaG9zdG5hbWV9L2F6dXJlL2FkL3dlYiIgbWV0aG9kPSJQT1NUIiBlbmN0eXBlPSJhcHBsaWNhdGlvbi94LXd3dy1mb3JtLXVybGVuY29kZWQiPgogICAgICAgIDxidXR0b24gdHlwZT0ic3VibWl0Ij5TdGFydCBvdmVyIGFnYWluPC9idXR0b24+CiAgICA8L2Zvcm0+CjwvZGl2Pgo8L2JvZHk+CjwvaHRtbD4="/&gt;
+            &lt;L7p:EarlyResponse booleanValue="true"/&gt;
+            &lt;L7p:ResponseContentType stringValue="text/html; charset=UTF-8"/&gt;
+        &lt;/L7p:HardcodedResponse&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+</l7:ResourceSet>
+                            </l7:Resources>
+                        </l7:Service>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+                    <l7:Name>azure/ad/web</l7:Name>
+                    <l7:Id>cb0fa104fae1fedf9f78671d378d5ff2</l7:Id>
+                    <l7:Type>SERVICE</l7:Type>
+                    <l7:TimeStamp>2018-09-12T18:21:59.775Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:Service id="cb0fa104fae1fedf9f78671d378d5ff2" version="2">
+                            <l7:ServiceDetail folderId="2c5c45743106e7dc43954dd5291bf0be" id="cb0fa104fae1fedf9f78671d378d5ff2" version="2">
+                                <l7:Name>azure/ad/web</l7:Name>
+                                <l7:Enabled>true</l7:Enabled>
+                                <l7:ServiceMappings>
+                                    <l7:HttpMapping>
+                                        <l7:UrlPattern>/azure/ad/web</l7:UrlPattern>
+                                        <l7:Verbs>
+                                            <l7:Verb>GET</l7:Verb>
+                                            <l7:Verb>POST</l7:Verb>
+                                            <l7:Verb>PUT</l7:Verb>
+                                            <l7:Verb>DELETE</l7:Verb>
+                                        </l7:Verbs>
+                                    </l7:HttpMapping>
+                                </l7:ServiceMappings>
+                                <l7:Properties>
+                                    <l7:Property key="internal">
+                                        <l7:BooleanValue>false</l7:BooleanValue>
+                                    </l7:Property>
+                                    <l7:Property key="policyRevision">
+                                        <l7:LongValue>4</l7:LongValue>
+                                    </l7:Property>
+                                    <l7:Property key="soap">
+                                        <l7:BooleanValue>false</l7:BooleanValue>
+                                    </l7:Property>
+                                    <l7:Property key="tracingEnabled">
+                                        <l7:BooleanValue>false</l7:BooleanValue>
+                                    </l7:Property>
+                                    <l7:Property key="wssProcessingEnabled">
+                                        <l7:BooleanValue>false</l7:BooleanValue>
+                                    </l7:Property>
+                                </l7:Properties>
+                            </l7:ServiceDetail>
+                            <l7:Resources>
+                                <l7:ResourceSet tag="policy">
+                                    <l7:Resource type="policy" version="3">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+                                        &lt;wsp:Policy xmlns:L7p=&quot;http://www.layer7tech.com/ws/policy&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2002/12/policy&quot;&gt;
+                                        &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                                        &lt;wsp:OneOrMore wsp:Usage=&quot;Required&quot;&gt;
+                                        &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                                        &lt;L7p:ComparisonAssertion&gt;
+                                        &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                                        &lt;L7p:Expression1 stringValue=&quot;${gateway.azure.tenant.displayName}&quot;/&gt;
+                                        &lt;L7p:Expression2 stringValue=&quot;your&quot;/&gt;
+                                        &lt;L7p:Operator operator=&quot;CONTAINS&quot;/&gt;
+                                        &lt;L7p:Predicates predicates=&quot;included&quot;&gt;
+                                        &lt;L7p:item binary=&quot;included&quot;&gt;
+                                        &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                                        &lt;L7p:Operator operator=&quot;CONTAINS&quot;/&gt;
+                                        &lt;L7p:RightValue stringValue=&quot;your&quot;/&gt;
+                                        &lt;/L7p:item&gt;
+                                        &lt;/L7p:Predicates&gt;
+                                        &lt;/L7p:ComparisonAssertion&gt;
+                                        &lt;L7p:SetVariable&gt;
+                                        &lt;L7p:AssertionComment assertionComment=&quot;included&quot;&gt;
+                                        &lt;L7p:Properties mapValue=&quot;included&quot;&gt;
+                                        &lt;L7p:entry&gt;
+                                        &lt;L7p:key stringValue=&quot;RIGHT.COMMENT&quot;/&gt;
+                                        &lt;L7p:value stringValue=&quot;// yes&quot;/&gt;
+                                        &lt;/L7p:entry&gt;
+                                        &lt;/L7p:Properties&gt;
+                                        &lt;/L7p:AssertionComment&gt;
+                                        &lt;L7p:Base64Expression stringValue=&quot;ICAgIDxoMT5IZWxsbywgQXp1cmUgVHV0b3JpYWwhPC9oMT4NCiAgICA8cD5UaGlzIGdhdGV3YXkgaGFzIG5vdCB5ZXQgYmVlbiBjb25maWd1cmVkIGZvciBBenVyZSBBRC4gT3BlbiBhIHBvbGljeSBtYW5hZ2VyIGFuZCBjb25maWd1cmUgdGhlIGNsdXN0ZXIgcHJvcGVydGllcyB0aGF0IGhhdmUgYSBuYW1lIHN0YXJ0aW5nIHdpdGggPGI+YXp1cmUuPGIvPi48L3A+DQogICAgPHA+T25jZSB0aGF0IGlzIGRvbmUsIHJlZnJlc2ggdGhpcyBwYWdlIGFuZCBnZXQgc3RhcnRlZCE8L3A+&quot;/&gt;
+                                        &lt;L7p:VariableToSet stringValue=&quot;form&quot;/&gt;
+                                        &lt;/L7p:SetVariable&gt;
+                                        &lt;L7p:assertionComment&gt;
+                                        &lt;L7p:Properties mapValue=&quot;included&quot;&gt;
+                                        &lt;L7p:entry&gt;
+                                        &lt;L7p:key stringValue=&quot;RIGHT.COMMENT&quot;/&gt;
+                                        &lt;L7p:value stringValue=&quot;// no&quot;/&gt;
+                                        &lt;/L7p:entry&gt;
+                                        &lt;/L7p:Properties&gt;
+                                        &lt;/L7p:assertionComment&gt;
+                                        &lt;/wsp:All&gt;
+                                        &lt;L7p:SetVariable&gt;
+                                        &lt;L7p:AssertionComment assertionComment=&quot;included&quot;&gt;
+                                        &lt;L7p:Properties mapValue=&quot;included&quot;&gt;
+                                        &lt;L7p:entry&gt;
+                                        &lt;L7p:key stringValue=&quot;RIGHT.COMMENT&quot;/&gt;
+                                        &lt;L7p:value stringValue=&quot;// yes&quot;/&gt;
+                                        &lt;/L7p:entry&gt;
+                                        &lt;/L7p:Properties&gt;
+                                        &lt;/L7p:AssertionComment&gt;
+                                        &lt;L7p:Base64Expression stringValue=&quot;ICAgIDxoMT5IZWxsbywgQXp1cmUgVHV0b3JpYWwhPC9oMT4NCiAgICA8cD5UaGlzIHBhZ2UgdGFrZXMgeW91IHRocm91Z2ggdGhlIGxvZ2luIHByb2Nlc3Mgd2l0aCBBenVyZSBBRCE8L3A+DQogICAgPHA+SWYgeW91IHByb3ZpZGUgYSB1c2VybmFtZSBiZWxvdywgaXQgaGFzIGJlIGtub3duIGluIHRoaXMgQUQ6IDxiPicke2dhdGV3YXkuYXp1cmUudGVuYW50LmRpc3BsYXlOYW1lfSc8L2I+LiBJZiBub25lIGlzIHByb3ZpZGVkLCB0aGUgdGFyZ2V0IEFEIHdpbGwgcHJvbXB0IHlvdS48L3A+DQogICAgPGZvcm0gYWN0aW9uPSJodHRwczovLyR7Z2F0ZXdheS5jbHVzdGVyLmhvc3RuYW1lfS9henVyZS9hZC9hdXRob3JpemUiIG1ldGhvZD0iUE9TVCIgZW5jdHlwZT0iYXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkIj4NCiAgICAgICAgPGxhYmVsIGZvcj0iaWRVc2VybmFtZSI+VXNlcm5hbWUgKG9wdGlvbmFsKTogPC9sYWJlbD4NCiAgICAgICAgPGlucHV0IHR5cGU9InRleHQiIHdpZHRoPSI1MCIgaWQ9ImlkVXNlcm5hbWUiIG5hbWU9InVzZXJuYW1lIi8+DQogICAgICAgIDxidXR0b24gdHlwZT0ic3VibWl0Ij5Mb2dpbjwvYnV0dG9uPg0KICAgIDwvZm9ybT4=&quot;/&gt;
+                                        &lt;L7p:VariableToSet stringValue=&quot;form&quot;/&gt;
+                                        &lt;/L7p:SetVariable&gt;
+                                        &lt;L7p:assertionComment&gt;
+                                        &lt;L7p:Properties mapValue=&quot;included&quot;&gt;
+                                        &lt;L7p:entry&gt;
+                                        &lt;L7p:key stringValue=&quot;RIGHT.COMMENT&quot;/&gt;
+                                        &lt;L7p:value stringValue=&quot;// check, if the Azure AD has been configured&quot;/&gt;
+                                        &lt;/L7p:entry&gt;
+                                        &lt;/L7p:Properties&gt;
+                                        &lt;/L7p:assertionComment&gt;
+                                        &lt;/wsp:OneOrMore&gt;
+                                        &lt;L7p:HardcodedResponse&gt;
+                                        &lt;L7p:AssertionComment assertionComment=&quot;included&quot;&gt;
+                                        &lt;L7p:Properties mapValue=&quot;included&quot;&gt;
+                                        &lt;L7p:entry&gt;
+                                        &lt;L7p:key stringValue=&quot;RIGHT.COMMENT&quot;/&gt;
+                                        &lt;L7p:value stringValue=&quot;// return a dead-simple web site&quot;/&gt;
+                                        &lt;/L7p:entry&gt;
+                                        &lt;/L7p:Properties&gt;
+                                        &lt;/L7p:AssertionComment&gt;
+                                        &lt;L7p:Base64ResponseBody stringValue=&quot;PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CiAgICA8bWV0YSBjaGFyc2V0PSJ1dGYtOCI+CiAgICA8bWV0YSBodHRwLWVxdWl2PSJYLVVBLUNvbXBhdGlibGUiIGNvbnRlbnQ9IklFPWVkZ2UiPgogICAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xIj4KICAgIDwhLS0gVGhlIGFib3ZlIDMgbWV0YSB0YWdzICptdXN0KiBjb21lIGZpcnN0IGluIHRoZSBoZWFkOyBhbnkgb3RoZXIgaGVhZCBjb250ZW50IG11c3QgY29tZSAqYWZ0ZXIqIHRoZXNlIHRhZ3MgLS0+CiAgICA8dGl0bGU+QXp1cmUgVHV0b3JpYWw8L3RpdGxlPgoKICAgIDwhLS0gQm9vdHN0cmFwIC0tPgogICAgPCEtLSBMYXRlc3QgY29tcGlsZWQgYW5kIG1pbmlmaWVkIENTUyAtLT4KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly9tYXhjZG4uYm9vdHN0cmFwY2RuLmNvbS9ib290c3RyYXAvMy4zLjcvY3NzL2Jvb3RzdHJhcC5taW4uY3NzIgogICAgICAgICAgaW50ZWdyaXR5PSJzaGEzODQtQlZZaWlTSUZlSzFkR21KUkFreWN1SEFIUmczMk9tVWN3dzdvbjNSWWRnNFZhK1BtU1Rzei9LNjh2YmRFamg0dSIgY3Jvc3NvcmlnaW49ImFub255bW91cyI+CgogICAgPCEtLSBIVE1MNSBzaGltIGFuZCBSZXNwb25kLmpzIGZvciBJRTggc3VwcG9ydCBvZiBIVE1MNSBlbGVtZW50cyBhbmQgbWVkaWEgcXVlcmllcyAtLT4KICAgIDwhLS0gV0FSTklORzogUmVzcG9uZC5qcyBkb2Vzbid0IHdvcmsgaWYgeW91IHZpZXcgdGhlIHBhZ2UgdmlhIGZpbGU6Ly8gLS0+CiAgICA8IS0tW2lmIGx0IElFIDldPgogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vb3NzLm1heGNkbi5jb20vaHRtbDVzaGl2LzMuNy4zL2h0bWw1c2hpdi5taW4uanMiPjwvc2NyaXB0PgogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vb3NzLm1heGNkbi5jb20vcmVzcG9uZC8xLjQuMi9yZXNwb25kLm1pbi5qcyI+PC9zY3JpcHQ+CiAgICA8IVtlbmRpZl0tLT4KICAgIDwhLS0galF1ZXJ5IChuZWNlc3NhcnkgZm9yIEJvb3RzdHJhcCdzIEphdmFTY3JpcHQgcGx1Z2lucykgLS0+CiAgICA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9hamF4Lmdvb2dsZWFwaXMuY29tL2FqYXgvbGlicy9qcXVlcnkvMS4xMi40L2pxdWVyeS5taW4uanMiPjwvc2NyaXB0PgogICAgPCEtLSBJbmNsdWRlIGFsbCBjb21waWxlZCBwbHVnaW5zIChiZWxvdyksIG9yIGluY2x1ZGUgaW5kaXZpZHVhbCBmaWxlcyBhcyBuZWVkZWQgLS0+CiAgICA8IS0tIExhdGVzdCBjb21waWxlZCBhbmQgbWluaWZpZWQgSmF2YVNjcmlwdCAtLT4KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL21heGNkbi5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC8zLjMuNy9qcy9ib290c3RyYXAubWluLmpzIgogICAgICAgICAgICBpbnRlZ3JpdHk9InNoYTM4NC1UYzVJUWliMDI3cXZ5alNNZkhqT01hTGtmdVdWeFp4VVBuQ0pBN2wybUNXTklwRzltR0NEOHdHTkljUEQ3VHhhIgogICAgICAgICAgICBjcm9zc29yaWdpbj0iYW5vbnltb3VzIj48L3NjcmlwdD4KPC9oZWFkPgo8Ym9keT4KPGRpdiBjbGFzcz0iY29udGFpbmVyIj4KICAgICR7Zm9ybX0KPC9kaXY+CjwvYm9keT4KPC9odG1sPg==&quot;/&gt;
+                                        &lt;L7p:ResponseContentType stringValue=&quot;text/html; charset=UTF-8&quot;/&gt;
+                                        &lt;/L7p:HardcodedResponse&gt;
+                                        &lt;/wsp:All&gt;
+                                        &lt;/wsp:Policy&gt;
+                                    </l7:Resource>
+                                </l7:ResourceSet>
+                            </l7:Resources>
+                        </l7:Service>
+                    </l7:Resource>
+                </l7:Item>
+            </l7:References>
+            <l7:Mappings>
+                <l7:Mapping action="NewOrExisting" srcId="0000000000000000ffffffffffffec76" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/folders/0000000000000000ffffffffffffec76" type="FOLDER">
+                    <l7:Properties>
+                        <l7:Property key="FailOnNew">
+                            <l7:BooleanValue>true</l7:BooleanValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrExisting" srcId="2c5c45743106e7dc43954dd5291bf0be" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/folders/2c5c45743106e7dc43954dd5291bf0be" type="FOLDER"/>
+                <l7:Mapping action="NewOrExisting" srcId="2c5c45743106e7dc43954dd5291bf159" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/trustedCertificates/2c5c45743106e7dc43954dd5291bf159" type="TRUSTED_CERT"/>
+                <l7:Mapping action="NewOrExisting" srcId="7afffb9d56b81b8a824b3c07981515d3" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/clusterProperties/7afffb9d56b81b8a824b3c07981515d3" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrExisting" srcId="7afffb9d56b81b8a824b3c07981515cf" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/clusterProperties/7afffb9d56b81b8a824b3c07981515cf" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrExisting" srcId="7afffb9d56b81b8a824b3c07981515cd" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/clusterProperties/7afffb9d56b81b8a824b3c07981515cd" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrExisting" srcId="37092643bd1c9e4fc433ac7e510fb6a0" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/policies/37092643bd1c9e4fc433ac7e510fb6a0" type="POLICY"/>
+                <l7:Mapping action="NewOrExisting" srcId="37092643bd1c9e4fc433ac7e510fb6b3" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/encapsulatedAssertions/37092643bd1c9e4fc433ac7e510fb6b3" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrExisting" srcId="37092643bd1c9e4fc433ac7e510fb68d" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/policies/37092643bd1c9e4fc433ac7e510fb68d" type="POLICY"/>
+                <l7:Mapping action="NewOrExisting" srcId="37092643bd1c9e4fc433ac7e510fb7df" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/encapsulatedAssertions/37092643bd1c9e4fc433ac7e510fb7df" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrExisting" srcId="2c5c45743106e7dc43954dd5291bf0fe" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/services/2c5c45743106e7dc43954dd5291bf0fe" type="SERVICE"/>
+                <l7:Mapping action="NewOrExisting" srcId="00000000000000000000000000000002:SSL" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/privateKeys/00000000000000000000000000000002:SSL" type="SSG_KEY_ENTRY">
+                    <l7:Properties>
+                        <l7:Property key="FailOnNew">
+                            <l7:BooleanValue>true</l7:BooleanValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrExisting" srcId="e23884300b9f3d2da78ecbed9ae0aa1a" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/clusterProperties/e23884300b9f3d2da78ecbed9ae0aa1a" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrExisting" srcId="2c5c45743106e7dc43954dd5291bf15d" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/services/2c5c45743106e7dc43954dd5291bf15d" type="SERVICE"/>
+                <l7:Mapping action="NewOrExisting" srcId="cb0fa104fae1fedf9f78671d378d5ff2" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/services/cb0fa104fae1fedf9f78671d378d5ff2" type="SERVICE"/>
+            </l7:Mappings>
+        </l7:Bundle>

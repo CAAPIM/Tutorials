@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+            <l7:References>
+                <l7:Item>
+                    <l7:Name>azure.tenant</l7:Name>
+                    <l7:Id>7afffb9d56b81b8a824b3c07981515d3</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-09-05T18:26:44.454Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="7afffb9d56b81b8a824b3c07981515d3" version="0">
+                            <l7:Name>azure.tenant</l7:Name>
+                            <l7:Value>your-tenant-id</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>azure.redirect_uri</l7:Name>
+                    <l7:Id>7afffb9d56b81b8a824b3c07981515cf</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-09-05T18:26:44.454Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="7afffb9d56b81b8a824b3c07981515cf" version="1">
+                            <l7:Name>azure.redirect_uri</l7:Name>
+                            <l7:Value>https://{your-server-name}/azure/ad/authorize/redirect</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>azure.applicationId</l7:Name>
+                    <l7:Id>7afffb9d56b81b8a824b3c07981515cd</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-09-05T18:26:44.454Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="7afffb9d56b81b8a824b3c07981515cd" version="0">
+                            <l7:Name>azure.applicationId</l7:Name>
+                            <l7:Value>{your-application-id}</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>azure.tenant.displayName</l7:Name>
+                    <l7:Id>e23884300b9f3d2da78ecbed9ae0aa1a</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-09-12T16:47:46.768Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="e23884300b9f3d2da78ecbed9ae0aa1a" version="1">
+                            <l7:Name>azure.tenant.displayName</l7:Name>
+                            <l7:Value>your-tenant-display-name</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+            </l7:References>
+            <l7:Mappings>
+                <l7:Mapping action="NewOrUpdate" srcId="7afffb9d56b81b8a824b3c07981515d3" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/clusterProperties/7afffb9d56b81b8a824b3c07981515d3" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrUpdate" srcId="7afffb9d56b81b8a824b3c07981515cf" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/clusterProperties/7afffb9d56b81b8a824b3c07981515cf" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrUpdate" srcId="7afffb9d56b81b8a824b3c07981515cd" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/clusterProperties/7afffb9d56b81b8a824b3c07981515cd" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrUpdate" srcId="e23884300b9f3d2da78ecbed9ae0aa1a" srcUri="https://theauthorizer.ca.com:8443/restman/1.0/clusterProperties/e23884300b9f3d2da78ecbed9ae0aa1a" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+            </l7:Mappings>
+        </l7:Bundle>
