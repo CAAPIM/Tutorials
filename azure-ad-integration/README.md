@@ -79,7 +79,8 @@ The next step is to configure the policies to work with your Azure AD account.
 **TIP 01:** Always turn on 'Show Comments' and 'Show Assertion Numbers' to see additional information in the policies
 
 **TIP 02:** The api **/azure/ad/authorize/redirect** is the one doing the most interesting things including JWT validation
-First, have a look what has been installed:
+
+Have a look what has been installed, browse a little bit:
 
 - In the lower left window you can find the folder **Azure Active Directory Integration**
 - Tasks -> Certificates, Keys and Secrets -> Manage Certificates
