@@ -13,3 +13,5 @@ ca-apim-otk-and-ifttt/apitest/*workspace.xml
 ca-apim-otk-and-ifttt/scripts/raw/*
 ca-apim-otk-and-ifttt/apitest/properties/*.properties
 !ca-apim-otk-and-ifttt/apitest/properties/ifttt-otk-tutorial.template.properties
+license*.xml
+azure_config*.bundle
