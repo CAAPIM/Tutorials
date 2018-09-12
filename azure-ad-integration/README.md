@@ -119,7 +119,8 @@ and what you did not like!
 
 ## Additional info
 
-Checkout my blog post about this tutorial: https://communities.ca.com/blogs/oauth/2018/09/12/azure-ad-integration
+Checkout my blog post about this tutorial:
+- https://communities.ca.com/blogs/oauth/2018/09/12/azure-ad-integration
 
 If you have trouble with policies, here are instructions for debugging them:
 - https://communities.ca.com/blogs/oauth/2017/03/06/tip-of-the-week-tracing-policy
